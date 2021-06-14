@@ -5,11 +5,11 @@
 
     <title>framECO</title>
 
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
 <nav class="navbar navbar-expand-lg navbar-light"> <!-- add class "sticky-top" to make it sticky  -->
     <a class="navbar-brand" href="#">framECO</a>
@@ -45,37 +45,71 @@
         <h2>A frame-based emotions context ontology</h2>
         <p id="subtitle">Because we are not just happiness, surprise, sadness and anger. We need new words, new concepts, new models to tell the emotions that are still linguistically indefinite, but that shape our experience.</p>
     </div>
-    <!--<div id="video">
-        <iframe height="500" width="1200" src="https://www.youtube.com/embed/wH6ZCIRjI14?autoplay=1&mute=1"></iframe>
-    </div>-->
     <div class="container">
         <video id="video" width="800" height="500" controls autoplay muted>
             <source src="anemoia-con-scritta.mp4" type="video/mp4"/>
         </video>
     </div>
-    <p>Credits to: Obscure Sorrows</p>
+    <p id="credits">Credits to: <a href="https://www.youtube.com/watch?v=wH6ZCIRjI14">Obscure Sorrows</a></p>
 </section>
 
 <section id="main">
     <h2 id="project">The Project</h2>
     <p style="color: red;">breve descrizione degli scopi/contenuti del progetto</p>
-    <p>WHAT THIS PROJECT IS ABOUT:</p>
-    <P style="color: red;">CARDS</P>
+    <h5>WHAT THIS PROJECT IS ABOUT:</h5>
+    <div class="card-deck">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">To enhance humanistic resources</h5>
+                <p class="card-text">Bringing humanities into the digital world means formalizing without trivializing the humanistic perspectives to compare and enrich them more effectively.</p>
+            </div>
+            <!--<div class="card-footer">
+                <small class="text-muted"></small>
+            </div>-->
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">To propose a more inclusive model</h5>
+                <p class="card-text">To devise a vocabulary that can define the context that characterizes emotions, even the most unusual ones, to overcome the shortages of existing models based on outdated theories.</p>
+            </div>
+            <!-- <div class="card-footer">
+                <small class="text-muted">Go to section</small>
+            </div> -->
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">To improve what already exists</h5>
+                <p class="card-text">There are already some models that capture the context in which an emotion is inserted, but they are not formal and inclusive enough.</p>
+            </div>
+            <!-- <div class="card-footer">
+                <small class="text-muted">Go to section/small>
+            </div> -->
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">For a sentiment analysis of emotion</h5>
+                <p class="card-text">To bring out from a literary text the description of emotions, whether they are unknown or already known, even from the most complex literary texts.</p>
+            </div>
+            <!-- <div class="card-footer">
+                <small class="text-muted">arianna.moretti2@studio.unibo.it</small>
+            </div> -->
+        </div>
+    </div>
 </section>
 
 <section id="documentation">
     <h2 id="doc">Documentation</h2>
 
     <div id="flex-container">
-        <div id="indice">
+        <div id="indice" class="sticky-top">
             <ol id="index-ol">
-                <li>The Idea</li>
-                <li>What's Already Out There</li>
-                <li>Reasoning Patterns and Knowledge Patterns</li>
-                <li>Frame-Based Alignment of Existing Ontologies</li>
-                <li>Designing FramECO</li>
-                <li>FramECO for Sentiment Analysis</li>
-                <li>Conclusions and Further Developments</li>
+                <li><a href="#idea">The Idea</a></li>
+                <li><a href="#existing">What's Already Out There</a></li>
+                <li><a href="#patterns">Reasoning Patterns and Knowledge Patterns</a></li>
+                <li><a href="#alignment">Frame-Based Alignment of Existing Ontologies</a></li>
+                <li><a href="#frameco">Designing FramECO</a></li>
+                <li><a href="#sentiframeco">FramECO for Sentiment Analysis</a></li>
+                <li><a href="#conclusion">Conclusions and Further Developments</a></li>
             </ol>
 
         </div>
@@ -83,14 +117,401 @@
 
 
         <div id="content">
-            <h3 id="idea">The idea</h3>
+            <h3 id="idea">The Idea</h3>
+            <p>Every day we experience much more complex emotions than those we can most easily give a name to. In literary and philosophical texts we find descriptions of emotions, or feelings, or moods that go beyond traditional models. So it is necessary to go beyond what already exists to formalize without trivializing, therefore in a sophisticated way, the humanistic perspectives in order to study and exploit them more effectively.</p>
+            <p>So the purpose of this project is twofold:</p>
+            <ol>
+                <li>to identify the theories of current emotions, how to give a formal characterization by bringing examples from the literature and from other projects on the subject;</li>
+                <li>to propose an ontology of those emotions to which we have not yet given a name and for which there is no taxonomy or classification, thus giving formal characterization to these new, emerging concepts. It is a question of creating a formal model (i.e. an ontology of the contexts of emotion) to describe the emerging emotions (more precisely, their contexts). Therefore, showing what is in the state of the art and what is missing to develop a model instead that allows both to describe an emotion starting from a vocabulary, and, possibly in the future, to recognize it in the text.</li>
+            </ol>
+
+
+
+            <h3 id="existing">What's Already Out There: the Need to Reuse and not Reinvent the Wheel</h3>
+            <p>This section presents the <b>existing models</b> of description of emotions, as well as some <b>theories of cognitive-affective science</b> that underlie these models plus a particular case of a theoretical model that does not yet have a formalization.</p>
+            <p>The purpose of this part of the project is to <b>identify what is there, what can be reused and what is missing in defining an emotion</b>. If most of the existing models share the same principles and if they are exhaustive and <b>consistent both from a formal and content</b> point of view.</p>
+
+            <h4>Existing Ontologies</h4>
+            <h5>1. <a href="https://link.springer.com/chapter/10.1007/978-3-642-24279-3_14">EMO / MFOEM Emotion Ontology</a></h5>
+            <p>Developed by the <a href="http://www.obofoundry.org/">OBO (Open Biological and Biomedical Ontology) Foundry group</a>, which is a community which develops interoperable ontologies for the <b>biological sciences</b>.</p>
+            <p>It’s an ontology of affective phenomena such as emotions, moods, appraisals and subjective feelings, designed to support interdisciplinary research by providing unified annotations. The ontology is a domain specialisation of the broader Mental Functioning Ontology.</p>
+            <p>The emotion process:</p>
+            <ul>
+                <li>is an <b>affective process</b>;</li>
+                <li>has agent an organism;</li>
+                <li>involves:
+                <ul>
+                    <li>an <b>appraisal process</b> which rises a a cognitive representation which represents an evaluation of the relevance of some triggering object or event to the organism</li>
+                    <li>an emotional <b>behavioral process</b>: behaviour of the organism in response to the appraisal, which includes the </li>
+                    <li>characteristic facial expressions for particular emotion types</li>
+                    <li>a <b>physiological response</b> to emotion process: a bodily process which encompasses all the neurophysiological changes caused by the appraisal, which take place in the central nervous system (CNS), neuro-endocrine system (NES) and autonomous nervous system (ANS)</li>
+                </ul>
+                </li>
+                <li>occurs with <b>consciousness</b>;</li>
+                <li>realizes a <b>mental disposition</b>;</li>
+                <li>has an <b>object</b>;</li>
+                <li>gives rise to an <b>action tendency</b>.</li>
+            </ul>
+            <p>So the basic idea is that every emotion process involves these <b>4 + 1 components</b>:</p>
+            <ol>
+                <li><b>appraisal</b>: e.g. the appraisal of suddenness gives rise to the emotional process which is called surprise;</li>
+                <li><b>subjective emotional feeling</b>: an affective representation that the organism has about its own emotion (representations are always about something), e.g. feeling nervous;</li>
+                <li><b>action tendency</b>: a disposition to behaviour that inheres in an organism by virtue of the physical changes brought about by an emotion process. e.g., smiling;</li>
+                <li><b>physiological response</b>: bodily process which encompasses all the neuro-physiological changes caused by the emotion, e.g. shivering, becomig pale, heart beating at a fast race;</li>
+                <li><b>emotional behavioral process</b>: not an actual component but rather an outcome of the emotion process. It’s the behavior of an organism in response to the emotion and as a result of the emotional action tendency which I referred to in the previous slide.</li>
+            </ol>
+            <p>The emotion process is linked to but distinguished from: an emotional personality trait, an affective representation, and emotional action tendency, and an emotion disposition.</p>
+            <p>The Emotion Ontology has been developed within the Basic Formal Ontology framework, to <b>support interdisciplinary research into emotions and other affective phenomena</b> in fields such as cognitive neuroscience, behavioral psychology, psychiatry, literary analysis, and artificial intelligence. The ontology provides a common language effectively, since the terms and relations in an ontology are provided with <b>logical definitions</b> which enable reasoning with the data.</p>
+            <div id="img-container">
+                <img src="imgs/1-classi_MFOEM.PNG" alt="MFOEM classes">
+                <img src="imgs/1-emozioni_MFOEM.PNG" alt="MFOEM emotions">
+            </div>
+            <img class="img-too-big" src="imgs/1-grafoMFOEM.png" alt="MFOEM graph">
+
+            <h5>2. <a href="https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-018-0634-6">VEO: a model for representing visual cues of emotions</a></h5>
+            <p>The background here are the <b>healthcare services</b>, particularly patient-provider interaction, which often involve highly emotional situations, and it is important for physicians to understand and respond to their patients’ emotions to best ensure their well-being.</p>
+            <p>This ontology is based on the Ortony, Clore, & Collins’ models of emotions ("<b>the OCC model</b>"), which differentiates 22 emotions depending on the <b>psychological scenario that causes the emotion and the subsequent affective reactions</b> that appear. The OCC model proposes that emotions are comprised of a <b>collection of behaviors</b> rather than independent entities that then cause the behaviors. This model describes <b>emotions based on situations</b> rather than on patterns of physiology, neurology, experience, expression, and motivation is more straightforward and reliable for computers to understand. Additionally, the OCC model organizes emotions into <b>three categories: those concerning consequences of events, actions of agents, and aspects of objects</b>.</p>
+            <p><b>VEO is aligned with EMO</b> of MFOEM, although it does not consider all the emotions categorized in the latter.</p>
+            <p>Emotions are defined by <b>valence, hierarchically and semantically</b> (e.g. Satisfaction is a subclass of Joy).</p>
+            <p>Finally, the emotion is defined as <b>"an affective state of conciousness"</b></p>
+            <img alt="VEO graph" src="imgs/2-VEO-graph.png">
+
+
+            <h5>3. <a href="https://wndomains.fbk.eu/wnaffect.html">WN-AFFECT: a WordNet extension</a></h5>
+            <p>While not an emotion ontology, WN-AFFECT is an <b>extension of the WordNet ontology with annotations that describe the emotional valence of words</b> based on the W3C lists of emotions. In particular, to some synsets where assigned <b>affective labels</b> such us ‘emotion’, ‘mood’, ‘trait’ + extension of a set of <b>additional a-labels</b> (called emotional categories), hierarchically organized.  In a second stage, synsets were distinguished according to emotional <b>valence</b>, defining four additional a-labels: positive, negative, ambiguous, and neutral. Another important property is the <b>stative/causative dimension</b>: an emotional adjective is said causative if it refers to some emotion that is caused by the entity represented by the modified noun (e.g. amusing movie); while an emotional adjective is said stative if it refers to the emotion owned or felt by the subject denoted by the modified noun (e.g. cheerful/happy boy).</p>
+
+            <h5>4. <a href="https://hal.archives-ouvertes.fr/hal-00908543/PDF/PID2998689.pdf">EmOCA: Emotion Ontology for Context Awareness</a></h5>
+            <p>EmOCA is an emotion ontology for describing and reasoning on <b>emotion context</b> in order to improve <b>emotion detection based on bodily expression</b>. Context is incorporated into the <b>two-factor theory of emotion</b> (bodily reaction plus cognitive input) to demonstrate the <b>importance of context in the emotion experience</b>. In attempting to determine emotion felt by another person, the bodily expression of their emotion is the only evidence directly available, eg, “John looks angry”.</p>
+            <p>The motivation behind the ontology creation is to <b>bring context into the emotion-modulating cognitive input</b>, eg, we know that John is a generally calm person, so we can conclude from expression (anger) plus context (calm) that John is not only angry, but that “John must be furious”. The choince of the ontology as a tool is due to the aim of bringing context into the implementation of the emotion detection process.</p>
+            <p><b>Two-factor theory</b>: this theory proposes that after perceiving a <b>stimulus</b> (internal eg, souvenir or external eg, real world object), a person first experiences an immediate <b>bodily reaction</b>, and secondly a <b>cognitive process</b> is launched which uses the bodily expression and cognitive valuation <b>to define their emotion</b>.</p>
+            <p>Emotions used in the ontologies are <b>Elkmann’s 6 basic emotions</b></p>
+            <img alt="EmOCA graph" class="img-too-big" src="imgs/3-EmOCA-graph.png">
+            <img alt="EmOCA graph 2" class="img-too-big" src="imgs/3-EmOCA-graph2.png">
+
+            <h5>5. <a href="https://www.researchgate.net/publication/279324794_EmotionsOnto_an_Ontology_for_Developing_Affective_Applications">EmotionsOnto: an Ontology for Developing Affective Applications</a></h5>
+            <p>EmotionsOnto is a generic ontology for <b>describing emotions and their detection and expression systems taking contextual and multimodal elements into account</b>. Once formalized as an ontology, the knowledge about emotions can be used in order to <b>make computers more personalised and adapted to users’ needs</b>. The ontology has been validated and evaluated by means of an applications based on a emotions-aware Tangible User Interface (TUI).</p>
+            <p>First assumption: <b>the focus are emotion detection and expression systems instead of modelling internal emotion processing</b> in humans. Second assumption: the emotion is conceived as <b>Emergent Emotion (full-blown)</b> in <b>Scherer-Douglas-Cowie list of affective states</b>, defined as: "<b>states where the person’s whole system is caught up in the way they react to a particular person or situation</b>". Aspects involved are: valence, impulses to act or express, distinctive changes in the body, short duration. EmotionsOnto is based on a <b>generic model</b> geared towards capturing the entities that take part in the Emergent Emotion process.</p>
+            <p>The ontology can help <b>implementing emotion-aware applications based on a wider range of theoretical approaches</b>. This flexibility and wide applicability of EmotionsOnto is in great part due to the fact that it is capable of <b>modeling contexts</b>. In order to do that, the <b>DOLCE upper ontology is reused and extended</b>, particularly the Description and Situation concepts. Descriptions correspond to the representations for the situations, which then trigger and are associated with emotions. Descriptive Ontology for Linguistic and Cognitive Engineering has also been chosen for cognitive aspects. Situations associated with emotions are stated to be modeled with <b>FrameNet</b>. FrameNet can be easily connected with DOLCE since the concept Frame appears as a subclass of Description.</p>
+            <img alt="EmotionsOnto" class="img-too-too-big" src="imgs/4-EmotionsOnto.PNG">
+            <img alt="EmotionsOnto graph" class="img-big" src="imgs/4-EmotionsOnto-graph.PNG">
+
+            <h5>6. SOCAM affective extension (Ontology Based Affective Context Representation)</h5>
+            <p>Focusing on the context, this is an <b>ontology-based representation of the affective states for context aware applications</b> which allows expressing the complex relations that are among the affective states and between these and the other context elements.</p>
+            <p>Emotions are subdivided in 2 main subclasses: <b>basic and secondary</b>. The Secondary has as subclasses a number of items that application-specific. <b>Activation-evaluation model</b>: each secondary state has a membership degree value for each of the basic state considered. The membership degree is expressed for each of the two following axes: <b>valence</b> (how positive, negative or neutral the state is) and <b>activation</b> (how dynamic the state is). The third axis measures the <b>intensity</b> of the state as in using values as low, medium, high. Since the affective states are considered to be permanently changing, a representation of <b>time</b> for an affective state is provided too.</p>
+
+            <h5>7. Emotional Cues Ontology</h5>
+            <p>It's a multimodal ontology: it is an <b>ontology based on emotional cues that uses media properties from different sources to model emotion</b>. It uses a generic approach to modeling emotional cues, so it is theoretical-system independent.</p>
+            <p>It presents 3 modules representing three layers of emotions' detection or production: the emotion module, the emotional cue module, and the media module:</p>
+            <ul>
+                <li><b>emotion module</b>: defines emotions as represented with emotional cues;</li>
+                <li><b>emotional cue module</b>: describes external emotional representations in terms of media properties (change of tone has media: voice/sound). Every emotion can have one or more emotional cues, represented in different media. Emotional cues can be simple (verbal, conductal, physiological) or complex (integration of two or more cues);</li>
+                <li><b>media module</b>: describes basic media properties important for emotional cues. This relation among emotional cues and media properties can be parameterized, enabling different settings for different emotional cues. Media is described with either simple media properties (e.g., intensity of sound), or derived (e.g., variations in the intensity of sound).</li>
+            </ul>
+            <p>The RECOGNITION OF EMOTIONS is BOTTOM-UP PROCESS: it is possible to define emotions as composed of complex emotional cues, which are composed of other simple emotional cues, which are based on some media properties.</p>
+            <p>The PRODUCTION OF EMOTIONS is TOP-DOWN PROCESS: we detect simple media properties, and then derive complex media properties. By analyzing complex media properties, we get simple emotional cues, and by combining these cues, we get complex emotional cues, which represent some emotion.</p>
+
+
+
+            <h4>Existing models</h4>
+            <h5>1. Underlying theories</h5>
+            <p>For most of the ontologies or vocabularies proposed there are some theories underlying them. The most relevant are:</p>
+            <ul>
+                <li><b>Categorical emotional models</b>: emotions are defined in discrete categories, such as happiness, sadness etc;</li>
+                <li><b>Dimensional emotional model</b>: emotions are defined according to dimensions, such as valence, arousal and control;
+                    <ul>
+                        <li><b>Lang's dimensional emotional model</b>: Lang also proposed analyzing of emotions according to three systems involved in the expressions of emotions: subjective or verbal information, behavioral or conductal, psycho-physiological answers.</li>
+                    </ul>
+                </li>
+                <li><b>The OCC model (Ortony, Clore, & Collins’ models of emotions)</b>: states that the strength of a given emotion primarily depends on the events, agents, or objects in the environment of the agent exhibiting the emotion;</li>
+                <li><b>Elkmann’s 6 basic emotions</b>: through a series of studies, Ekman found a high agreement across members of diverse Western and Eastern literate cultures on selecting emotional labels that fit facial expressions. Expressions he found to be universal included those indicating wrath, grossness, fear, joy, loneliness, and shock;</li>
+                <li><b>Scherer-Douglas-Cowie list of affective states</b>: Attitudes, Established emotion, Emergent Emotion (full-blown), Emergent Emotion (suppressed), Moods, Partial emotion (topic shifting), Partial emotion (simmering), Stance towards person, Stance towards object/situation, Interpersonal bonds, Altered state of arousal, Altered state of control, Altered state of seriousness and Emotionless.</li>
+            </ul>
+
+            <h5>2. Theories without a formal model yet</h5>
+            <p>Among all the emotion theories that have not been translated to a formal model, there is one that is more interesting because of its significant conceptual difference: the <b>Theory of Constructed Emotion</b>.</p>
+            <p>Presented by psychology professor and neuroscientist Dr. Lisa Feldman Barrett in her book <i>How Emotions Are Made</i>, it contradicts many of our most firmly held ideas about how human emotions work. Indeed, some of this unusual statements can bu used to build a <b>Conceptual Model</b> since they are the most relevant for the theory. For example, it argues that:</p>
+            <ul>
+                <li>Emotions cannot be detected through facial expressions or any other physiological measurement;</li>
+                <li class="red">Emotions don’t have any Expressor.</li>
+
+                <li>There are no "universal" emotions across people, nations, or cultures. Each one of us constructs their own emotions based on their personal experiences, although we can share it with others;</li>
+                <li class="red">All emotions are subjective and based on personal experiences. We can share emotions with others.</li>
+
+                <li>Emotions are not “reactions” to external events: the experience of an emotion is a “simulation” or prediction of the appropriate way for the body to react to an event. The experience of an emotion is a prediction of the brain of what it thinks it might happen next;</li>
+                <li class="red">All experiences of an emotion are predictions. Predictions are about how to react to an event.</li>
+
+                <li><b>Emotions are concepts</b> that are constructed by the brain;</li>
+                <li class="red">All emotions are concepts. Concept is a necessary condition for Emotion.</li>
+
+                <li>Emotions are concepts built by the mind out of pieces of sensory data, knowledge and history of social interactions.</li>
+                <li class="red">Emotions are concepts built by the mind out of pieces of sensory data, knowledge and history of social interactions.</li>
+            </ul>
+            <p><b>Glossary of terms</b>: Emotion, Concept, Experiencer, Personal Experience, Emotion Experience, Prediction, Bodily Reaction, Event, Mind, Sensory Data, Knowledge, Social Interactions.</p>
+            <h6>Conceptual model:</h6>
+            <img class="img-too-big" style="width: 60%;" src="imgs/barrett_v2.png" alt="constructed-em-CM">
+
+
+            <h4>Summing up table</h4>
+            <table class="huge">
+                <tr>
+                    <th>Ontology/Vocabulary</th>
+                    <th>First-level classification</th>
+                    <th>Second-level classification</th>
+                    <th>Source of emotions definitions</th>
+                    <th>Hierarchy among emotions</th>
+                    <th>Valence</th>
+                    <th>Other criterion for definition / relevant features</th>
+                    <th>Focus</th>
+                    <th>Scope/Application context</th>
+                </tr>
+                <tr>
+                    <th>EMO/MFOEM</th>
+                    <td>Distinction of emotion process from mood, trait, emotion disposition, subjective emotion feeling.</td>
+                    <td>Emotion processes are classified in 33 different classes.</td>
+                    <td>OCEAS (Oxford Companion to Emotion and the Affective Sciences).</td>
+                    <td>Yes. Some emotions are subclasses of others (e.g., positive/negative surprise).</td>
+                    <td>Yes. Positive/Negative.</td>
+                    <td>The emotion process involves 5 components: appraisal, subjective emotional feeling, action tendency, physiological response and emotional behavioral process. Occurs with consciousness, has an object and realizes a mental disposition.
+                        Emotions as collections of independent entities that then cause the behaviors.</td>
+                    <td>Modeling  internal emotion processing in humans.</td>
+                    <td>Bio-medical. Ontology is designed to support interdisciplinary research by providing unified annotations. Eamples of use cases: ‘sentiment mining’.</td>
+                </tr>
+                <tr>
+                    <th>VEO</th>
+                    <td>Not stated clearly but since it is stated that the Emotion class in the VEO is equivalent to the emotion process class in EMO, first-level classification is supposed to be the same.</td>
+                    <td>25 emotions defined.</td>
+                    <td>OCC model (psychological constructivist approach).</td>
+                    <td>Yes. An Emotion is divided into either a Positive Emotion or a Negative Emotion subclass, which then can be further divided into Approving/Disapproving, Liking/Disliking, and Pleased/Displeased subclasses. Then, emotions are categorized into one or more of these subclasses in accordance with the OCC model. </td>
+                    <td>Yes. Positive/Negative.</td>
+                    <td>Emotions are defined depending on the psychological scenario that causes the emotion and the subsequent affective reactions that appear. Thus they are organized into 3 categories: those concerning consequences, actions and aspects of objects. Emotions are comprised of a collection of behaviors.</td>
+                    <td>Modeling  internal emotion processing in humans.</td>
+                    <td>Clinical. It’s planned to use VEO in patient-facing software tools to enhance interactions between patients and providers in a clinical environment. Developed together with emotions visualizations.</td>
+                </tr>
+                <tr>
+                    <th>WN-AFFECT</th>
+                    <td>Distinction of emotion from mood, trait, behavior, attitute, sensation etc.</td>
+                    <td>Assignment of emotional categories to synsets.</td>
+                    <td>Based on the W3C lists of emotions.</td>
+                    <td>Yes. Emotional categories are hierarchically organized.</td>
+                    <td>Yes. Positive, negative, ambiguous and neutral.</td>
+                    <td>Stative/causative dimension: an emotional adjective is said causative if it refers to some emotion that is caused by the entity represented by the modified noun (e.g. amusing movie); while an emotional adjective is said stative if it refers to the emotion owned or felt by the subject denoted by the modified noun (e.g. cheerful/happy boy).</td>
+                    <td>Word valence.</td>
+                    <td>Extension of the WordNet ontology with annotations that describe the emotional valence of words (synsets).</td>
+                </tr>
+                <tr>
+                    <th>EmOCA</th>
+                    <td>Emotions are clearly distinguished from stimulus, impact and trait.</td>
+                    <td>6 emotions defined.</td>
+                    <td>Two-factor theory of emotions (after perceiving a stimulus, a person first experiences an immediate bodily reaction, and secondly a cognitive process is risen which uses the bodily expression and cognitive valuation to define their emotion) + Elkmann 6 basic emotions.</td>
+                    <td>No hierarchy among emotion categories.</td>
+                    <td>Yes. Numerical valence of an emotion is retrieved/assigned with Russel model (continuous model).</td>
+                    <td>Emotion context: incorporation of context into the two-factor theory of emotion (bodily reaction plus cognitive input) → importance of context in the emotion experience.
+                        Arousal is also calculated with Russel model.
+                    .</td>
+                    <td>Emotion context.</td>
+                    <td>Improve emotion detection based on bodily expression. The ontology can be used to temper emotion determination based on facial expression alone.
+                    </td>
+                </tr>
+                <tr>
+                    <th>EmotionsOnto</th>
+                    <td>Emotion is distinguished from sensation, perception, description and memory (and situation and stimulus).</td>
+                    <td>Not stated.</td>
+                    <td>None: it’s a generic ontology independent from any theoretical approach. But it adopts the Emergent Emotion (full-blown) definition.</td>
+                    <td>Not stated clearly.</td>
+                    <td>Yes. Positive or negative.</td>
+                    <td>Reuse of DOLCE upper ontology and FrameNet: frame semantics for context.</td>
+                    <td>Emotion detection and expression systems instead of modelling internal emotion processing in humans.</td>
+                    <td>Emotion-aware applications, emotion expression and recognition systems an social networks, make computers more personalised and adapted to users’ needs.</td>
+                </tr>
+                <tr>
+                    <th>Constructed Emotion Theory</th>
+                    <td>Emotion is a concept, thus it is distinguished from reaction, experience, perception, description, situation and stimulus.</td>
+                    <td>Not stated.</td>
+                    <td>How Emotions Are Made by Lisa Feldman Barrett.</td>
+                    <td>N.d.</td>
+                    <td>Not stated clearly, but possibly yes. Positive or negative.</td>
+                    <td>Emotions are concept defined by the brain, which is driven by simulations, which we are indeed experiencing.</td>
+                    <td>Birth and development of emotions + what are emotions and what is emotional experience.</td>
+                    <td>Theoretical, relevant in the affective science and neuroscience domain.</td>
+                </tr>
+            </table>
+
+
+            <h3 id="patterns">Let's Clear Things Up: Reasoning Patterns Behind Existing Ontologies' Knowledge Patterns</h3>
+            <h4>Formalization of the Theory of Constructed Emotion</h4>
+            <p>Starting from the Theory of Constructed Emotion, it is possible to define a OWL and DL formalization starting from the conceptual model (using CemoT as a hypothetical prefix):</p>
+            <figure>
+                <img class="img-tab" src="imgs/logic/cemot.PNG">
+                <figcaption>In green the class expression that i the necessary condition for the Concept class, which is the parent class of Emotion.</figcaption>
+            </figure>
+
+            <h4>Clarification of the formalization of existing and mentioned ontologies</h4>
+            <p>In this section the formalization regarding the concept of "emotion" is made explicit for each ontology considered earlier. Where possible, the formalization of the definition of <i>an</i> emotion is provided too.</p>
+            <h5>1. EMO/MFOEM</h5>
+            <h6>1. Definition of Emotion (for 3 of the main class expressions and axioms for Emotion class):</h6>
+            <figure>
+                <img class="img-tab" src="imgs/logic/mfoem.PNG">
+                <figcaption>In grey:class expressions to which "affective process" is equivalent to</figcaption>
+            </figure>
+            <p>Other class expressions relevant for the description of the Emotion class:<br>subclassof: hasPart some 'emotional behavioural process', hasPart some 'physiological response to emotion process', 'has occurrent part' some consciousness, realizes some 'mental disposition', 'has participant at all times' some 'extended organism'</p>
+
+            <h6>1. Definition of an Emotion (which is a subclass of the class "emotion process"):</h6>
+            <p><b>Interest</b>: Interest is a positive emotion which motivates learning, exploration and curiosity. Feelings of interest are associated with the novelty and complexity of stimuli. [Source: OCEAS]</p>
+            <figure>
+                <img class="img-tab" src="imgs/logic/mfoem-interest.PNG">
+                <figcaption>Plus those inherited by the Emotion Process class.</figcaption>
+            </figure>
+
+
+            <h5>2. VEO</h5>
+            <h6>1. Definition of Emotion:</h6>
+            <p>"an affective state of consciousness" + equivalent to the emotion process class in EMO</p>
+            <figure>
+                <img class="img-tab" src="imgs/logic/veo.PNG">
+            </figure>
+
+            <h6>1. Definition of an Emotion:</h6>
+            <p><b>Interest</b>: Interest is liking an unfamiliar aspect (of an object) [Source: OCC Model]</p>
+            <figure>
+                <img class="img-tab" src="imgs/logic/veo-interest.PNG">
+            </figure>
+
+
+            <h5>3. EmOCA</h5>
+            <h6>1. Definition of Emotion:</h6>
+            <p>Emotion is defined by Coordinate, which has subclasses Radius and Component. Component has 2 subclasses: Arousal and Valence. A person has trait Trait which has impact Impact which pertains to Component.</p>
+            <figure>
+                <img class="img-tab" src="imgs/logic/emoca.PNG">
+            </figure>
+
+
+
+            <h5>4. EmotionsOnto</h5>
+            <h6>1. Definition of Emotion:</h6>
+            <p>an EmergentEmotion is a subclass of Event. The class “EmergentEmotion” is not linked with any other class.</p>
+            <p>This lacking definition provided by the ontology is different from the definitions stated in the paper (López et al., 2014):</p>
+            <ul>
+                <li>Description triggers EmergentEmotion, and EmotionExpressionSystem has input EmergentEmotion. Perception hasOutput Description.</li>
+                <li>Emergent Emotion: states where the agent’s whole emotional system is caught up in the way they react to a particular situation [Douglas-Cowie et al., 2006], which is "internally" represented using a description</li>
+            </ul>
+
+            <figure>
+                <img class="img-tab" src="imgs/logic/emotionsonto.PNG">
+            </figure>
+
+
+
+
+            <h5>5. SOCAM affective extension (Ontology Based Affective Context Representation)</h5>
+            <h6>1. Definition of Emotion:</h6>
+            <p>Emotion is an Affective State. State has subclasses: Affective, Mental and Physiological. Affective has subclasses Basic, Current and Secondary.<br>
+                [Basic ∪ Secondary] HasSensitivity Sensitivity. Sensitivity isOwnedBy Person. Person isInTheState Current. Person isLocatedIn Location. Current isInducedBy Location or Time.</p>
+            <figure>
+                <img class="img-tab" src="imgs/logic/socam.PNG">
+            </figure>
+
+
+
+
+            <h5>6. Emotional Cues Ontology</h5>
+            <h6>1. Definition of Emotion:</h6>
+            <p>Emotion has external manifestation EmotionalCue.  EmotionalCue has mediarepresentation MediaProperty. EmotionalCue has subclasses: SimpleEmotionalCue and ComplexEmotionalCue.</p>
+            <figure>
+                <img class="img-tab" src="imgs/logic/ECO.PNG">
+            </figure>
+
+
+
+
+
+
+
+
+
+            <h3 id="alignment">Frame-based Alignment of Existing Ontologies: Approaching FrameNet</h3>
+            <p>Since we do not have the complete structure for each ontology mentioned, and almost no logical formalization for them, a complete and exhaustive alignment is not possible, but an attempt may be useful to <b>detect elements in common in the definitions of the concept of emotion</b>. Considering the lack of axiomatization and of declaration of logical types defined within the ontologies collected, the approach chosen to find correspondences between ontology entities is <b>frame-based</b>: we want to <b>express the intensional meaning of the models, abstracting from logical types</b> (Aspirino et al., 2017). Thus, we will follow the method explained in: Luigi Asprino, Valentina Presutti, Aldo Gangemi, and Paolo Ciancarini. 2017. Frame-based ontology alignment. In Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence (AAAI'17). AAAI Press, 4905–4906.</p>
+            <p>In order to do a frame-based alignment, we will use <b>FrameNet</b>: a project housed at the International Computer Science Institute in Berkeley, California which produces an electronic resource based on frame semantics. Frame Semantics (Fillmore, 1982) is a formal theory of meaning based on the idea that human can <i>better understand the meaning of a single word by knowing the relational knowledge associated to that word</i> (Aspirino et al., 2017). A <b>semantic frame</b> can be thought of as a conceptual structure describing an event, relation, or object and the participants in it. <b>Frame elements</b> (FE) provide additional information to the semantic structure of a sentence. Each frame has a number of core and non-core FEs which can be thought of as semantic roles. Indeed, <b>a frame can be considered as “unit of meaning” for ontologies, and can be exploited as a means for representing the intensional meaning of the entities</b>.</p>
+            <p>In this ontology alignment we will <b>focus only on the entity of "emotion"</b>, to find out if there is something that all these models have in common and which is therefore factually fundamental in describing an emotion – in order to <b>distinguish the essential elements to describe the meaning of the concept (frame) from the merely descriptive ones</b>.</p>
+            <p>The purpose of this alignment, however, is not strictly that of making the entities of different ontologies correspond, but rather that of <b>identifying the most important frames (and their respective elements) to define the concept of emotion</b>, i.e. those common to several annotations of the entity it represents in any ontology taken into consideration. Eventually, frames evoked by these entities will be compared to the frame elements of the <b>Emotion frame in FrameNet</b>.</p>
+
+            <h4>1. Selecting frames evoked by annotations</h4>
+            <p>In this first step, for each ontology selected from the bibliographic search, <b>the words that evoke the frames representing the meaning of emotion are extracted from the annotation</b> of the entity "emotion". When neither the annotation nor the comment were present, the definition was taken from the refering journal article. Taking into account the entity's comment and annotation allows us to disambiguate the meaning of the word. The selection of the evoked frames takes place <b>exploiting the frames FrameNet as mentioned, but also the synsets of WordNet</b>. <a href="https://wordnet.princeton.edu/">WordNet</a> is a large lexical database of English: nouns, verbs, adjectives and adverbs are grouped into sets of cognitive synonyms (synsets), each expressing a distinct concept. Synsets are interlinked by means of conceptual-semantic and lexical relations. WordNet has been used to find synonyms / hyponyms / hypernyms of keywords retrieved in the annotation of the entity, in the case that exact keyword is not present on FrameNet. </p>
+            <table class="medium">
+                <tr>
+                    <th>Ontology</th>
+                    <th>Entity corresponding to the concept of “emotion” in NL</th>
+                    <th>Comment or annotation of the entity</th>
+                    <th>Frames evoked (choosing among FrameNet’s ones)</th>
+                </tr>
+                <tr>
+                    <th>EMO/MFOEM</th>
+                    <td>emotion process</td>
+                    <td>An emotion process is a <b>mental process</b> that is a synchronized aggregate of constituent mental processes including an <b>appraisal process</b>, which is <b>valenced</b>, has an <b>object</b>, and gives rise to an <b>action tendency</b>.</td>
+                    <td><b>Mental_activity, Assessing</b> (has not-annotated lexical unit: appraisal), <b style="color: #700101">Process</b>, <b>Inclination</b>, Response, Body_movement, Position_on_a_scale, <b>Degree</b></td>
+                </tr>
+                <tr>
+                    <th>EMO/MFOEM</th>
+                    <td>Emotion [stated as equivalent to the emotion process class in EMO]</td>
+                    <td>An <b>affective state</b> of <b>consciousness</b></td>
+                    <td><b>Awareness</b>(has not-annotated lexical unit: consciousness), <b>Awareness_status, Awareness_situation</b>, <b style="color: #700101">State</b></td>
+                </tr>
+                <tr>
+                    <th>EmOCA</th>
+                    <td>Emotion</td>
+                    <td>After perceiving a <b>stimulus</b> (internal or external), a person first experiences an immediate <b>bodily reaction</b>, and secondly a <b>cognitive process</b> is launched which uses the <b>bodily expression and cognitive valuation</b> to define their emotion. [definition from the article]</td>
+                    <td><b>Categorization, Stimulate_emotion</b>, Stimulus_focus, Cause_to_start, <b>Response</b>, Biological_mechanisms, Body_movement, <b>Assessing</b></td>
+                </tr>
+                <tr>
+                    <th>EmotionsOnto</th>
+                    <td>EmergentEmotion</td>
+                    <td>A state where the person’s whole system is caught up in <b>the way they react</b> to a particular person or situation. Aspects involved: <b>valence</b>, impulses to <b>act or express</b>, distinctive <b>changes in the body</b>, <b>short duration</b>. [definition from the article]</td>
+                    <td><b style="color: #700101">State</b>, <b>Response, Stimulate_emotion, Degree</b>, Timespan</td>
+                </tr>
+                <tr>
+                    <th>SOCAM affective extension</th>
+                    <td>Affective [subclass of State]</td>
+                    <td>Emotion is an <b>affective state</b> which has some <b>valence</b>, <b>activation</b> and <b>intensity</b>. A person can be in the state of a current emotion, which can be induced by <b>location</b> or <b>time</b>. [definition inferred from the article]</td>
+                    <td><b style="color: #700101">State</b>, <b>Degree</b>, Timespan</td>
+                </tr>
+                <tr>
+                    <th>Emotional Cues Ontology</th>
+                    <td>Emotion</td>
+                    <td>It is possible to define emotions as composed of complex <b>emotional cues</b>, which are composed of other simple emotional cues, which are based on some <b>media properties</b>. [definition from the article]</td>
+                    <td><b>Body_movement</b>, Facial_expression</td>
+                </tr>
+                <tr>
+                    <th>CemoT</th>
+                    <td>Emotion</td>
+                    <td>Emotions are <b>concept</b> built by the <b>mind</b> driven by <b>simulations</b>, based on the <b>personal experience</b>, knowledge and history of social interactions of the experiencer. They are <b>subjective</b> but can be shared with others. The emotion is content of the <b>emotion experience</b>.</td>
+                    <td>Awareness (conception is a LU of the frame), Entity, Feeling, Experiencer_focused_emotion, <b style="color: #700101;">Mental_activity</b></td>
+                </tr>
+            </table>
+
+            <h4>2. Mapping frames and ontologies</h4>
+            <p>In order to identify the effective mapping between ontologies and frames, we go through ontology entities and for each entity we compute any possible <b>mapping between the entity and the frames selected in the previous step</b> (i.e. those evoked by its annotations). In frame semantics, a frame is characterized by its roles (also called frame elements) and each element possibly define the semantic type of the individual that can play that role in the frame.</p>
+
+            <h3 id="frameco">Designing FramECO</h3>
             <p></p>
-            <h3 id="existing">What's already out there: the need to reuse and not reinvent the wheel</h3>
+
+
+            <h3 id="sentiframeco">FramECO for Sentiment Analysis</h3>
             <p></p>
-            <h3 id="models">Some existing models for emotions</h3>
+
+
+            <h3 id="conclusion">Conclusions and Further Developments</h3>
             <p></p>
-            <h3 id="patterns">Let's clear things up: reasoning patterns behind existing ontologies' knowledge patterns</h3>
-            <p></p>
+
+
+            <h3>References</h3>
+            <ul>
+                <li>López, Juan & Gil, Rosa & García, Roberto & Collazos, César. (2014). EmotionsOnto: an Ontology for Developing Affective Applications. JOURNAL OF UNIVERSAL COMPUTER SCIENCE. 20. 1813-1828.</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
         </div>
     </div>
 
@@ -103,11 +524,13 @@
 </section>
 
 <footer>
-    <img src="cc-by.jpeg" style="max-width: 70px; margin: 0 1em 1em 0.5em;">
+    <img src="imgs/cc-by.jpeg" style="max-width: 70px; margin: 0 1em 1em 0.5em;">
     <p>Sara Coppini: <a href="https://orcid.org/0000-0002-6279-3830">orcid</a>, <a href="https://github.com/saroppini">GitHub</a> and <a href="mailto:sara.coppini@studio.unibo.it">institutional e-mail</a></p>
 
 </footer>
 
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -5,6 +5,8 @@ section {
     margin: 2em 4em 1em 4em;
 }
 
+p { margin-bottom: 0.2em !important; }
+
 body { background-color: #f4f4f4 !important; }
 
 section#intro {
@@ -24,9 +26,34 @@ h2, h3, h4, h5, h6 { font-family: 'Libre Baskerville', serif !important; }
     box-shadow: 1px 1px 5px #b1b1b1;
 }
 
-footer a {
+.dropdown-menu.show {
+    display: block;
+    background: #d1dedf !important;
+    border: 0 !important;
+    /* border-left: 1px solid #bcc4c4; */
+    /* border: 1px solid #bcc4c4; */
+    /* border-right: 1px solid #bcc4c4; */
+    /* border-bottom: 1px solid #bcc4c4; */
+    box-shadow: 1px 1px 5px #bcc4c4;
+}
+
+a.dropdown-item:hover { background: #abc2c3 !important; }
+
+p#credits {
+    font-size: 1vw;
+}
+
+footer a, p#credits a, ol#index-ol a {
     color: #57463e !important;
     font-weight: bold;
+}
+
+div.card-deck { margin-top: 2em !important; }
+
+.card-deck .card {
+    box-shadow: 3px 3px 3px #dddddd, -3px -3px 3px #ffffff;
+    border: 0 !important;
+    background: #FBF8F9 !important;
 }
 
 h1 {
@@ -38,6 +65,11 @@ div#flex-container {
     display: flex;
 }
 
+div#indice {
+    flex-basis: 20%;
+    align-self: flex-start
+}
+
 ol#index-ol {
     font-family: 'Libre Baskerville', serif;
     padding: 2em;
@@ -45,9 +77,22 @@ ol#index-ol {
 
 ol#index-ol li {
     margin: 0 0 0.5em 0;
+    font-size: 1.1vw;
 }
 
-div#content {padding: 2em;}
+div#content {
+    padding: 2em;
+    flex-basis: 80%;
+}
+
+div#content h2, div#content h3:not(:first-of-type), div#content h4 {
+    margin-top: 2em !important;
+}
+
+div#content h5, div#content h6 {
+    margin-top: 1.5em !important;
+}
+
 
 section#about-section {
     text-align: center;
@@ -61,6 +106,65 @@ footer {
     display: flex !important;
     justify-content: center;
     align-items: center;
+}
+
+div#img-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+div#img-container img {
+    margin: 1vw;
+}
+
+img.img-too-big {
+    width: 80%;
+    display: block;
+    margin: 1em auto auto;
+}
+
+img.img-too-too-big {
+    width: 50%;
+    display: block;
+    margin: 1em auto auto;
+}
+
+img.img-big {
+    width: 100%;
+    display: block;
+    margin: 1em auto auto;
+}
+
+img.img-tab {
+    width: 100% !important;
+}
+
+figcaption {
+    font-size: 1vw;
+}
+
+table td, table th {
+    vertical-align: top;
+    border: 1px solid #bcbcbc;
+    margin: 0.2em;
+    padding: 0.3em;
+}
+
+table.huge td, table.huge th {
+    font-size: 0.9vw;
+}
+
+table.medium td, table.medium th {
+    font-size: 1vw;
+}
+
+.red {
+    color: #700101;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    list-style-type: none;
 }
 
 /*div#video {
