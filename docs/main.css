@@ -1,7 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 section {
     margin: 2em 4em 1em 4em;
 }
 
-h1, h2, h3, h4, h5, h6 { font-family: 'Libre Baskerville', serif !important; }
+body { background-color: #f4f4f4 !important; }
+
+section#intro {
+    margin: 0;
+    padding: 2em 8em 3em 8em;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+section#main {text-align: center;}
+
+h2, h3, h4, h5, h6 { font-family: 'Libre Baskerville', serif !important; }
+
+.navbar, .navbar-expand-lg, .navbar-light, .bg-light {
+    background-color: #c5d6d8 !important;
+    font-family: 'Libre Baskerville', serif !important;
+    box-shadow: 1px 1px 5px #b1b1b1;
+}
+
+footer a {
+    color: #57463e !important;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive !important;
+    font-size: 70px !important;
+}
+
+div#flex-container {
+    display: flex;
+}
+
+ol#index-ol {
+    font-family: 'Libre Baskerville', serif;
+    padding: 2em;
+}
+
+ol#index-ol li {
+    margin: 0 0 0.5em 0;
+}
+
+div#content {padding: 2em;}
+
+section#about-section {
+    text-align: center;
+    padding: 0 10em 0 10em;
+}
+
+footer {
+    background: #a2b2b4;
+    padding: 2em 2em 1em 2em;
+    text-align: center;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+/*div#video {
+    width: 900px;
+    height: 800px;
+}*/
