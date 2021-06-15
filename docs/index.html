@@ -184,7 +184,7 @@
 
 
             <h5>3. <a href="https://wndomains.fbk.eu/wnaffect.html">WN-AFFECT: a WordNet extension</a></h5>
-            <p>While not an emotion ontology, WN-AFFECT is an <b>extension of the WordNet ontology with annotations that describe the emotional valence of words</b> based on the W3C lists of emotions. In particular, to some synsets where assigned <b>affective labels</b> such us ‘emotion’, ‘mood’, ‘trait’ + extension of a set of <b>additional a-labels</b> (called emotional categories), hierarchically organized.  In a second stage, synsets were distinguished according to emotional <b>valence</b>, defining four additional a-labels: positive, negative, ambiguous, and neutral. Another important property is the <b>stative/causative dimension</b>: an emotional adjective is said causative if it refers to some emotion that is caused by the entity represented by the modified noun (e.g. amusing movie); while an emotional adjective is said stative if it refers to the emotion owned or felt by the subject denoted by the modified noun (e.g. cheerful/happy boy).</p>
+            <p>While not an emotion ontology, WN-AFFECT is an <b>extension of the <a href="https://wordnet.princeton.edu/">WordNet</a> ontology with annotations that describe the emotional valence of words</b> based on the W3C lists of emotions. In particular, to some synsets where assigned <b>affective labels</b> such us ‘emotion’, ‘mood’, ‘trait’ + extension of a set of <b>additional a-labels</b> (called emotional categories), hierarchically organized.  In a second stage, synsets were distinguished according to emotional <b>valence</b>, defining four additional a-labels: positive, negative, ambiguous, and neutral. Another important property is the <b>stative/causative dimension</b>: an emotional adjective is said causative if it refers to some emotion that is caused by the entity represented by the modified noun (e.g. amusing movie); while an emotional adjective is said stative if it refers to the emotion owned or felt by the subject denoted by the modified noun (e.g. cheerful/happy boy).</p>
 
             <h5>4. <a href="https://hal.archives-ouvertes.fr/hal-00908543/PDF/PID2998689.pdf">EmOCA: Emotion Ontology for Context Awareness</a></h5>
             <p>EmOCA is an emotion ontology for describing and reasoning on <b>emotion context</b> in order to improve <b>emotion detection based on bodily expression</b>. Context is incorporated into the <b>two-factor theory of emotion</b> (bodily reaction plus cognitive input) to demonstrate the <b>importance of context in the emotion experience</b>. In attempting to determine emotion felt by another person, the bodily expression of their emotion is the only evidence directly available, eg, “John looks angry”.</p>
@@ -197,7 +197,7 @@
             <h5>5. <a href="https://www.researchgate.net/publication/279324794_EmotionsOnto_an_Ontology_for_Developing_Affective_Applications">EmotionsOnto: an Ontology for Developing Affective Applications</a></h5>
             <p>EmotionsOnto is a generic ontology for <b>describing emotions and their detection and expression systems taking contextual and multimodal elements into account</b>. Once formalized as an ontology, the knowledge about emotions can be used in order to <b>make computers more personalised and adapted to users’ needs</b>. The ontology has been validated and evaluated by means of an applications based on a emotions-aware Tangible User Interface (TUI).</p>
             <p>First assumption: <b>the focus are emotion detection and expression systems instead of modelling internal emotion processing</b> in humans. Second assumption: the emotion is conceived as <b>Emergent Emotion (full-blown)</b> in <b>Scherer-Douglas-Cowie list of affective states</b>, defined as: "<b>states where the person’s whole system is caught up in the way they react to a particular person or situation</b>". Aspects involved are: valence, impulses to act or express, distinctive changes in the body, short duration. EmotionsOnto is based on a <b>generic model</b> geared towards capturing the entities that take part in the Emergent Emotion process.</p>
-            <p>The ontology can help <b>implementing emotion-aware applications based on a wider range of theoretical approaches</b>. This flexibility and wide applicability of EmotionsOnto is in great part due to the fact that it is capable of <b>modeling contexts</b>. In order to do that, the <b>DOLCE upper ontology is reused and extended</b>, particularly the Description and Situation concepts. Descriptions correspond to the representations for the situations, which then trigger and are associated with emotions. Descriptive Ontology for Linguistic and Cognitive Engineering has also been chosen for cognitive aspects. Situations associated with emotions are stated to be modeled with <b>FrameNet</b>. FrameNet can be easily connected with DOLCE since the concept Frame appears as a subclass of Description.</p>
+            <p>The ontology can help <b>implementing emotion-aware applications based on a wider range of theoretical approaches</b>. This flexibility and wide applicability of EmotionsOnto is in great part due to the fact that it is capable of <b>modeling contexts</b>. In order to do that, the <b>DOLCE upper ontology is reused and extended</b>, particularly the Description and Situation concepts. Descriptions correspond to the representations for the situations, which then trigger and are associated with emotions. Descriptive Ontology for Linguistic and Cognitive Engineering has also been chosen for cognitive aspects. Situations associated with emotions are stated to be modeled with <b><a href="https://framenet.icsi.berkeley.edu/fndrupal/">FrameNet</a></b>. FrameNet can be easily connected with DOLCE since the concept Frame appears as a subclass of Description.</p>
             <img alt="EmotionsOnto" class="img-too-too-big" src="imgs/4-EmotionsOnto.PNG">
             <img alt="EmotionsOnto graph" class="img-big" src="imgs/4-EmotionsOnto-graph.PNG">
 
@@ -585,7 +585,7 @@
             <h3 id="frameco">Designing FramECO</h3>
             <h4>Why do we need something different?</h4>
             <p>Comparing existing models in a frame-based alignment, after having explained the implicit formalizations (as far as possible), it makes evident the <b>discrepancies between definitions of the concept of "emotion" coming from different sources</b>. Existing ontologies do not allow us to accurately describe emotions, especially those outside the norm (emerging, anonymous or meta-emotions), as they are <b>still linked to restricted or outdated cognitive theories</b>. We therefore need a model that is innovative from the point of view of contents, or, better, in defining a concept of emotion suitable for identifying also uncommon emotions, not yet part of a taxonomy or psychological theory. At the same time, one could think of a model that could be the formal definition of new theories on emotions, such as that of professor and scientist Lisa Feldman Barrett.</p>
-            <p>The focus therefore becomes the <b>context of an emotion</b>, so the best formalization to express a concept based on its semantic context of meaning is certainly the <b>frame semantics</b>. The privileged tool for a frame-based ontology formalization is <b>FrameNet</b>, but there are many other relevant resources in the context of frame semantics (Framester, FRED etc.). But even an extraordinary tool like FrameNet appears insufficient, in its current state, if it is used for ontology design.</p>
+            <p>The focus therefore becomes the <b>context of an emotion</b>, so the best formalization to express a concept based on its semantic context of meaning is certainly the <b>frame semantics</b>. The privileged tool for a frame-based ontology formalization is <b>FrameNet</b>, but there are many other relevant resources in the context of frame semantics (e.g., <a href="http://wit.istc.cnr.it/stlab-tools/fred/">FRED</a>). But even an extraordinary tool like FrameNet appears insufficient, in its current state, if it is used for ontology design.</p>
             <p>In fact, although in FrameNet there is a distinction between core elements, which are essential to the expression of the meaning of the frame, and non-core elements, which are merely descriptive; there is <b>no logical formalization</b> which allows to distinguish universal axioms from existential ones, which indeed allows to clarify which elements are strictly necessary for the definition of emotions and which are not, and of the latter which are their domains and ranges or subclasses. In short, the aim is to try to exploit a <b>linguistic resource</b> such as FrameNet for the design of a proper <b>frame-based ontology</b>.</p>
             <p>Another reason why a tool like FrameNet is preferable to other more traditional ones is that it allows us to express a <b>network concept</b> of emotion and emotions that is much more interesting than the simple division by types, according to which complex emotions are compositions of the emotions of basic and basic emotions are defined diametrically on the basis of positive and negative valence. In other words, instead of giving us a purely hierarchical organization of knowledge (which in any case exists in part, just think of the fact that some elements of the frame are hereditary), there is also partially a <b>reticular structure</b> that allows us to formulate definitions and wider models.</p>
 
@@ -606,12 +606,8 @@
             <h4>Competency questions</h4>
             <p>Competency questions to highlight and analyse the most relevant features of the subject: these are the questions we want to be answered through SPARQL queries. The CQs results listed a range of different characteristics our module needed to take into account in order to effectively model it.</p>
             <p>What is an (unfamiliar) emotion?</p>
-            <code>SELECT ?thing <br>
-                WHERE { framECO:Emotion rdfs:subClassOf ?thing</code>
             <p>What is the context of an emotion? Which are the elements necessarily defining an emotion? Which elements make an emotion detectable (of its context)?</p>
-            <code>SELECT ?element <br>
-                WHERE { framECO:Emotion owl:subClassOf ?element }</code>
-
+            <p>Can an emotion be valenced?</p>
 
 
 
@@ -814,6 +810,8 @@
                 hasExperiencer some Experiencer<br>
                 These are the class expressions to whom is <b>subclass</b> the defined class Emotion, that for now is a <b>primitive class</b>, because they are necessary to define that class, but not sufficient for themselves (if they were necessary and sufficient conditions, the class Emotion would be equivalent to these class expressions). With this we have stated that for every instance of the class Emotion there must be a hasCircumstance property instance to an instance of Circumstances and a hasExperiencer property instance to an instance of Experiencer.<br>
                 However, we can say that Emotion is equivalent to the intersection of AffectiveState, and the two class expressions mentioned above (since we suppose that other AffectiveState can have an experiencer, but only emotion is defined by having both an experiencer and a circumstance). So emotion can be considered as a <b>defined class</b> since it is <b>equivalent to</b>: AffectiveState and (hasExperiencer some Experiencer) and (hasCircumstance some Circumstance). With this we have stated that if we have an individual, and that individual is a member of the class “AffectiveState”, and hasExperiencer some Experiencer and hasCircumstance some Circumstance; that means that individual is an Emotion.</p>
+            <p>The Emotion defined class can be finally defined:</p>
+            <img class="img-tab" src="imgs/logic/frameco.PNG">
 
             <h6>Defining non-core elements</h6>
             <p>Non-core elements are defined either as ranges of properties with <b>domain Emotion</b> (thus, when these properties are used, we can infer that the thing is an emotion); or as ranges of properties with a <b>domain that is the union of the Emotion class and another class</b> from the Emotion class (elements that are also present in other frames besides emotion)</p>
@@ -827,6 +825,7 @@
 
             <h6>Adding other constraints on the properties to define a class by its description</h6>
             <p>Apart from the existential restrictions specified above to define the Emotion class, the <b>Valence</b> class is also defined according to a description – but this time not a description based on constraints: the enumeration. Valence is a defined and <b>enumerated class</b> since its three possible individuals are specified (Positive, Negative and Neutral) and its asserted as equivalent to the class expression that is the set of the individuals.</p>
+            <p>Apart from the existential restrictions specified above to define the Emotion class, the <b>Valence</b> class is also defined according to a description – but this time not a description based on constraints: the enumeration. Valence is a defined and <b>enumerated class</b> since its three possible individuals are specified (Positive, Negative and Neutral) and its asserted as equivalent to the class expression that is the set of the individuals.</p>
 
             <h6>Final Knowledge Graph</h6>
             <img class="img-too-big" src="imgs/frameco-graph.png">
@@ -834,6 +833,29 @@
             <h6>Ontology Documentation</h6>
             <p>To read the full documentation of framECO ontology, visit the <a href="documentation/index-en.html">documentation page</a>.</p>
             <iframe style="height: 80vh;" src="documentation/webvowl/index.html"></iframe>
+
+            <h6>Sample of possible SPARQL queries</h6>
+            <p>What is an (unfamiliar) emotion?</p>
+            <code>SELECT ?thing <br>
+                WHERE { framECO:Emotion rdfs:subClassOf ?thing }</code>
+            <p><b>Result:</b></p>
+            <code>AffectiveState</code>
+
+            <p>What is the context of an emotion? Which are the elements necessarily defining an emotion? Which elements make an emotion detectable (of its context)?</p>
+            <code>SELECT ?class<br>
+                WHERE { framECO:Emotion ?p ?class .<br>
+                VALUES ?p { rdfs:subClassOf owl:equivalentClass }
+                }</code>
+            <p><b>Result:</b></p>
+            <code>AffectiveState</code><br>
+            <code>ObjectIntersectionOf(AffectiveState ObjectSomeValuesFrom(hasCircumstance Circumstance))</code>
+
+
+            <p>Can an emotion be valenced?</p>
+            <code>SELECT ?valence <br>
+                WHERE {  ?valence rdf:type framECO:Valence. }</code>
+            <p><b>Result:</b></p>
+            <code style="margin-top: 0;">Neutral<br>Positive<br>Negative</code>
 
             <h3 id="sentiframeco">FramECO for Sentiment Analysis</h3>
             <p>It is possible to think of a further categorization of emotions, which can somehow <b>distinguish the unfamiliar or anonymous ones from the well-known and precisely defined ones</b>. It is a question of distinguishing emotions from each other not by value but by <b>determining elements for the onset or content of the emotion itself</b>, and therefore conceptually closer to FrameNet frames.</p>
@@ -846,7 +868,7 @@
             <p>In this case the definition of emotion that is the focus of framECO would correspond to a frame, which could be called Unfamiliar_Emotion or <b>Circumstanced_Emotion</b>, which would turn out to be just <b>a perspective on the Emotions frame</b>, next to the Experiencer_focused_emotion and Stimulus_Emotion frames.</p>
             <p>Furthermore, in this way, the <b>distinction between core and non-core elements would be overcome</b> as necessarily present to define an emotion or not. It is a useful distinction in an abstract model of emotions, but in <b>natural language</b>, given also the complexity of emotion as an expressed concept, it is much more likely that <b>emotions can be defined each time with different elements</b>, and that there never are any of constants. So in an ontology that has textual annotation as its purpose, it may be preferable to substitute the distinction between the <b>elements that are instantiated and that are not</b> to the core-non-core distinction.</p>
             <p>The absence of core elements intended as elements necessary for the definition of emotion does not preclude the possibility of detecting the emotion in the text, which could in any case occur through the <b>verb "feeling", "state" and their declensions</b>. Indeed, for the application of framECO in sentiment analysis - or in general in text annotation activities - a possible issue that should be overcome concerns the distinction between feeling and emotion.</p>
-            <p>This kind of ontology would be more suitable in <b>(semi-)automated parsing of natural language sentences</b>, similarly to tools like FRED or other existing projects or methods (e.g., Jan Scheffczyk et al., Ontology-based Reasoning about Lexical Resources).</p>
+            <p>This kind of ontology would be more suitable in <b>(semi-)automated parsing of natural language sentences</b>, similarly to tools like <a href="http://wit.istc.cnr.it/stlab-tools/fred/">FRED</a> or other existing projects or methods (e.g., Jan Scheffczyk et al., Ontology-based Reasoning about Lexical Resources).</p>
             <p>Basing the modification of framECO for annotation purposes on the cited work, the new version of the ontology would be:</p>
             <img class="img-big" src="imgs/frameco2.png">
 
@@ -887,6 +909,8 @@
                 <li>Kuderna-Iulian Benta, Anca Rarău, and Marcel Cremene. 2007. <i>Ontology Based Affective Context Representation</i>. In <i>Proceedings of the 2007 Euro American conference on Telematics and information systems</i> (<i>EATIS '07</i>). Association for Computing Machinery, New York, NY, USA, Article 46, 1–9. DOI:https://doi.org/10.1145/1352694.1352741</li>
                 <li>Obrenovic, Z. & Garay-Vitoria, Nestor & López, Juan & Fajardo, Inmaculada & Cearreta, Idoia. (2005). <i>An Ontology for Description of Emotional Cues</i>. 505-512. 10.1007/11573548_65. </li>
                 <li>Mathieu Y.Y. (2005) <i>Annotation of Emotions and Feelings in Texts</i>. In: Tao J., Tan T., Picard R.W. (eds) Affective Computing and Intelligent Interaction. ACII 2005. Lecture Notes in Computer Science, vol 3784. Springer, Berlin, Heidelberg. https://doi.org/10.1007/11573548_45</li>
+                <li>Lisa Feldman Barrett, <i>How Emotions Are Made: The Secret Life of the Brain</i>, Houghton Mifflin Harcourt, 2017</li>
+                <li> David Sander, Klaus Scherer, <i>Oxford Companion to Emotion and the Affective Sciences</i>, Oxford University Press; Reprint edizione, 2014.</li>
             </ul>
 
         </div>
@@ -901,8 +925,11 @@
 </section>
 
 <footer>
-    <img src="imgs/cc-by.jpeg" style="max-width: 70px; margin: 0 1em 1em 0.5em;">
-    <p>Sara Coppini: <a href="https://orcid.org/0000-0002-6279-3830">orcid</a>, <a href="https://github.com/saroppini">GitHub</a> and <a href="mailto:sara.coppini@studio.unibo.it">institutional e-mail</a></p>
+    <div id="inline">
+        <img src="imgs/cc-by.jpeg" style="max-width: 70px; margin: 0 1em 1em 0.5em;">
+        <p>Sara Coppini: <a href="https://orcid.org/0000-0002-6279-3830">orcid</a>, <a href="https://github.com/saroppini">GitHub</a> and <a href="mailto:sara.coppini@studio.unibo.it">institutional e-mail</a></p>
+    </div>
+    <p><b>CREDITS & TOOLS USED</b>: <a href="https://github.com/dgarijo/Widoco">WIDOCO</a>, <a href="https://essepuntato.it/lode/">LODE</a>, <a href="https://www.yworks.com/products/yed">yED</a>, <a href="https://protege.stanford.edu/">Protégé</a>, <a href="http://wit.istc.cnr.it/stlab-tools/fred/">FRED</a>, <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://framenet.icsi.berkeley.edu/fndrupal/">FrameNet</a>, <a href="https://wordnet.princeton.edu/">WordNet</a>, <a href="https://www.dictionaryofobscuresorrows.com/">The Dictionary of Obscure Sorrows</a> </p>
 
 </footer>
 

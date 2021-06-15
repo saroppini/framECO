@@ -178,6 +178,11 @@ footer {
     background: #a2b2b4;
     padding: 2em 2em 1em 2em;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+div#inline {
     display: flex !important;
     justify-content: center;
     align-items: center;
