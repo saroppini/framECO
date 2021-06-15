@@ -130,10 +130,48 @@ div#content h5, div#content h6 {
     margin-top: 1.5em !important;
 }
 
+ul#ref {
+    padding: 0;
+}
+
+ul#ref li {
+    list-style-type: none;
+    margin: 1em 0;
+}
+
 
 section#about-section {
     text-align: center;
-    padding: 0 10em 0 10em;
+    border-top: 1px solid #b6b6b6;
+    margin: 0 6em;
+    padding: 2em 10em;
+}
+
+section#documentation {
+    padding: 2em 0 1em 0;
+    border-top: 1px solid #b6b6b6;
+    margin: 4em 2em 1em 2em;
+}
+
+section#main {
+    margin: 2em 6em 1em 6em;
+}
+
+h2#project, h2#doc, h2#about {
+    margin: 0 0 0.5em 1em;
+    /* font-weight: bold; */
+    text-shadow: 1px 1px 1px #b9b3b0;
+    font-size: 2.5em;
+}
+
+
+section a {
+    color: #6e9798;
+}
+
+section a:hover {
+    color: #237481;
+    text-decoration: none;
 }
 
 footer {

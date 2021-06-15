@@ -22,11 +22,15 @@
                 <a class="nav-link" href="#project">The Project</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Documentation</a>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Development</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="#idea">The idea</a>
-                    <a class="dropdown-item" href="#existing">What's already out there</a>
-                    <a class="dropdown-item" href="#patterns">Reasoning patterns and knowledge patterns</a>
+                    <a class="dropdown-item" href="#existing">What's Already Out There</a>
+                    <a class="dropdown-item" href="#patterns">Reasoning Patterns and Knowledge Patterns</a>
+                    <a class="dropdown-item" href="#alignment">Frame-based Alignment of Existing Ontologies</a>
+                    <a class="dropdown-item" href="#frameco">Designing FramECO</a>
+                    <a class="dropdown-item" href="#sentiframeco">FramECO for Sentiment Analysis</a>
+                    <a class="dropdown-item" href="#conclusion">Conclusions and References</a>
                 </div>
             </li>
             <li class="nav-item">
@@ -55,8 +59,10 @@
 
 <section id="main">
     <h2 id="project">The Project</h2>
-    <p style="color: red;">breve descrizione degli scopi/contenuti del progetto</p>
-    <h5>WHAT THIS PROJECT IS ABOUT:</h5>
+    <p>Bringing the humanities in the computational domain means opening up to new ways of defining complex concepts and ideas, such as Emotion. FramECO is a proposal for a <b>new ontological model in OWL-DL, frame-based, to describe the context of emotions</b>. Because emotion has a complex context in which it fits, which goes beyond some of the most famous - and overcome - theories in the affective sciences, especially if we take into consideration some unusual emotions, which do not yet have a common name. For this reason framECO is located at the crossroads between the affective sciences or neurosciences and the humanities: identifying and formalizing the context of an emotion can serve not only to categorize it, but above all to identify it in literary and philosophical texts.</p>
+    <p>Starting from existing models for emotion description, some elements common to all can be identified, and they can be recovered to maintain continuity with the literature in this domain, but overcoming the limits and filling the gaps of current models. Defining an ontology starting from a linguistic resource such as FramECO allows us to focus on the context of emotion rather than on its psycho-physical genesis and development; and allows us to build a model that can be especially useful for purposes such as automatic text annotation. Always with the aim of exploiting all the potential provided by humanistic resources.</p>
+    <p>To learn more, visit the <a href="documentation/index-en.html">ontology documentation page</a>, or read below the <a href="#documentation">Development section</a>.</p>
+    <h5 style="margin-top: 2em;">WHAT THIS PROJECT IS ABOUT:</h5>
     <div class="card-deck">
         <div class="card">
             <div class="card-body">
@@ -98,7 +104,7 @@
 </section>
 
 <section id="documentation">
-    <h2 id="doc">Documentation</h2>
+    <h2 id="doc">Development</h2>
 
     <div id="flex-container">
         <div id="indice" class="sticky-top">
@@ -109,7 +115,7 @@
                 <li><a href="#alignment">Frame-Based Alignment of Existing Ontologies</a></li>
                 <li><a href="#frameco">Designing FramECO</a></li>
                 <li><a href="#sentiframeco">FramECO for Sentiment Analysis</a></li>
-                <li><a href="#conclusion">Conclusions and Further Developments</a></li>
+                <li><a href="#conclusion">Conclusions and References</a></li>
             </ol>
 
         </div>
@@ -792,7 +798,7 @@
 
             <h4>From frame to OWL ontology class: organizing concepts in classes and hierarchies among classes, relations in properties and individuals</h4>
             <h6>Conceptual model of framECO</h6>
-            <img src="imgs/frameco-CM.png">
+            <img class="img-too-big" src="imgs/frameco-CM.png">
 
             <p>Our goal now is therefore to <b>rigorously formalize this definition</b>, defining which elements of the frame are necessary for its definition and which ones can be accessories. It is a distinction that goes beyond that between core elements and non-core elements, and goes in the direction of a <b>descriptive logic of the first order</b>. In other words, it is a question of proposing <b>an axiomatic distinction, which is currently lacking in FrameNet, between those elements that are always there and those that could be there</b>. This logical definition will serve as foundations for building the ontology, since framECO is defined in <b>OWL-DL language</b> (Description Logic Semantics, also Direct Semantics, is chosen as semantics for OWL – rather than RDF/XML syntax) and built with Protégé.</p>
             <p>Before getting to the heart of the logical formalization, a premix is necessary. Initially, the idea was to translate FrameNet’s frames into classes, frame-frame relations into binary relations between classes, and frame elements as fillers. However, frame-frame relations are often not consistent or well-defined; we are not so much interest in many other frames a part from Emotion, State and few others; and since they can all be considered as stand-alone concepts, both core and non-core elements can be defined as classes (and not just fillers of existential restrictions) of framECO ontology.</p>
@@ -823,13 +829,17 @@
             <p>Apart from the existential restrictions specified above to define the Emotion class, the <b>Valence</b> class is also defined according to a description – but this time not a description based on constraints: the enumeration. Valence is a defined and <b>enumerated class</b> since its three possible individuals are specified (Positive, Negative and Neutral) and its asserted as equivalent to the class expression that is the set of the individuals.</p>
 
             <h6>Final Knowledge Graph</h6>
-            <img src="imgs/frameco-graph.png">
+            <img class="img-too-big" src="imgs/frameco-graph.png">
+
+            <h6>Ontology Documentation</h6>
+            <p>To read the full documentation of framECO ontology, visit the <a href="documentation/index-en.html">documentation page</a>.</p>
+            <iframe style="height: 80vh;" src="documentation/webvowl/index.html"></iframe>
 
             <h3 id="sentiframeco">FramECO for Sentiment Analysis</h3>
             <p>It is possible to think of a further categorization of emotions, which can somehow <b>distinguish the unfamiliar or anonymous ones from the well-known and precisely defined ones</b>. It is a question of distinguishing emotions from each other not by value but by <b>determining elements for the onset or content of the emotion itself</b>, and therefore conceptually closer to FrameNet frames.</p>
             <p>Looking at the frame-frame relations in FrameNet could help understanding where to locate this frame for unfamiliar emotions in the frames hierarchy:</p>
             <figure>
-                <img src="imgs/frame-frame_relations.gif">
+                <img class="img-big" src="imgs/frame-frame_relations.gif">
                 <figcaption>Pink edges represents the "is perspectivized in" relation, the red one the "is inherited by" and the green one the "is used by" relation.</figcaption>
             </figure>
 
@@ -838,27 +848,45 @@
             <p>The absence of core elements intended as elements necessary for the definition of emotion does not preclude the possibility of detecting the emotion in the text, which could in any case occur through the <b>verb "feeling", "state" and their declensions</b>. Indeed, for the application of framECO in sentiment analysis - or in general in text annotation activities - a possible issue that should be overcome concerns the distinction between feeling and emotion.</p>
             <p>This kind of ontology would be more suitable in <b>(semi-)automated parsing of natural language sentences</b>, similarly to tools like FRED or other existing projects or methods (e.g., Jan Scheffczyk et al., Ontology-based Reasoning about Lexical Resources).</p>
             <p>Basing the modification of framECO for annotation purposes on the cited work, the new version of the ontology would be:</p>
-            <img src="imgs/frameco2.png">
+            <img class="img-big" src="imgs/frameco2.png">
 
             <p>And a parsing could be similar to:</p>
-            <img src="imgs/frameco-FRED2.png">
+            <img class="img-big" src="imgs/frameco-FRED2.png">
 
 
 
-            <h3 id="conclusion">Conclusions</h3>
+            <h3 id="conclusion">Conclusions and References</h3>
             <p>An emotion has a complex scenario in which it is inserted, and therefore being able to formalize it and make it come out automatically or transform a resource into a formal resource to enhance humanistic resources (such as the Dictionary for Obscure Sorrows) without trivializing them, to make them potential also in the computational field.</p>
             <p>Ontologies are needed for classification as well as for automatic parsing of text in natural language for disciplines such as sentiment analysis, but in both cases the formalization must be consistent and the contents relevant.</p>
             <p>FramECO for now is only the first step in this direction.</p>
 
 
-            <h3>References</h3>
-            <ul>
-                <li>López, Juan & Gil, Rosa & García, Roberto & Collazos, César. (2014). EmotionsOnto: an Ontology for Developing Affective Applications. JOURNAL OF UNIVERSAL COMPUTER SCIENCE. 20. 1813-1828.</li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+            <h4>References</h4>
+            <ul id="ref">
+                <li>López, Juan & Gil, Rosa & García, Roberto & Collazos, César. (2014). <i>EmotionsOnto: an Ontology for Developing Affective Applications</i>. JOURNAL OF UNIVERSAL COMPUTER SCIENCE. 20. 1813-1828.</li>
+                <li>Janna Hastings, Werner Ceusters, Barry Smith, and Kevin Mulligan, <i>The Emotion Ontology: Enabling Interdisciplinary Research in the Affective Sciences</i>, in <i>Proceedings of Modeling and Using Context</i>, 7th International and Interdisciplinary Conference CONTEXT 2011, Karlsruhe, Germany, September 26-30, Springer, 2011.</li>
+                <li>Josef Ruppenhofer,
+                    Michael Ellsworth,
+                    Miriam R. L. Petruck,
+                    Christopher R. Johnson,
+                    Collin F. Baker.
+                    Jan Scheffczyk, <i>FrameNet II: Extended Theory and Practice, 2016.</i></li>
+                <li>Jan SCHEFFCZYK, Adam PEASE, Michael ELLSWORTH, <i>Linking FrameNet to the Suggested Upper Merged Ontology</i>, in
+                    <i>Formal Ontology in Information Systems</i>, B. Bennett and C. Fellbaum (Eds.), IOS Press, 2.</li>
+                <li>Luigi Asprino, Valentina Presutti, Aldo Gangemi, Paolo Ciancarini, <i>Frame-Based Ontology Alignment</i>, in <i>Proceedings of the Thirty-First AAAI Conference on Artificial Intelligence (AAAI-17), 2017, Association for the Advancement of Artificial Intelligence</i></li>
+                <li>Stefano Baccianella, Andrea Esuli, and Fabrizio Sebastiani, <i>SENTIWORDNET 3.0: An Enhanced Lexical Resource for Sentiment Analysis and Opinion Mining</i></li>
+                <li>Paulo Hauck, Regina Braga, Fernanda Campos, Tiago Torrent, Ely Matos,
+                    José Maria N. David, <i>Supporting FrameNet Project
+                        with Semantic Web technologies</i></li>
+                <li>Josef Ruppenhofer, <i>The treatment of emotion vocabulary inFrameNet: Past, present and future developments</i></li>
+                <li>Rebecca Lin, Muhammad “Tuan” Amith, Chen Liang, Rui Duan, Yong Chen and Cui Tao, <i>Visualized Emotion Ontology: a model for representing visual cues of emotions.</i>From The 2nd International Workshop on Semantics-Powered Data Analytics
+                    Kansas City, MO, USA. 13 November 2017. https://doi.org/10.1186/s12911-018-0634-6</li>
+                <li>Franck Berthelon, Peter Sander. <i>Emotion Ontology for Context Awareness</i>. Coginfocom 2013 - 4th
+                    IEEE Conference on Cognitive Infocommunicaitons, Dec 2013, Budapest, Hungary. ￿hal-00908543</li>
+                <li>López, Juan & Gil, Rosa & García, Roberto & Collazos, César. (2014). <i>EmotionsOnto: an Ontology for Developing Affective Applications</i>. JOURNAL OF UNIVERSAL COMPUTER SCIENCE. 20. 1813-1828. </li>
+                <li>Kuderna-Iulian Benta, Anca Rarău, and Marcel Cremene. 2007. <i>Ontology Based Affective Context Representation</i>. In <i>Proceedings of the 2007 Euro American conference on Telematics and information systems</i> (<i>EATIS '07</i>). Association for Computing Machinery, New York, NY, USA, Article 46, 1–9. DOI:https://doi.org/10.1145/1352694.1352741</li>
+                <li>Obrenovic, Z. & Garay-Vitoria, Nestor & López, Juan & Fajardo, Inmaculada & Cearreta, Idoia. (2005). <i>An Ontology for Description of Emotional Cues</i>. 505-512. 10.1007/11573548_65. </li>
+                <li>Mathieu Y.Y. (2005) <i>Annotation of Emotions and Feelings in Texts</i>. In: Tao J., Tan T., Picard R.W. (eds) Affective Computing and Intelligent Interaction. ACII 2005. Lecture Notes in Computer Science, vol 3784. Springer, Berlin, Heidelberg. https://doi.org/10.1007/11573548_45</li>
             </ul>
 
         </div>
