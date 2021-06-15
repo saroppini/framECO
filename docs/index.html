@@ -489,17 +489,366 @@
 
             <h4>2. Mapping frames and ontologies</h4>
             <p>In order to identify the effective mapping between ontologies and frames, we go through ontology entities and for each entity we compute any possible <b>mapping between the entity and the frames selected in the previous step</b> (i.e. those evoked by its annotations). In frame semantics, a frame is characterized by its roles (also called frame elements) and each element possibly define the semantic type of the individual that can play that role in the frame.</p>
+            <table class="medium">
+                <tr>
+                    <th>Frame</th>
+                    <th>Definition</th>
+                    <th>Role [and Semantic Type]</th>
+                </tr>
+                <tr>
+                    <td>Mental activity</td>
+                    <td>In this frame, a <b>Sentient_entity</b> has some activity of the mind operating on a particular <b>Content</b> or about a particular <b>Topic</b>. The particular activity may be perceptual, emotional, or more generally cognitive. This non-lexical frame is intended primarily for inheritance.</td>
+                    <td><b>Content (Content), Expressor, Sentient_entity (Sentient), Topic</b>, Degree (Degree), Evidence, Manner (Manner), Paradigm, Role, Time (Time)</td>
+                </tr>
+                <tr>
+                    <td>Assessing</td>
+                    <td>An <b>Assessor</b> examines a <b>Phenomenon</b> to figure out its <b>Value</b> according to some <b>Feature</b> of the Phenomenon. This Value is a factor in determining the acceptability of the Phenomenon. In some cases, a <b>Method</b> (implicitly involving an Assessor) is used to determine the Phenomenon's Value.</td>
+                    <td><b>Assessor (Sentient), Feature, Medium, Method, Phenomenon</b>, Beneficiary, Circumstances, Co-participant, Degree, Depictive, Duration, Evidence, Explanation, Frequency, Manner (Manner), Means (State_of_affairs), Place (Locative_relation), Purpose (State_of_affairs), Result, Standard, Time, Value</td>
+                </tr>
+                <tr>
+                    <td>Process</td>
+                    <td>This frame describes a complex event which lasts some amount of time, consisting of a beginning stage, a stage where the process is ongoing, and a finish or end.
+                    </td>
+                    <td><b>Process</b>, Duration, Explanation, Manner (Manner), Place (Locative_relation), Result, Time (Time)</td>
+                </tr>
+                <tr>
+                    <td>Inclination</td>
+                    <td>Due to internal forces/properties, an <b>Entity</b> is inclined towards a particular <b>Behavior</b>, which may be to perform an action or to maintain a state. The underlying force is seen as being beyond the Entity's control. The <b>Degree</b> to which the Entity is inclined towards the Behavior may also be specified as well as the <b>Basis</b> for the inclination.</td>
+                    <td><b>Entity, Behavior</b>, Basis, Containing_event, Degree</td>
+                </tr>
+                <tr>
+                    <td>Response</td>
+                    <td>An <b>Agent</b> performs a <b>Response</b> action in consequence of a <b>Trigger</b> event. In many cases, a non-agentive <b>Responding_entity</b> causes the Response after the Trigger occurs.</td>
+                    <td><b>Agent (Sentient), Responding_entity (Agent), Trigger, Response</b>, Dimension, Manner (Manner), Place (Locative_relation), Purpose (State_of_affairs), Role, Time (Time)</td>
+                </tr>
+                <tr>
+                    <td>Body_movement</td>
+                    <td>This frame contains words for motions or actions an <b>Agent</b> performs using some part of his/her body.</td>
+                    <td><b>Agent (Sentient), Body_part (Body_part)</b>, Addressee, Area, Cognate_event, Coordinated_event, Degree, Depictive, Duration (Duration), External_cause, Goal [Goal], Internal_cause, Manner (Manner), Message (Message)...</td>
+                </tr>
+                <tr>
+                    <td>Degree</td>
+                    <td>LUs in this frame modify a gradable attribute and describe intensities at the extreme positions on a scale. </td>
+                    <td><b>Gradable_attribute</b></td>
+                </tr>
+                <tr>
+                    <td>Awareness</td>
+                    <td>A <b>Cognizer</b> has a piece of <b>Content</b> in their model of the world. The Content is not necessarily present due to immediate perception, but usually, rather, due to deduction from perceivables.</td>
+                    <td><b>Cognizer (Sentient), Content (Content), Expressor, Topic</b>, Degree, Evidence, Explanation, Manner, Paradigm, Role, Time</td>
+                </tr>
+                <tr>
+                    <td>Categorization</td>
+                    <td>A <b>Cognizer</b> construes an <b>Item</b> as belonging to a certain <b>Category</b>.</td>
+                    <td><b>Cognizer (Sentient), Category, Criteria, Item</b>, Circumstances, Concessive, Explanation, Manner (Manner), Means (State_of_affairs), Time (Time)</td>
+                </tr>
+                <tr>
+                    <td>Stimulate_emotion</td>
+                    <td>Some phenomenon (the <b>Stimulus</b>) provokes a particular emotion in an <b>Experiencer</b>.</td>
+                    <td><b>Experiencer (Sentient), Stimulus</b>, Circumstances, Degree, Depictive,  Explanation, Manner (Manner), Means (State_of_affairs), Result, Time (Time)</td>
+                </tr>
+                <tr>
+                    <td>State</td>
+                    <td>An <b>Entity</b> persists in a stable situation called a <b>State</b></td>
+                    <td><b>Entity, State</b></td>
+                </tr>
+                <tr>
+                    <td>Entity</td>
+                    <td>This frame is for words that denote highly schematic entities.</td>
+                    <td><b>Entity</b>, Constituent_parts, Formational_cause, Name, Type</td>
+                </tr>
+            </table>
+
+            <p>In the original model proposed for this type of alignment, it is now necessary to compute the similarity of the entities with the evoked frames, its elements, and its semantic types: an ontology entity may correspond to one of these components defined in the evoked frames. However, this is not the case. These frame-based specifications in our case it is useful more than anything else to identify the most common frames and roles, and therefore most significant for the meaning of emotion among the different ontologies.</p>
+
+            <h4>Conclusion</h4>
+            <p>Anyway, comparing frame-based specifications of ontology entities – which is a step of the alignment thought to finally and definitely align entities – could be useful for our purposes of retrieving most relevant frames and frame elements. Summing up:</p>
+            <ol>
+                <li>An emotion is mainly defined as a <b>State</b>;</li>
+                <li>An emotion involves <b>Assessing</b> (and possibly <b>Awareness</b> or <b>Categorization</b>), a <b>Response</b> – such as a <b>Body_movement</b> – or an <b>Inclination</b> [to respond]. Since it involves or appear as a Response, it is also linked with a stimulus (<b>Emotion_stimulus</b>). </li>
+            </ol>
+
+
+
+
+
+
+
+
+
 
             <h3 id="frameco">Designing FramECO</h3>
-            <p></p>
+            <h4>Why do we need something different?</h4>
+            <p>Comparing existing models in a frame-based alignment, after having explained the implicit formalizations (as far as possible), it makes evident the <b>discrepancies between definitions of the concept of "emotion" coming from different sources</b>. Existing ontologies do not allow us to accurately describe emotions, especially those outside the norm (emerging, anonymous or meta-emotions), as they are <b>still linked to restricted or outdated cognitive theories</b>. We therefore need a model that is innovative from the point of view of contents, or, better, in defining a concept of emotion suitable for identifying also uncommon emotions, not yet part of a taxonomy or psychological theory. At the same time, one could think of a model that could be the formal definition of new theories on emotions, such as that of professor and scientist Lisa Feldman Barrett.</p>
+            <p>The focus therefore becomes the <b>context of an emotion</b>, so the best formalization to express a concept based on its semantic context of meaning is certainly the <b>frame semantics</b>. The privileged tool for a frame-based ontology formalization is <b>FrameNet</b>, but there are many other relevant resources in the context of frame semantics (Framester, FRED etc.). But even an extraordinary tool like FrameNet appears insufficient, in its current state, if it is used for ontology design.</p>
+            <p>In fact, although in FrameNet there is a distinction between core elements, which are essential to the expression of the meaning of the frame, and non-core elements, which are merely descriptive; there is <b>no logical formalization</b> which allows to distinguish universal axioms from existential ones, which indeed allows to clarify which elements are strictly necessary for the definition of emotions and which are not, and of the latter which are their domains and ranges or subclasses. In short, the aim is to try to exploit a <b>linguistic resource</b> such as FrameNet for the design of a proper <b>frame-based ontology</b>.</p>
+            <p>Another reason why a tool like FrameNet is preferable to other more traditional ones is that it allows us to express a <b>network concept</b> of emotion and emotions that is much more interesting than the simple division by types, according to which complex emotions are compositions of the emotions of basic and basic emotions are defined diametrically on the basis of positive and negative valence. In other words, instead of giving us a purely hierarchical organization of knowledge (which in any case exists in part, just think of the fact that some elements of the frame are hereditary), there is also partially a <b>reticular structure</b> that allows us to formulate definitions and wider models.</p>
 
+
+
+
+
+
+
+
+
+
+            <h4>Domain and application tasks: the domain and the goal of the ontology</h4>
+            <p>We are considering <b>affective sciences</b> as primary domain (emotions are the object of study of affective sciences such as cognitive psychology), but eventually also <b>literature</b> (because on the one hand, the vocabulary on which FramECO is built comes from the humanistic field; and secondly because a potential use of the resource would be in the context of the sentiment analysis of literary texts).</p>
+            <p>The application task can be summarized as <b>formally defining unfamiliar/anonymous emotion</b>.</p>
+
+
+            <h4>Competency questions</h4>
+            <p>Competency questions to highlight and analyse the most relevant features of the subject: these are the questions we want to be answered through SPARQL queries. The CQs results listed a range of different characteristics our module needed to take into account in order to effectively model it.</p>
+            <p>What is an (unfamiliar) emotion?</p>
+            <code>SELECT ?thing <br>
+                WHERE { framECO:Emotion rdfs:subClassOf ?thing</code>
+            <p>What is the context of an emotion? Which are the elements necessarily defining an emotion? Which elements make an emotion detectable (of its context)?</p>
+            <code>SELECT ?element <br>
+                WHERE { framECO:Emotion owl:subClassOf ?element }</code>
+
+
+
+
+
+            <h4>What’s in FrameNet</h4>
+            <p>FrameNet Emotion and Feeling frames:</p>
+            <iframe src="https://framenet2.icsi.berkeley.edu/fnReports/data/frameIndex.xml?frame=Emotions"></iframe>
+            <iframe src="https://framenet2.icsi.berkeley.edu/fnReports/data/frameIndex.xml?frame=Feeling"></iframe>
+            <p>The close relationship of meaning between the concept of "emotion" and the concept of "feeling" is ambiguous, and it seems to resume the WordNet definitions:</p>
+            <ul>
+                <li><i>emotion</i>: any strong feeling</li>
+                <li><i>feeling</i>: the experiencing of affective and emotional states</li>
+            </ul>
+            <p>Indeed, <i>feeling</i> is the direct hypernim (term with broader meaning) of emotion, but the <i>feeling</i> synset is defined according to emotion, which is its direct hyponym (specific instance of the hypernym). This may suggest a distinction between the emotion as a phenomenon, and the feeling as the subjective (as “of the subject”) experiencing of the emotion itself. In FrameNet, “emotion” appear as one of the lexical units of the “feeling” frame, but there are plenty of frames regarding emotion as an independent concept from feeling.</p>
+            <p>Other hyponims of feeling – so other sister terms of emotion: <b>mood</b> (temper, mood, humor: a characteristic (habitual or relatively temporary) state of feeling); <b>affect</b> (the conscious subjective aspect of feeling or emotion); and <b>sentiment</b> (tender, romantic, or nostalgic feeling or emotion).</p>
+
+            <p style="margin-top: 2em;">Among all the frames related to the concept of “emotion” in some way, two of them appear to be more relevant because among the lexical units related to them there are the traditional and well-know emotions:</p>
+            <iframe src="https://framenet2.icsi.berkeley.edu/fnReports/data/frameIndex.xml?frame=Emotion_directed"></iframe>
+            <iframe src="https://framenet2.icsi.berkeley.edu/fnReports/data/frameIndex.xml?frame=Experiencer_focused_emotion"></iframe>
+            <p>As we can see, most of the elements of the proposed frames are synonymous or semantically similar to the keywords used in existing models to describe the concept of emotion. </p>
+
+            <p style="margin-top: 2em;">Some emotions can be found as lexical units also for two other frames: <a href="https://framenet2.icsi.berkeley.edu/fnReports/data/frameIndex.xml?frame=Emotions_of_mental_activity">Emotions_of_mental_activity</a> and <a href="https://framenet2.icsi.berkeley.edu/fnReports/data/frameIndex.xml?frame=Emotions_by_stimulus">Emotions_by_stimulus</a>. Then there are some frames whose lexical units are mostly verbs that arouse emotions: <a href="https://framenet2.icsi.berkeley.edu/fnReports/data/frameIndex.xml?frame=Cause_emotion">Cause_emotion</a> and <a href="https://framenet2.icsi.berkeley.edu/fnReports/data/frameIndex.xml?frame=Stimulate_emotion">Stimulate_emotion</a>. Finally, the last frames related to emotions are the following: <a href="https://framenet2.icsi.berkeley.edu/fnReports/data/frameIndex.xml?frame=Emotion_heat">Emotion_heat</a> and <a href="https://framenet2.icsi.berkeley.edu/fnReports/data/frameIndex.xml?frame=Emotions_by_possibility">Emotions_by_possibility</a>.</p>
+            <h5>Conclusion of what’s on FrameNet</h5>
+            <p>There are many frames related to the concept of emotion, some more consistent and relevant than others on a formal and characterization level. Emotions such as happiness, sadness, anger appear as lexical units of some frames. However, it <b>lacks an underlying organicity and consistency, as well as an appropriate formalization</b>.</p>
+
+
+
+
+
+
+
+
+
+            <h4>Dictionary for Obscure sorrows: what is it and how can it help building a more comprehensive model for emotions</h4>
+            <p><a href="https://www.dictionaryofobscuresorrows.com/">The Dictionary of Obscure Sorrows</a> is an online resource, which is a “compendium of all the aches, demons, vibes, joys and urges that roam the wilderness of the psychological interior. The author’s mission is to harpoon, bag and tag wild sorrows then release them gently back into the subconscious.” (from the website). Among all the new words which are entries of the dictionary,  some of them could be considered as emotions: something that we might feel at some point in our lives or about some topic, an event. Since they are all new words anyway, we could define them as “anonymous emotions” or “unfamiliar emotions” – since we may have already experienced some of them, but they are not the well-known ones. Three of them are reported as significant examples:</p>
+            <cite class="green">
+                <span class="big-span">Onism</span><br>
+                n. the frustration of being stuck in just one body, that inhabits only one place at a time, which is like standing in front of the departures screen at an airport, flickering over with strange place names like other people’s passwords, each representing one more thing you’ll never get to see before you die — and all because, as the arrow on the map helpfully points out, you are here.
+            </cite>
+            <p>This first example represents all those emotions, described in the dictionary, which appear to be <span class="green">specifications of already defined, known, existing emotions</span>.</p>
+
+            <cite class="lilac">
+                <span class="big-span">Midding</span><br>
+                v. intr. feeling the tranquil pleasure of being near a gathering but not quite in it—hovering on the perimeter of a campfire, chatting outside a party while others dance inside, resting your head in the backseat of a car listening to your friends chatting up front—feeling blissfully invisible yet still fully included, safe in the knowledge that everyone is together and everyone is okay, with all the thrill of being there without the burden of having to be.
+            </cite>
+            <p>This second example instead represents those emotions that are not specifications of pre-existing emotions, but are <span class="lilac">described as "feeling"</span>.</p>
+
+            <cite class="orange">
+                <span class="big-span">Ecstatic shock</span><br>
+                n. the surge of energy upon catching a glance from someone you like—a thrill that starts in your stomach, arcs up through your lungs and flashes into a spontaneous smile—which scrambles your ungrounded circuits and tempts you to chase that feeling with a kite and a key.
+            </cite>
+            <p>Finally, this third example represents all definitions that <span class="orange">are implicitly emotions or involve emotions</span>.</p>
+
+            <p style="margin-top: 2em">For the sake of brevity and necessity, we will focus here only on the <b>second type</b> of "anonymous emotion" that is present in the Dictionary of Obscure Sorrows: before we model emotions that appear as specifications of existing emotions, we want to try to model those that are independent of them.</p>
+
+
+
+
+
+
+
+            <h4>A new frame for Emotion: FEs and key concepts (glossary of terms)</h4>
+            <p>Let’s see if they have some elements in common, i.e., considering the definitions in order to define a possible Unfamiliar_emotion frame in FrameNet, we can try to spot the frame elements and frame relations. The definition is inspired by those present on FrameNet, while the roles proposed as core or non-core are also taken from FrameNet, but modified to better suit our purpose and to have a unique and consistent definition of these elements (while in FrameNet themselves FEs have different definitions in different frames).</p>
+            <cite>
+                <span class="big-span">Chrysalism</span><br>
+                n. <span class="bw">[feeling] the amniotic tranquility</span> of <span class="green">being indoors during a thunderstorm</span>, listening to waves of rain pattering against the roof like an argument upstairs, whose muffled words are unintelligible but whose crackling release of built-up tension you understand perfectly.
+            </cite>
+
+            <cite>
+                <span class="big-span">Midding</span><br>
+                v. intr. <span class="bw">feeling the tranquil pleasure</span> of <span class="green">being near a gathering but not quite in it</span> — hovering on the perimeter of a campfire, chatting outside a party while others dance inside, resting your head in the backseat of a car listening to your friends chatting up front — feeling <span class="yellow">blissfully invisible yet still fully included</span>, safe in the knowledge that everyone is together and everyone is okay, with all the thrill of being there without the burden of having to be.
+            </cite>
+
+            <cite>
+                <span class="big-span">Rückkehrunruhe</span><br>
+                n. the <span class="bw">feeling</span> <span class="green">of returning home after an immersive trip</span> only to find it <span class="yellow">fading rapidly from your awareness</span> — to the extent you have to keep reminding yourself that it happened at all, even though it felt so vivid just days ago — which makes you wish you could smoothly cross-dissolve back into everyday life, or just hold the shutter open indefinitely and let one scene become superimposed on the next, so all your days would run together and you’d never have to call cut.
+            </cite>
+
+            <p style="margin-top: 2em;">Compared with those of well-known emotions:</p>
+            <cite>
+                <span class="big-span">Happiness</span><br>
+                n. the state of <span class="bw">feeling pleasure or satisfaction.</span>
+            </cite>
+            <cite>
+                <span class="big-span">Frustration</span><br>
+                n. the <span class="bw">feeling of being annoyed or less confident</span> <span class="green">because you cannot achieve what you want</span>, or something that makes you feel like this.
+            </cite>
+            <cite>
+                <span class="big-span">Surprise</span><br>
+                an unexpected event, or the <span class="bw">feeling</span> caused <span class="green">when something unexpected happens</span>.
+            </cite>
+
+            <p style="margin-top: 2em;">We can propose a frame:</p>
+
+            <p><b>Emotion</b></p>
+            <p>An <span class="orange">Experiencer</span> is in a particular emotional <span class="bw">Affective State</span> with respect to some <span class="green">Circumstances</span> under which the <span class="orange">Experiencer</span> experiences the emotion. <span class="green">Circumstances</span> do not give the specific content for the emotion, but the <span class="yellow">Content</span> can often be inferred from the <span class="green">Circumstances</span>. The <span class="yellow">Content</span> may refer to an actual, current state of affairs, but quite often it refers to a general situation which causes the emotion.</p>
+
+            <p style="margin-top: 2em;"><b>FEs:</b></p>
+            <p><b>Core:</b></p>
+            <p><span class="orange">Experiencer</span> [Exp], Semantic Type: Sentient <br>The Experiencer is the person or sentient entity that experiences or feels the emotion or other internal state.</p>
+            <p style="margin-top: 1.5em;"><span class="green">Circumstances</span> [cir] <br>The Circumstances FE encodes the circumstances or conditions under which the Experiencer experiences the emotion. Unlike Content it does not give the specific content of the emotion, but the Content can often be inferred from the Circumstances.<br><span class="green">When returning home</span>, <span class="orange">I</span> always <span class="bw">feel</span> <span class="yellow">like it is fading from my awareness</span>.</p>
+
+            <p style="margin-top: 2em;"><b>Non-core:</b></p>
+            <p><span class="yellow">Content</span> [Cont], Semantic Type: Content<br>
+                Content is what the Experiencer's feelings or experiences are directed towards or based upon. The Content differs from a stimulus because the Content is not construed as being directly responsible for causing the emotion. <br>
+                <span class="orange">I</span> am <span class="bw">afraid</span> of <span class="yellow">spiders</span>.
+                <span class="orange">My</span> <span class="bw">enjoyment</span> <span class="yellow">of the movie</span> was considerably impaired by the seven-foot guy sitting in front of me.<br>
+                <span class="orange">Smithers</span> takes great <span class="bw">pleasure</span> <span class="yellow">in collecting matchboxes</span>.<br>
+                <span class="orange">Sergio</span> derives great <span class="bw">pleasure</span> <span class="yellow">from smoking</span>.<br>
+                <span class="orange">I</span>’m <span class="bw">feeling nostalgic</span> <span class="yellow">about the past that I’ll never be able to live</span>.</p>
+
+            <p style="margin-top: 1.5em;"><span class="lilac">Event</span><br>The Event is the occasion or happening that Experiencers in a certain emotional state participate in.<br>
+                <span class="lilac">At the wedding</span> <span class="orange">I</span> was <span class="bw">happy</span> <span class="green">when I was close to the group of guests but not among them</span>.</p>
+
+            <p style="margin-top: 1.5em;"><span class="dark-green">Expressor</span><br>The Frame Element Expressor marks expressions that indicate a body part, gesture or other expression of the Experiencer that reflects his or her emotional state. They describe a presentation of the experience or emotion denoted by the adjective or noun.<br>
+                The <span class="bw">delight</span> <span class="dark-green">on her face</span> was mixed with <span class="bw">astonishment</span>.</p>
+
+            <p style="margin-top: 1.5em;"><span class="red-bg">Stimulus</span><br>The Stimulus is the person, event, or state of affairs that evokes the emotional response in the Experiencer.<br>
+                <span class="red-bg">Pietro’s return home</span> caused <span class="bw">happiness</span> in <span class="orange">Teresa</span> yesterday.</p>
+
+
+            <p style="margin-top: 1.5em;"><span class="pink">Degree</span><br>The Degree is the degree to which the Experiencer feels the emotion.<br>
+            <span class="yellow">Smoking</span> gives <span class="orange">me</span> <span class="pink">extreme</span> <span class="bw">pleasure</span>.
+            </p>
+
+            <p style="margin-top: 1.5em;"><span class="blue">Manner</span><br>Any description of the way in which the Experiencer experiences the Emotion which is not covered by more specific FEs, including secondary effects (quietly, loudly), and general descriptions comparing events (the same way). Manner may also describe a state of the Experiencer that affects the details of the emotional experience.<br>
+                <span class="lilac">At the wedding</span>, <span class="orange">Anna</span> <span class="bw">felt sad</span> <span class="blue">the same way</span> she felt at the funeral.
+            </p>
+
+            <p style="margin-top: 1.5em;"><span class="brown">Valence</span><br>Valence represents that dimension of a feeling as positive or negative, pleasant or unpleasant, good or bad.<br>
+                <span class="orange">Clara</span> had a <span class="brown">good</span> <span class="bw">feeling</span> <span class="yellow">about the audition</span>.
+            </p>
+
+            <p style="margin-top: 2em;"><b>Frame-frame Relations:</b></p>
+            <p>inherits from: Affective State [State]
+            <br>
+                The Affective State is the abstract noun that describes a more lasting experience by the Experiencer.
+            </p>
+
+
+
+
+
+
+
+
+
+
+
+
+            <h4>What it is new and what it is not: to reuse or not reuse?</h4>
+            <p>In formulating a possible definition for the Unfamiliar_emotion frame, among the frames already present on FrameNet the one most similar to what we would like to describe is the <b>Experiencer_focused_emotion frame</b>. As the name of the frame suggests, this definition of emotion moves away from the more well-known ones that focus on the stimulus that causes the emotion and the behavior that follows. For this reason, since this frame is more suitable for our purposes, we have reused some of its FEs.</p>
+            <p>For what concern <b>already mentioned ontologies, we cannot directly reuse one of them</b> since they represents because they are models conceived and designed focusing on modeling the neurological / biological / physiological process in which the emotion is supposed to consist, or focusing on the external manifestation of the emotion on the subject. Since this is not our focus, and neither our scope is the medical-clinical application of framECO, we can only recover some concepts from these existing ontologies, but not consistently integrate them into framECO.</p>
+            <p>
+                <b>What distinguishes this frame</b>, and therefore this concept of emerging emotion, <b>from the concept of emotion that emerges from the traditional models</b> that we have collected and from those proposed in different frames by FrameNet:</p>
+            <ol>
+                <li><b>emotions are not <i>necessarily</i> defined by valence or degree in a valenced way</b>: that is mainly because unfamiliar emotions are not defined by a clear valence, either positive or negative; even if traditional well-known emotions might be – that’s why “degree” and “valence” are proposed as non-core elements;</li>
+                <li><b>emotions are not hierarchically ordered between them</b>: there are no basic emotions from which complex ones should derive;</li>
+                <li><b>they are not <i>necessarily</i> caused by a Stimulus and the Content of the emotion is not <i>necessarily</i> expressed</b>, understood as the general situation that causes the emotion – rather, Stimulus and Content are proposed as non-core elements;</li>
+                <li><b>the main focus is not the external or physical expression of the emotion</b>, but rather the emotion itself;</li>
+                <li><b>the emotion as a state or process is not distinguished by the subjective emotion feeling</b>.</li>
+            </ol>
+            <p>What this definition of emotion has <b>in common</b> with those proposed by existing models:</p>
+            <ol>
+                <li><b>it <i>is</i> an affective state, which <i>is</i> a state</b>: most of the theoretical models proposed define emotions as states;</li>
+                <li>can be<b>valenced</b>;</li>
+                <li>can have a <b>stimulus</b> and can have <b>content</b></li>
+                <li>can have a <b>physical expressor</b> of the emotion: this expressor has been defined in MFOEM as the action tendency rose by the emotion; by EmOCA as immediate bodily reaction to a stimulus; and by Emotional Cues ontology as the emotional cues based on media properties which characterize emotions.</li>
+            </ol>
+            <p>Talking about the <b>distinction between emotion, feeling and mood</b>, existing models do not agree, and are inconsistent even in themselves. This theoretical confusion mentioned earlier, added to the fact that in framECO we do not want to distinguish perception or experience from the physical-biological phenomenon, it leads us to overcome this distinction. Indeed, we ought not make formal distinctions between emotion and feeling, but of course an emotion should be defined as an (affective) state. On the other hand, we can neither distinguish a framECO-defined emotion from a mood, since traditionally [like in wordnet and mfoem] emotions are distinguished from moods because the former necessarily have a content or object. Here, we want to overcome this definition to include unfamiliar emotions, which are not necessarily directed towards an object or risen from a content. However, a distinction could still be made based on the fact that an emotion has a circumstance while a mood might not be defined according to some circumstances, an emotion is usually stronger than a mood, and a mood is usually habitual or characteristic or less temporary (long-lasting) than an emotion (WordNet, MFOEM).</p>
+            <p>Thus we can say that the definition of this frame might be suitable also to describe traditional well-know emotions, thanks to the non-core elements, which conceptually are closer to old and established theoretical models for emotion description. In any case, one of the goal of this project is to be <b>theoretically independent from any theory of emotions</b>, so thanks to the alignment proposed earlier, we can grasp the <b>elements used to describe emotions that are common to more than one model</b>. The ultimate goal of framECO is to <b>define the context both of traditional and unfamiliar emotions</b>.</p>
+            <p>Even if we are now reusing existing ontologies, such as an upper ontology, we still reuse one of the most common OWL design pattern: enumerated class, which will be explained in depth later.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+            <h4>From frame to OWL ontology class: organizing concepts in classes and hierarchies among classes, relations in properties and individuals</h4>
+            <h6>Conceptual model of framECO</h6>
+            <img src="imgs/frameco-CM.png">
+
+            <p>Our goal now is therefore to <b>rigorously formalize this definition</b>, defining which elements of the frame are necessary for its definition and which ones can be accessories. It is a distinction that goes beyond that between core elements and non-core elements, and goes in the direction of a <b>descriptive logic of the first order</b>. In other words, it is a question of proposing <b>an axiomatic distinction, which is currently lacking in FrameNet, between those elements that are always there and those that could be there</b>. This logical definition will serve as foundations for building the ontology, since framECO is defined in <b>OWL-DL language</b> (Description Logic Semantics, also Direct Semantics, is chosen as semantics for OWL – rather than RDF/XML syntax) and built with Protégé.</p>
+            <p>Before getting to the heart of the logical formalization, a premix is necessary. Initially, the idea was to translate FrameNet’s frames into classes, frame-frame relations into binary relations between classes, and frame elements as fillers. However, frame-frame relations are often not consistent or well-defined; we are not so much interest in many other frames a part from Emotion, State and few others; and since they can all be considered as stand-alone concepts, both core and non-core elements can be defined as classes (and not just fillers of existential restrictions) of framECO ontology.</p>
+
+
+            <h6>Defining core elements and non-core elements as classes</h6>
+            <p>framECO will be composed of classes that define the emotion, either necessarily or not: AffectiveState, Experiencer, Circumstance, Content, Event, Expressor, Stimulus, Degree, Manner, Valence, State (superclass);</p>
+
+            <h6>Differences between classes derived from core elements and classes derived from non-core elements</h6>
+            <p><b>Core elements are classes linked with Emotion class with existential restriction:</b></p>
+            <p>When we assign a property to a class using restrictions, it means that this property is necessary for defining that class. Using existential restriction means that having circumstances, an affective state and an experiencer is necessary for a thing to be an Emotion; or if a thing is an Emotion it must always have a Circumstance, a State and an Experiencer. Existential restrictions on the three core elements:<br>
+                hasCircumstance some Circumstance<br>
+                hasExperiencer some Experiencer<br>
+                These are the class expressions to whom is <b>subclass</b> the defined class Emotion, that for now is a <b>primitive class</b>, because they are necessary to define that class, but not sufficient for themselves (if they were necessary and sufficient conditions, the class Emotion would be equivalent to these class expressions). With this we have stated that for every instance of the class Emotion there must be a hasCircumstance property instance to an instance of Circumstances and a hasExperiencer property instance to an instance of Experiencer.<br>
+                However, we can say that Emotion is equivalent to the intersection of AffectiveState, and the two class expressions mentioned above (since we suppose that other AffectiveState can have an experiencer, but only emotion is defined by having both an experiencer and a circumstance). So emotion can be considered as a <b>defined class</b> since it is <b>equivalent to</b>: AffectiveState and (hasExperiencer some Experiencer) and (hasCircumstance some Circumstance). With this we have stated that if we have an individual, and that individual is a member of the class “AffectiveState”, and hasExperiencer some Experiencer and hasCircumstance some Circumstance; that means that individual is an Emotion.</p>
+
+            <h6>Defining non-core elements</h6>
+            <p>Non-core elements are defined either as ranges of properties with <b>domain Emotion</b> (thus, when these properties are used, we can infer that the thing is an emotion); or as ranges of properties with a <b>domain that is the union of the Emotion class and another class</b> from the Emotion class (elements that are also present in other frames besides emotion)</p>
+
+
+            <h6>Some properties (regarding both core and non-core elements) are functional property</h6>
+            <p>A functional property is a property that can have only one (unique) value y for each instance x, i.e. there cannot be two distinct values y1 and y2 such that the pairs (x,y1) and (x,y2) are both instances of this property. Thus, to add precision to framECO we can state that both :hasExperiencer and :hasCircumstance are functional properties for instance.</p>
+
+            <h6>Cardinality</h6>
+            <p>All emotions have exactly one experiencer. So we need to add cardinality to the hasExperiencer property as a restriction for the Emotion class.</p>
+
+            <h6>Adding other constraints on the properties to define a class by its description</h6>
+            <p>Apart from the existential restrictions specified above to define the Emotion class, the <b>Valence</b> class is also defined according to a description – but this time not a description based on constraints: the enumeration. Valence is a defined and <b>enumerated class</b> since its three possible individuals are specified (Positive, Negative and Neutral) and its asserted as equivalent to the class expression that is the set of the individuals.</p>
+
+            <h6>Final Knowledge Graph</h6>
+            <img src="imgs/frameco-graph.png">
 
             <h3 id="sentiframeco">FramECO for Sentiment Analysis</h3>
-            <p></p>
+            <p>It is possible to think of a further categorization of emotions, which can somehow <b>distinguish the unfamiliar or anonymous ones from the well-known and precisely defined ones</b>. It is a question of distinguishing emotions from each other not by value but by <b>determining elements for the onset or content of the emotion itself</b>, and therefore conceptually closer to FrameNet frames.</p>
+            <p>Looking at the frame-frame relations in FrameNet could help understanding where to locate this frame for unfamiliar emotions in the frames hierarchy:</p>
+            <figure>
+                <img src="imgs/frame-frame_relations.gif">
+                <figcaption>Pink edges represents the "is perspectivized in" relation, the red one the "is inherited by" and the green one the "is used by" relation.</figcaption>
+            </figure>
+
+            <p>In this case the definition of emotion that is the focus of framECO would correspond to a frame, which could be called Unfamiliar_Emotion or <b>Circumstanced_Emotion</b>, which would turn out to be just <b>a perspective on the Emotions frame</b>, next to the Experiencer_focused_emotion and Stimulus_Emotion frames.</p>
+            <p>Furthermore, in this way, the <b>distinction between core and non-core elements would be overcome</b> as necessarily present to define an emotion or not. It is a useful distinction in an abstract model of emotions, but in <b>natural language</b>, given also the complexity of emotion as an expressed concept, it is much more likely that <b>emotions can be defined each time with different elements</b>, and that there never are any of constants. So in an ontology that has textual annotation as its purpose, it may be preferable to substitute the distinction between the <b>elements that are instantiated and that are not</b> to the core-non-core distinction.</p>
+            <p>The absence of core elements intended as elements necessary for the definition of emotion does not preclude the possibility of detecting the emotion in the text, which could in any case occur through the <b>verb "feeling", "state" and their declensions</b>. Indeed, for the application of framECO in sentiment analysis - or in general in text annotation activities - a possible issue that should be overcome concerns the distinction between feeling and emotion.</p>
+            <p>This kind of ontology would be more suitable in <b>(semi-)automated parsing of natural language sentences</b>, similarly to tools like FRED or other existing projects or methods (e.g., Jan Scheffczyk et al., Ontology-based Reasoning about Lexical Resources).</p>
+            <p>Basing the modification of framECO for annotation purposes on the cited work, the new version of the ontology would be:</p>
+            <img src="imgs/frameco2.png">
+
+            <p>And a parsing could be similar to:</p>
+            <img src="imgs/frameco-FRED2.png">
 
 
-            <h3 id="conclusion">Conclusions and Further Developments</h3>
-            <p></p>
+
+            <h3 id="conclusion">Conclusions</h3>
+            <p>An emotion has a complex scenario in which it is inserted, and therefore being able to formalize it and make it come out automatically or transform a resource into a formal resource to enhance humanistic resources (such as the Dictionary for Obscure Sorrows) without trivializing them, to make them potential also in the computational field.</p>
+            <p>Ontologies are needed for classification as well as for automatic parsing of text in natural language for disciplines such as sentiment analysis, but in both cases the formalization must be consistent and the contents relevant.</p>
+            <p>FramECO for now is only the first step in this direction.</p>
 
 
             <h3>References</h3>

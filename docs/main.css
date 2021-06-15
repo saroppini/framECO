@@ -7,6 +7,12 @@ section {
 
 p { margin-bottom: 0.2em !important; }
 
+code {
+    color: #5b759b;
+}
+
+code + p { margin-top: 1.3em; }
+
 body { background-color: #f4f4f4 !important; }
 
 section#intro {
@@ -17,6 +23,12 @@ section#intro {
 }
 
 section#main {text-align: center;}
+
+iframe {
+    width: 100%;
+    height: 50vh;
+    margin: 0.5em 0 1.5em 0;
+}
 
 h2, h3, h4, h5, h6 { font-family: 'Libre Baskerville', serif !important; }
 
@@ -60,6 +72,31 @@ h1 {
     font-family: 'Abril Fatface', cursive !important;
     font-size: 70px !important;
 }
+
+.green { background-color: rgba(193, 255, 77, 0.5);}
+
+.dark-green { background-color: rgba(11, 129, 0, 0.7);}
+
+.lilac { background-color: rgb(170, 147, 255); }
+
+.pink { background-color: rgba(212, 78, 217, 0.7); }
+
+.orange { background-color: rgb(255, 146, 54); }
+
+.red-bg { background-color: rgba(196, 16, 16, 0.6); }
+
+.blue { background-color: rgba(11, 44, 162, 0.5); }
+
+.brown { background-color: rgba(88, 36, 12, 0.6); }
+
+.bw {
+    background-color: black;
+    color: white;
+}
+
+.yellow {background-color: rgba(255, 255, 0, 0.8)}
+
+.big-span {font-size: 1.5em;}
 
 div#flex-container {
     display: flex;
@@ -150,6 +187,10 @@ table td, table th {
     border: 1px solid #bcbcbc;
     margin: 0.2em;
     padding: 0.3em;
+}
+
+table tr:first-of-type {
+    background-color: #e5e5e5;
 }
 
 table.huge td, table.huge th {
