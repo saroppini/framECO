@@ -1,0 +1,248 @@
+<http://www.w3id.org/framECO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3id.org/framECO> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3id.org/framECO/1.0> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3id.org/framECO#evokedBy
+<http://www.w3id.org/framECO#evokedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/framECO#evokedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/framECO#Emotion> .
+<http://www.w3id.org/framECO#evokedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/framECO#Stimulus> .
+<http://www.w3id.org/framECO#evokedBy> <http://www.w3.org/2000/01/rdf-schema#label> "evokedBy" .
+# 
+# http://www.w3id.org/framECO#hasCircumstance
+<http://www.w3id.org/framECO#hasCircumstance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/framECO#hasCircumstance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.w3id.org/framECO#hasCircumstance> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/framECO#Emotion> .
+<http://www.w3id.org/framECO#hasCircumstance> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/framECO#Circumstance> .
+<http://www.w3id.org/framECO#hasCircumstance> <http://www.w3.org/2000/01/rdf-schema#label> "hasCircumstance" .
+# 
+# http://www.w3id.org/framECO#hasContent
+<http://www.w3id.org/framECO#hasContent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/framECO#hasContent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/framECO#Emotion> .
+<http://www.w3id.org/framECO#hasContent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/framECO#Content> .
+<http://www.w3id.org/framECO#hasContent> <http://www.w3.org/2000/01/rdf-schema#label> "hasContent" .
+# 
+# http://www.w3id.org/framECO#hasDegree
+<http://www.w3id.org/framECO#hasDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/framECO#hasDegree> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/framECO#Emotion> .
+<http://www.w3id.org/framECO#hasDegree> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/framECO#Degree> .
+<http://www.w3id.org/framECO#hasDegree> <http://www.w3.org/2000/01/rdf-schema#label> "hasDegree" .
+# 
+# http://www.w3id.org/framECO#hasEntity
+<http://www.w3id.org/framECO#hasEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/framECO#hasEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.w3id.org/framECO#hasEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/framECO#State> .
+<http://www.w3id.org/framECO#hasEntity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/framECO#Entity> .
+<http://www.w3id.org/framECO#hasEntity> <http://www.w3.org/2000/01/rdf-schema#label> "hasEntity" .
+# 
+# http://www.w3id.org/framECO#hasExperiencer
+<http://www.w3id.org/framECO#hasExperiencer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/framECO#hasExperiencer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.w3id.org/framECO#hasExperiencer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/framECO#AffectiveState> .
+<http://www.w3id.org/framECO#hasExperiencer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/framECO#Experiencer> .
+<http://www.w3id.org/framECO#hasExperiencer> <http://www.w3.org/2000/01/rdf-schema#label> "hasExperiencer" .
+# 
+# http://www.w3id.org/framECO#hasExpressor
+<http://www.w3id.org/framECO#hasExpressor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/framECO#hasExpressor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/framECO#Emotion> .
+<http://www.w3id.org/framECO#hasExpressor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/framECO#Expressor> .
+<http://www.w3id.org/framECO#hasExpressor> <http://www.w3.org/2000/01/rdf-schema#label> "hasExpressor" .
+# 
+# http://www.w3id.org/framECO#hasManner
+<http://www.w3id.org/framECO#hasManner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/framECO#hasManner> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/framECO#Emotion> .
+<http://www.w3id.org/framECO#hasManner> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/framECO#Manner> .
+<http://www.w3id.org/framECO#hasManner> <http://www.w3.org/2000/01/rdf-schema#label> "hasManner" .
+# 
+# http://www.w3id.org/framECO#hasValence
+<http://www.w3id.org/framECO#hasValence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/framECO#hasValence> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/framECO#AffectiveState> .
+<http://www.w3id.org/framECO#hasValence> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/framECO#Valence> .
+<http://www.w3id.org/framECO#hasValence> <http://www.w3.org/2000/01/rdf-schema#label> "hasValence" .
+# 
+# http://www.w3id.org/framECO#partecipateIn
+<http://www.w3id.org/framECO#partecipateIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/framECO#partecipateIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/framECO#Experiencer> .
+<http://www.w3id.org/framECO#partecipateIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/framECO#Event> .
+<http://www.w3id.org/framECO#partecipateIn> <http://www.w3.org/2000/01/rdf-schema#label> "partecipateIn" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3id.org/framECO#AffectiveState
+<http://www.w3id.org/framECO#AffectiveState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/framECO#AffectiveState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/framECO#State> .
+<http://www.w3id.org/framECO#AffectiveState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/framECO#hasExperiencer> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3id.org/framECO#Experiencer> .
+<http://www.w3id.org/framECO#AffectiveState> <http://www.w3.org/2000/01/rdf-schema#comment> "An Affective State is a feeling State of an Experiencer."@en .
+<http://www.w3id.org/framECO#AffectiveState> <http://www.w3.org/2000/01/rdf-schema#label> "AffectiveState"@en .
+# 
+# http://www.w3id.org/framECO#BodilyProcess
+<http://www.w3id.org/framECO#BodilyProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/framECO#BodilyProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/framECO#Expressor> .
+# 
+# http://www.w3id.org/framECO#Circumstance
+<http://www.w3id.org/framECO#Circumstance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/framECO#Circumstance> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/framECO#Content> .
+<http://www.w3id.org/framECO#Circumstance> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/framECO#Stimulus> .
+<http://www.w3id.org/framECO#Circumstance> <http://www.w3.org/2000/01/rdf-schema#comment> "Circumstances or conditions under which the Experiencer experiences the emotion. Unlike Content it does not give the specific content of the emotion, but the Content can often be inferred from the Circumstances."@en .
+<http://www.w3id.org/framECO#Circumstance> <http://www.w3.org/2000/01/rdf-schema#label> "Circumstance"@en .
+# 
+# http://www.w3id.org/framECO#Content
+<http://www.w3id.org/framECO#Content> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/framECO#Content> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/framECO#Stimulus> .
+<http://www.w3id.org/framECO#Content> <http://www.w3.org/2000/01/rdf-schema#comment> "Content is what the Experiencer's feelings or experiences are directed towards or based upon. The Content differs from a stimulus because the Content is not construed as being directly responsible for causing the emotion."@en .
+<http://www.w3id.org/framECO#Content> <http://www.w3.org/2000/01/rdf-schema#label> "Content"@en .
+# 
+# http://www.w3id.org/framECO#Degree
+<http://www.w3id.org/framECO#Degree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/framECO#Degree> <http://www.w3.org/2000/01/rdf-schema#comment> "Degree to which the Experiencer feels the emotion."@en .
+<http://www.w3id.org/framECO#Degree> <http://www.w3.org/2000/01/rdf-schema#label> "Degree"@en .
+# 
+# http://www.w3id.org/framECO#Emotion
+<http://www.w3id.org/framECO#Emotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/framECO#Emotion> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/framECO#AffectiveState> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3id.org/framECO#hasCircumstance> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3id.org/framECO#Circumstance> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/framECO#Emotion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/framECO#AffectiveState> .
+<http://www.w3id.org/framECO#Emotion> <http://www.w3.org/2000/01/rdf-schema#comment> "An emotion is an Affective State lived by an Experiencer which involves or is evoked by specific Circumstances. For this reason it is usually intense and short-lived."@en .
+<http://www.w3id.org/framECO#Emotion> <http://www.w3.org/2000/01/rdf-schema#label> "Emotion"@en .
+# 
+# http://www.w3id.org/framECO#Entity
+<http://www.w3id.org/framECO#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/framECO#Entity> <http://www.w3.org/2000/01/rdf-schema#comment> "Any living being"@en .
+<http://www.w3id.org/framECO#Entity> <http://www.w3.org/2000/01/rdf-schema#label> "Entity"@en .
+# 
+# http://www.w3id.org/framECO#Event
+<http://www.w3id.org/framECO#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/framECO#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "The Event is the occasion or happening that Experiencers in a certain emotional state participate in."@en .
+<http://www.w3id.org/framECO#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
+# 
+# http://www.w3id.org/framECO#Experiencer
+<http://www.w3id.org/framECO#Experiencer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/framECO#Experiencer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/framECO#Entity> .
+<http://www.w3id.org/framECO#Experiencer> <http://www.w3.org/2000/01/rdf-schema#comment> "The Experiencer is the person or sentient entity that experiences or feels the Emotion or other internal state such as Mood."@en .
+<http://www.w3id.org/framECO#Experiencer> <http://www.w3.org/2000/01/rdf-schema#label> "Experiencer"@en .
+# 
+# http://www.w3id.org/framECO#Expressor
+<http://www.w3id.org/framECO#Expressor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/framECO#Expressor> <http://www.w3.org/2000/01/rdf-schema#comment> "The Expressor marks expressions that indicate a bodily process, such as a gesture, facial expression, speech impairment or other expression of the Experiencer that reflects their emotional state."@en .
+<http://www.w3id.org/framECO#Expressor> <http://www.w3.org/2000/01/rdf-schema#label> "Expressor"@en .
+# 
+# http://www.w3id.org/framECO#Facial
+<http://www.w3id.org/framECO#Facial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/framECO#Facial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/framECO#Expressor> .
+<http://www.w3id.org/framECO#Facial> <http://www.w3.org/2000/01/rdf-schema#comment> "A Facial Expressor of an emotion is a change in the face of the Experiencer, such as blushing or raising the eyebrows."@en .
+<http://www.w3id.org/framECO#Facial> <http://www.w3.org/2000/01/rdf-schema#label> "Facial"@en .
+# 
+# http://www.w3id.org/framECO#Gesture
+<http://www.w3id.org/framECO#Gesture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/framECO#Gesture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/framECO#BodilyProcess> .
+<http://www.w3id.org/framECO#Gesture> <http://www.w3.org/2000/01/rdf-schema#comment> "A Gesture is a Bodily Process, which is an Expressor of the Experiencer's Emotion. It can be, for instance, clenching fists or rubbing hands."@en .
+<http://www.w3id.org/framECO#Gesture> <http://www.w3.org/2000/01/rdf-schema#label> "Gesture"@en .
+# 
+# http://www.w3id.org/framECO#HighDegree
+<http://www.w3id.org/framECO#HighDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/framECO#HighDegree> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/framECO#Degree> .
+<http://www.w3id.org/framECO#HighDegree> <http://www.w3.org/2000/01/rdf-schema#comment> "An Affective State is lived with high intensity."@en .
+<http://www.w3id.org/framECO#HighDegree> <http://www.w3.org/2000/01/rdf-schema#label> "HighDegree"@en .
+# 
+# http://www.w3id.org/framECO#LocomotoryBehavior
+<http://www.w3id.org/framECO#LocomotoryBehavior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/framECO#LocomotoryBehavior> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/framECO#BodilyProcess> .
+<http://www.w3id.org/framECO#LocomotoryBehavior> <http://www.w3.org/2000/01/rdf-schema#comment> "A Locomotory Behavior is a Bodily Process, which is an Expressor of the Experiencer's Emotion. It consists in the movement of the body of the Experiencer, such as walking, running etc."@en .
+<http://www.w3id.org/framECO#LocomotoryBehavior> <http://www.w3.org/2000/01/rdf-schema#label> "Locomotory Behavior"@en .
+# 
+# http://www.w3id.org/framECO#LowDegree
+<http://www.w3id.org/framECO#LowDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/framECO#LowDegree> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/framECO#Degree> .
+<http://www.w3id.org/framECO#LowDegree> <http://www.w3.org/2000/01/rdf-schema#comment> "An Affective State is lived with low intensity."@en .
+<http://www.w3id.org/framECO#LowDegree> <http://www.w3.org/2000/01/rdf-schema#label> "LowDegree"@en .
+# 
+# http://www.w3id.org/framECO#Manner
+<http://www.w3id.org/framECO#Manner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/framECO#Manner> <http://www.w3.org/2000/01/rdf-schema#comment> "Any description of the way in which the Experiencer experiences the Emotion, including secondary effects (e.g. \"quietly\", \"loudly\"), and general descriptions comparing events (e.g. \"the same way\"). Manner may also describe a state of the Experiencer that affects the details of the emotional experience."@en .
+<http://www.w3id.org/framECO#Manner> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "Manner"@en .
+# 
+# http://www.w3id.org/framECO#PhysiologicalProcess
+<http://www.w3id.org/framECO#PhysiologicalProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/framECO#PhysiologicalProcess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/framECO#BodilyProcess> .
+<http://www.w3id.org/framECO#PhysiologicalProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "A Physiological Process is a Bodily Process which is an Expressor of an Experiencer's Emotion. It can be a change in the rate of breathing, muscle becoming tense or relaxing, etc."@en .
+<http://www.w3id.org/framECO#PhysiologicalProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "A Physiological Process is a Bodily Process, which is an Expressor of an Experiencer's Emotion. It can be a change in the rate of the heart beating, or muscle relaxing or becoming tense, or crying etc."@en .
+<http://www.w3id.org/framECO#PhysiologicalProcess> <http://www.w3.org/2000/01/rdf-schema#label> "Physiological Process"@en .
+# 
+# http://www.w3id.org/framECO#Speech
+<http://www.w3id.org/framECO#Speech> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/framECO#Speech> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/framECO#Expressor> .
+<http://www.w3id.org/framECO#Speech> <http://www.w3.org/2000/01/rdf-schema#comment> "A Speech impaiment or a change in the way of speaking might be an Expressor of an Emotion."@en .
+<http://www.w3id.org/framECO#Speech> <http://www.w3.org/2000/01/rdf-schema#label> "Speech"@en .
+# 
+# http://www.w3id.org/framECO#State
+<http://www.w3id.org/framECO#State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/framECO#State> <http://www.w3.org/2000/01/rdf-schema#comment> "An Entity persists in a stable situation"@en .
+<http://www.w3id.org/framECO#State> <http://www.w3.org/2000/01/rdf-schema#label> "State"@en .
+# 
+# http://www.w3id.org/framECO#Stimulus
+<http://www.w3id.org/framECO#Stimulus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/framECO#Stimulus> <http://www.w3.org/2000/01/rdf-schema#comment> "The Stimulus is the person, event, or state of affairs that evokes the emotional response in the Experiencer."@en .
+<http://www.w3id.org/framECO#Stimulus> <http://www.w3.org/2000/01/rdf-schema#label> "Stimulus"@en .
+# 
+# http://www.w3id.org/framECO#Valence
+<http://www.w3id.org/framECO#Valence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/framECO#Valence> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid6 <http://www.w3.org/2002/07/owl#oneOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/framECO#Negative> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/framECO#Neutral> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3id.org/framECO#Positive> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.w3id.org/framECO#Negative
+<http://www.w3id.org/framECO#Negative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.w3id.org/framECO#Neutral
+<http://www.w3id.org/framECO#Neutral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/framECO#Neutral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/framECO#Valence> .
+# 
+# http://www.w3id.org/framECO#Positive
+<http://www.w3id.org/framECO#Positive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

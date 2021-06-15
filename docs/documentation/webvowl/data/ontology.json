@@ -1,0 +1,617 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.w3id.org/framECO" ],
+    "iri" : "http://www.w3id.org/framECO"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3id.org/framECO#Experiencer",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Experiencer",
+      "en" : "Experiencer"
+    },
+    "comment" : {
+      "en" : "The Experiencer is the person or sentient entity that experiences or feels the Emotion or other internal state such as Mood."
+    },
+    "id" : "3",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3id.org/framECO#Emotion",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Emotion",
+      "en" : "Emotion"
+    },
+    "intersection" : [ "5" ],
+    "comment" : {
+      "en" : "An emotion is an Affective State lived by an Experiencer which involves or is evoked by specific Circumstances. For this reason it is usually intense and short-lived."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3id.org/framECO#Circumstance",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Circumstance",
+      "en" : "Circumstance"
+    },
+    "comment" : {
+      "en" : "Circumstances or conditions under which the Experiencer experiences the emotion. Unlike Content it does not give the specific content of the emotion, but the Content can often be inferred from the Circumstances."
+    },
+    "id" : "6"
+  }, {
+    "iri" : "http://www.w3id.org/framECO#HighDegree",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HighDegree",
+      "en" : "HighDegree"
+    },
+    "comment" : {
+      "en" : "An Affective State is lived with high intensity."
+    },
+    "id" : "7",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3id.org/framECO#Stimulus",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Stimulus",
+      "en" : "Stimulus"
+    },
+    "comment" : {
+      "en" : "The Stimulus is the person, event, or state of affairs that evokes the emotional response in the Experiencer."
+    },
+    "id" : "11"
+  }, {
+    "iri" : "http://www.w3id.org/framECO#Speech",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Speech",
+      "en" : "Speech"
+    },
+    "comment" : {
+      "en" : "A Speech impaiment or a change in the way of speaking might be an Expressor of an Emotion."
+    },
+    "id" : "26",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.w3id.org/framECO#BodilyProcess",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BodilyProcess"
+    },
+    "subClasses" : [ "13", "16", "18" ],
+    "id" : "14",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.w3id.org/framECO#Content",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Content",
+      "en" : "Content"
+    },
+    "comment" : {
+      "en" : "Content is what the Experiencer's feelings or experiences are directed towards or based upon. The Content differs from a stimulus because the Content is not construed as being directly responsible for causing the emotion."
+    },
+    "id" : "10"
+  }, {
+    "iri" : "http://www.w3id.org/framECO#PhysiologicalProcess",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PhysiologicalProcess",
+      "en" : "Physiological Process"
+    },
+    "comment" : {
+      "en" : "A Physiological Process is a Bodily Process, which is an Expressor of an Experiencer's Emotion. It can be a change in the rate of the heart beating, or muscle relaxing or becoming tense, or crying etc."
+    },
+    "id" : "16",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.w3id.org/framECO#Valence",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Valence"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.w3id.org/framECO#Neutral",
+      "baseIri" : "http://www.w3id.org/framECO",
+      "labels" : {
+        "IRI-based" : "Neutral"
+      }
+    }, {
+      "iri" : "http://www.w3id.org/framECO#Negative",
+      "baseIri" : "http://www.w3id.org/framECO",
+      "labels" : {
+        "IRI-based" : "Negative"
+      }
+    }, {
+      "iri" : "http://www.w3id.org/framECO#Positive",
+      "baseIri" : "http://www.w3id.org/framECO",
+      "labels" : {
+        "IRI-based" : "Positive"
+      }
+    } ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.w3id.org/framECO#LocomotoryBehavior",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LocomotoryBehavior",
+      "en" : "Locomotory Behavior"
+    },
+    "comment" : {
+      "en" : "A Locomotory Behavior is a Bodily Process, which is an Expressor of the Experiencer's Emotion. It consists in the movement of the body of the Experiencer, such as walking, running etc."
+    },
+    "id" : "18",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://www.w3id.org/framECO#Entity",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Entity",
+      "en" : "Entity"
+    },
+    "subClasses" : [ "3" ],
+    "comment" : {
+      "en" : "Any living being"
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3id.org/framECO#Manner",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "en",
+        "value" : "Manner",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Manner"
+    },
+    "comment" : {
+      "en" : "Any description of the way in which the Experiencer experiences the Emotion, including secondary effects (e.g. \"quietly\", \"loudly\"), and general descriptions comparing events (e.g. \"the same way\"). Manner may also describe a state of the Experiencer that affects the details of the emotional experience."
+    },
+    "id" : "30"
+  }, {
+    "iri" : "http://www.w3id.org/framECO#Facial",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Facial",
+      "en" : "Facial"
+    },
+    "comment" : {
+      "en" : "A Facial Expressor of an emotion is a change in the face of the Experiencer, such as blushing or raising the eyebrows."
+    },
+    "id" : "22",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.w3id.org/framECO#Event",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event",
+      "en" : "Event"
+    },
+    "comment" : {
+      "en" : "The Event is the occasion or happening that Experiencers in a certain emotional state participate in."
+    },
+    "id" : "33"
+  }, {
+    "iri" : "http://www.w3id.org/framECO#State",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "State",
+      "en" : "State"
+    },
+    "subClasses" : [ "5" ],
+    "comment" : {
+      "en" : "An Entity persists in a stable situation"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3id.org/framECO#Expressor",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Expressor",
+      "en" : "Expressor"
+    },
+    "subClasses" : [ "22", "26", "14" ],
+    "comment" : {
+      "en" : "The Expressor marks expressions that indicate a bodily process, such as a gesture, facial expression, speech impairment or other expression of the Experiencer that reflects their emotional state."
+    },
+    "id" : "23"
+  }, {
+    "iri" : "http://www.w3id.org/framECO#AffectiveState",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AffectiveState",
+      "en" : "AffectiveState"
+    },
+    "subClasses" : [ "4" ],
+    "comment" : {
+      "en" : "An Affective State is a feeling State of an Experiencer."
+    },
+    "id" : "5",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3id.org/framECO#Degree",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Degree",
+      "en" : "Degree"
+    },
+    "subClasses" : [ "38", "7" ],
+    "comment" : {
+      "en" : "Degree to which the Experiencer feels the emotion."
+    },
+    "id" : "8"
+  }, {
+    "iri" : "http://www.w3id.org/framECO#LowDegree",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LowDegree",
+      "en" : "LowDegree"
+    },
+    "comment" : {
+      "en" : "An Affective State is lived with low intensity."
+    },
+    "id" : "38",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3id.org/framECO#Gesture",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Gesture",
+      "en" : "Gesture"
+    },
+    "comment" : {
+      "en" : "A Gesture is a Bodily Process, which is an Expressor of the Experiencer's Emotion. It can be, for instance, clenching fists or rubbing hands."
+    },
+    "id" : "13",
+    "superClasses" : [ "14" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "28",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.w3id.org/framECO#hasEntity",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasEntity",
+      "undefined" : "hasEntity"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "functional" ],
+    "id" : "0"
+  }, {
+    "range" : "11",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "9"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "12"
+  }, {
+    "range" : "14",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "range" : "14",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "range" : "2",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "19"
+  }, {
+    "range" : "1",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "23",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.w3id.org/framECO#hasCircumstance",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasCircumstance",
+      "undefined" : "hasCircumstance"
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "functional" ],
+    "id" : "24"
+  }, {
+    "range" : "23",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "10",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "11",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.w3id.org/framECO#hasExperiencer",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasExperiencer",
+      "undefined" : "hasExperiencer"
+    },
+    "domain" : "5",
+    "attributes" : [ "object", "functional" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://www.w3id.org/framECO#hasDegree",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasDegree",
+      "undefined" : "hasDegree"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://www.w3id.org/framECO#partecipateIn",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "partecipateIn",
+      "undefined" : "partecipateIn"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.w3id.org/framECO#hasManner",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasManner",
+      "undefined" : "hasManner"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.w3id.org/framECO#evokedBy",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "evokedBy",
+      "undefined" : "evokedBy"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.w3id.org/framECO#hasExpressor",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasExpressor",
+      "undefined" : "hasExpressor"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://www.w3id.org/framECO#hasContent",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasContent",
+      "undefined" : "hasContent"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.w3id.org/framECO#hasValence",
+    "baseIri" : "http://www.w3id.org/framECO",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "hasValence",
+      "undefined" : "hasValence"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "23",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "range" : "8",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  } ]
+}

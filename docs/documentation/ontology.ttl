@@ -1,0 +1,266 @@
+@prefix : <http://www.w3id.org/framECO#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3id.org/framECO> .
+
+<http://www.w3id.org/framECO> rdf:type owl:Ontology ;
+                               owl:versionIRI <http://www.w3id.org/framECO/1.0> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3id.org/framECO#evokedBy
+:evokedBy rdf:type owl:ObjectProperty ;
+          rdfs:domain :Emotion ;
+          rdfs:range :Stimulus ;
+          rdfs:label "evokedBy" .
+
+
+###  http://www.w3id.org/framECO#hasCircumstance
+:hasCircumstance rdf:type owl:ObjectProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :Emotion ;
+                 rdfs:range :Circumstance ;
+                 rdfs:label "hasCircumstance" .
+
+
+###  http://www.w3id.org/framECO#hasContent
+:hasContent rdf:type owl:ObjectProperty ;
+            rdfs:domain :Emotion ;
+            rdfs:range :Content ;
+            rdfs:label "hasContent" .
+
+
+###  http://www.w3id.org/framECO#hasDegree
+:hasDegree rdf:type owl:ObjectProperty ;
+           rdfs:domain :Emotion ;
+           rdfs:range :Degree ;
+           rdfs:label "hasDegree" .
+
+
+###  http://www.w3id.org/framECO#hasEntity
+:hasEntity rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :State ;
+           rdfs:range :Entity ;
+           rdfs:label "hasEntity" .
+
+
+###  http://www.w3id.org/framECO#hasExperiencer
+:hasExperiencer rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :AffectiveState ;
+                rdfs:range :Experiencer ;
+                rdfs:label "hasExperiencer" .
+
+
+###  http://www.w3id.org/framECO#hasExpressor
+:hasExpressor rdf:type owl:ObjectProperty ;
+              rdfs:domain :Emotion ;
+              rdfs:range :Expressor ;
+              rdfs:label "hasExpressor" .
+
+
+###  http://www.w3id.org/framECO#hasManner
+:hasManner rdf:type owl:ObjectProperty ;
+           rdfs:domain :Emotion ;
+           rdfs:range :Manner ;
+           rdfs:label "hasManner" .
+
+
+###  http://www.w3id.org/framECO#hasValence
+:hasValence rdf:type owl:ObjectProperty ;
+            rdfs:domain :AffectiveState ;
+            rdfs:range :Valence ;
+            rdfs:label "hasValence" .
+
+
+###  http://www.w3id.org/framECO#partecipateIn
+:partecipateIn rdf:type owl:ObjectProperty ;
+               rdfs:domain :Experiencer ;
+               rdfs:range :Event ;
+               rdfs:label "partecipateIn" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3id.org/framECO#AffectiveState
+:AffectiveState rdf:type owl:Class ;
+                rdfs:subClassOf :State ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasExperiencer ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :Experiencer
+                                ] ;
+                rdfs:comment "An Affective State is a feeling State of an Experiencer."@en ;
+                rdfs:label "AffectiveState"@en .
+
+
+###  http://www.w3id.org/framECO#BodilyProcess
+:BodilyProcess rdf:type owl:Class ;
+               rdfs:subClassOf :Expressor .
+
+
+###  http://www.w3id.org/framECO#Circumstance
+:Circumstance rdf:type owl:Class ;
+              owl:disjointWith :Content ,
+                               :Stimulus ;
+              rdfs:comment "Circumstances or conditions under which the Experiencer experiences the emotion. Unlike Content it does not give the specific content of the emotion, but the Content can often be inferred from the Circumstances."@en ;
+              rdfs:label "Circumstance"@en .
+
+
+###  http://www.w3id.org/framECO#Content
+:Content rdf:type owl:Class ;
+         owl:disjointWith :Stimulus ;
+         rdfs:comment "Content is what the Experiencer's feelings or experiences are directed towards or based upon. The Content differs from a stimulus because the Content is not construed as being directly responsible for causing the emotion."@en ;
+         rdfs:label "Content"@en .
+
+
+###  http://www.w3id.org/framECO#Degree
+:Degree rdf:type owl:Class ;
+        rdfs:comment "Degree to which the Experiencer feels the emotion."@en ;
+        rdfs:label "Degree"@en .
+
+
+###  http://www.w3id.org/framECO#Emotion
+:Emotion rdf:type owl:Class ;
+         owl:equivalentClass [ owl:intersectionOf ( :AffectiveState
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :hasCircumstance ;
+                                                      owl:someValuesFrom :Circumstance
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ;
+         rdfs:subClassOf :AffectiveState ;
+         rdfs:comment "An emotion is an Affective State lived by an Experiencer which involves or is evoked by specific Circumstances. For this reason it is usually intense and short-lived."@en ;
+         rdfs:label "Emotion"@en .
+
+
+###  http://www.w3id.org/framECO#Entity
+:Entity rdf:type owl:Class ;
+        rdfs:comment "Any living being"@en ;
+        rdfs:label "Entity"@en .
+
+
+###  http://www.w3id.org/framECO#Event
+:Event rdf:type owl:Class ;
+       rdfs:comment "The Event is the occasion or happening that Experiencers in a certain emotional state participate in."@en ;
+       rdfs:label "Event"@en .
+
+
+###  http://www.w3id.org/framECO#Experiencer
+:Experiencer rdf:type owl:Class ;
+             rdfs:subClassOf :Entity ;
+             rdfs:comment "The Experiencer is the person or sentient entity that experiences or feels the Emotion or other internal state such as Mood."@en ;
+             rdfs:label "Experiencer"@en .
+
+
+###  http://www.w3id.org/framECO#Expressor
+:Expressor rdf:type owl:Class ;
+           rdfs:comment "The Expressor marks expressions that indicate a bodily process, such as a gesture, facial expression, speech impairment or other expression of the Experiencer that reflects their emotional state."@en ;
+           rdfs:label "Expressor"@en .
+
+
+###  http://www.w3id.org/framECO#Facial
+:Facial rdf:type owl:Class ;
+        rdfs:subClassOf :Expressor ;
+        rdfs:comment "A Facial Expressor of an emotion is a change in the face of the Experiencer, such as blushing or raising the eyebrows."@en ;
+        rdfs:label "Facial"@en .
+
+
+###  http://www.w3id.org/framECO#Gesture
+:Gesture rdf:type owl:Class ;
+         rdfs:subClassOf :BodilyProcess ;
+         rdfs:comment "A Gesture is a Bodily Process, which is an Expressor of the Experiencer's Emotion. It can be, for instance, clenching fists or rubbing hands."@en ;
+         rdfs:label "Gesture"@en .
+
+
+###  http://www.w3id.org/framECO#HighDegree
+:HighDegree rdf:type owl:Class ;
+            rdfs:subClassOf :Degree ;
+            rdfs:comment "An Affective State is lived with high intensity."@en ;
+            rdfs:label "HighDegree"@en .
+
+
+###  http://www.w3id.org/framECO#LocomotoryBehavior
+:LocomotoryBehavior rdf:type owl:Class ;
+                    rdfs:subClassOf :BodilyProcess ;
+                    rdfs:comment "A Locomotory Behavior is a Bodily Process, which is an Expressor of the Experiencer's Emotion. It consists in the movement of the body of the Experiencer, such as walking, running etc."@en ;
+                    rdfs:label "Locomotory Behavior"@en .
+
+
+###  http://www.w3id.org/framECO#LowDegree
+:LowDegree rdf:type owl:Class ;
+           rdfs:subClassOf :Degree ;
+           rdfs:comment "An Affective State is lived with low intensity."@en ;
+           rdfs:label "LowDegree"@en .
+
+
+###  http://www.w3id.org/framECO#Manner
+:Manner rdf:type owl:Class ;
+        rdfs:comment "Any description of the way in which the Experiencer experiences the Emotion, including secondary effects (e.g. \"quietly\", \"loudly\"), and general descriptions comparing events (e.g. \"the same way\"). Manner may also describe a state of the Experiencer that affects the details of the emotional experience."@en ;
+        rdfs:seeAlso "Manner"@en .
+
+
+###  http://www.w3id.org/framECO#PhysiologicalProcess
+:PhysiologicalProcess rdf:type owl:Class ;
+                      rdfs:subClassOf :BodilyProcess ;
+                      rdfs:comment "A Physiological Process is a Bodily Process which is an Expressor of an Experiencer's Emotion. It can be a change in the rate of breathing, muscle becoming tense or relaxing, etc."@en ,
+                                   "A Physiological Process is a Bodily Process, which is an Expressor of an Experiencer's Emotion. It can be a change in the rate of the heart beating, or muscle relaxing or becoming tense, or crying etc."@en ;
+                      rdfs:label "Physiological Process"@en .
+
+
+###  http://www.w3id.org/framECO#Speech
+:Speech rdf:type owl:Class ;
+        rdfs:subClassOf :Expressor ;
+        rdfs:comment "A Speech impaiment or a change in the way of speaking might be an Expressor of an Emotion."@en ;
+        rdfs:label "Speech"@en .
+
+
+###  http://www.w3id.org/framECO#State
+:State rdf:type owl:Class ;
+       rdfs:comment "An Entity persists in a stable situation"@en ;
+       rdfs:label "State"@en .
+
+
+###  http://www.w3id.org/framECO#Stimulus
+:Stimulus rdf:type owl:Class ;
+          rdfs:comment "The Stimulus is the person, event, or state of affairs that evokes the emotional response in the Experiencer."@en ;
+          rdfs:label "Stimulus"@en .
+
+
+###  http://www.w3id.org/framECO#Valence
+:Valence rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Class ;
+                               owl:oneOf ( :Negative
+                                           :Neutral
+                                           :Positive
+                                         )
+                             ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.w3id.org/framECO#Negative
+:Negative rdf:type owl:NamedIndividual .
+
+
+###  http://www.w3id.org/framECO#Neutral
+:Neutral rdf:type owl:NamedIndividual ,
+                  :Valence .
+
+
+###  http://www.w3id.org/framECO#Positive
+:Positive rdf:type owl:NamedIndividual .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
