@@ -1,0 +1,335 @@
+#### knowledge graph for: Altschmerz: weariness with the same old issues that you’ve always had—the same boring flaws and anxieties you’ve been gnawing on for years, which leaves them soggy and tasteless and inert, with nothing interesting left to think about, nothing left to do but spit them out and wander off to the backyard, ready to dig up some fresher pain you might have buried long ago.
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#spit_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Spit> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasTruthValue>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#False> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Out> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_3> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_4> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Out>
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-out-adjective-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#InterestingLeft>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Left> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Interesting> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#bury_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Bury> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Possible> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Long> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Ago> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_3> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Destination>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#pain_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Pain>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_state> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> , <https://w3id.org/framester/data/framestercore/PerceptionBody> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-pain-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#%27ve_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#%27ve> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_1> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#patient>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#issue_1> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Always> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Ready>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/ActivityPrepare> , <https://w3id.org/framester/data/framestercore/CookingCreation> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Ready_26030100> , <http://www.w3.org/2006/03/wn/wn30/instances/synset-cook-verb-2> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#think_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Think> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasTruthValue>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#False> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#About> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#left_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#do_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Do> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_3> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#patient>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_4> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasTruthValue>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#False> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Out> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Dig>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/Residence> , <https://w3id.org/framester/data/framestercore/Removing> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-dig-verb-1> , <http://www.ontologydesignpatterns.org/ont/vn/data/Dig_35010000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Interesting>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/MentalStimulusStimulusFocus> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> , <https://w3id.org/framester/data/framestercore/StimulusFocus> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-interesting-adjective-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Backyard>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_artifact> , <http://www.ontologydesignpatterns.org/ont/d0.owl#Location> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-backyard-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_2>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Situation> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#bury_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#pain_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#dig_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#dig_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Dig> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Up> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#pain_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Situation> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Gnaw>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Gnaw_39020100> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Think>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/Categorization> , <https://w3id.org/framester/data/framestercore/Awareness> , <https://w3id.org/framester/data/framestercore/Regard> , <https://w3id.org/framester/data/framestercore/Opinion> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-think-verb-1> , <http://www.ontologydesignpatterns.org/ont/vn/data/Think_29090200> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1>
+        a       <http://www.w3.org/2002/07/owl#Thing> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Tasteless> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Inert> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Soggy> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#issue_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#SameOldIssue> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Same> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Old> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Have>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Possession> , <https://w3id.org/framester/data/framestercore/Ingestion> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Have_39040100> , <http://www.w3.org/2006/03/wn/wn30/instances/synset-have-verb-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Spit>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Excreting> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Spit_9100000> , <http://www.w3.org/2006/03/wn/wn30/instances/synset-spit-verb-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#left_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#InterestingLeft> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#flaw_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Anxiety> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#SameBoringFlaw> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Boring> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Same> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Do>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/IntentionallyAffect> , <https://w3id.org/framester/data/framestercore/IntentionallyCreate> , <https://w3id.org/framester/data/framestercore/IntentionallyAct> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-make-verb-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Wander>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/Motion> , <https://w3id.org/framester/data/framestercore/SelfMotion> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-roll-verb-12> , <http://www.ontologydesignpatterns.org/ont/vn/data/Wander_51032000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#OldIssue>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Issue> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Bury>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Bury_9010100> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#gnaw_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Gnaw> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#for>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#year_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_2> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Patient>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#flaw_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ready_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Ready> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasTruthValue>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#False> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Product>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_2> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Same>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Identicality> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-same-adjective-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Fresher>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_person> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-freshman-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Leave>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/FormingRelationships> , <https://w3id.org/framester/data/framestercore/Quitting> , <https://w3id.org/framester/data/framestercore/Giving> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/Abandonment> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Leave_10110000> , <http://www.ontologydesignpatterns.org/ont/vn/data/Leave_15020000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#leave_2>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Leave> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasTruthValue>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#False> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_3> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Location>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#left_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#pain_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#FresherPain> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#%27ve>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#FresherPain>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Pain> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Fresher> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Weariness>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_state> , <https://w3id.org/framester/data/framestercore/BiologicalUrge> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-fatigue-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#leave_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Leave> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#year_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#wander_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Wander> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasTruthValue>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#False> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Off> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Location>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#backyard_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_3> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#year_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Year> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Left>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/PartOrientational> , <http://www.ontologydesignpatterns.org/ont/d0.owl#Location> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_location> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-left-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#backyard_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Backyard> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#fresher_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Fresher> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#pain_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#some> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#weariness_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Weariness> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#with>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#issue_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#have_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Have> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#with>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#weariness_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Patient>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#flaw_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_2>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_3>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#BoringFlaw>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Flaw> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#SameBoringFlaw>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#BoringFlaw> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#SameOldIssue>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#OldIssue> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2>
+        a       <http://www.w3.org/2002/07/owl#Thing> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_4>
+        a       <http://www.w3.org/2002/07/owl#Thing> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_3>
+        a       <http://www.w3.org/2002/07/owl#Thing> .
+
+# -------------------------

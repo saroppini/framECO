@@ -1,0 +1,328 @@
+#### knowledge graph for: apomakrysmenophobia: fear that your connections with people are ultimately shallow, that although your relationships feel congenial at the time, an audit of your life would produce an emotional safety deposit box of low-interest holdings and uninvested windfall profits, which will indicate you were never really at risk of joy, sacrifice or loss
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#DepositBox>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_artifact> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Box> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Deposit> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-safe-deposit-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#feel_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Feel> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#at>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#time_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#relationship_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Produce>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/Manufacturing> , <https://w3id.org/framester/data/framestercore/Creating> , <https://w3id.org/framester/data/framestercore/CauseToStart> , <https://w3id.org/framester/data/framestercore/IntentionallyCreate> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-produce-verb-1> , <http://www.ontologydesignpatterns.org/ont/vn/data/Produce_26070200> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#sacrifice_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Sacrifice> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_2>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Situation> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Necessary> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#profit_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#holding_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#loss_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#joy_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#produce_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_4> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#sacrifice_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#box_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Shallow> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#indicate_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#audit_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#people_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Ultimately> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#risk_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Really> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#connection_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#relationship_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#feel_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#although>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#feel_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#at>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#risk_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Loss>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> , <https://w3id.org/framester/data/framestercore/Possession> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_possession> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-loss-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#fear_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Fear> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_2> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Topic> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Risk>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_state> , <https://w3id.org/framester/data/framestercore/RiskySituation> , <https://w3id.org/framester/data/framestercore/BeingAtRisk> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> , <https://w3id.org/framester/data/framestercore/RunRisk> , <https://w3id.org/framester/data/framestercore/Endangering> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-hazard-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Deposit>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-sediment-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Indicate>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/CauseToPerceive> , <https://w3id.org/framester/data/framestercore/Sign> , <https://w3id.org/framester/data/framestercore/Evidence> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/Communication> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Indicate_78000100> , <http://www.w3.org/2006/03/wn/wn30/instances/synset-indicate-verb-2> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Feel>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Feeling> , <https://w3id.org/framester/data/framestercore/PerceptionExperience> , <https://w3id.org/framester/data/framestercore/Seeking> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/PerceptionActive> , <https://w3id.org/framester/data/framestercore/Getting> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-feel-verb-1> , <http://www.ontologydesignpatterns.org/ont/vn/data/Feel_35010000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#joy_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Joy> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#loss_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#sacrifice_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Time>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> , <https://w3id.org/framester/data/framestercore/Timespan> , <https://w3id.org/framester/data/framestercore/EventInstance> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_event> , <https://w3id.org/framester/data/framestercore/LocationInTime> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-time-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#EmotionalSafetyDeposit>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#SafetyDeposit> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#EmotionalSafety> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#indicate_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Indicate> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Necessary> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Cause>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#profit_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Topic>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_2> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#time_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Time> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Situation> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_4> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Really> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Never> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Sacrifice>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/IntentionallyAct> , <http://www.ontologydesignpatterns.org/ont/d0.owl#Activity> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_act> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-forfeit-noun-3> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#People>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_group> , <https://w3id.org/framester/data/framestercore/People> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-people-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Fear>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/d0.owl#CognitiveEntity> , <https://w3id.org/framester/data/framestercore/Fear> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_feeling> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-fear-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#safety_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Safety> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#box_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#an> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#disjunct_2>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Disjunct> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#loss_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Loss> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Safety>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/BeingAtRisk> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_state> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-safety-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#WindfallProfit>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Profit> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#loss_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Loss> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#connection_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Connection> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Shallow> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#connectionOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#with>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#people_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Joy>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/d0.owl#CognitiveEntity> , <https://w3id.org/framester/data/framestercore/ExperiencerObj> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_feeling> , <https://w3id.org/framester/data/framestercore/Feeling> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://dbpedia.org/resource/Happiness> , <http://www.w3.org/2006/03/wn/wn30/instances/synset-joy-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#deposit_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Deposit> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#box_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#SafetyDepositBox>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_artifact> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#DepositBox> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#SafetyDeposit> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-safe-deposit-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#relationship_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Relationship> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Congenial> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#relationshipOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_2> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#holding_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Low-interestHolding> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Low-interest> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#SafetyDeposit>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Deposit> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Safety> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#EmotionalSafety>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Safety> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Emotional> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Windfall>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/d0.owl#Event> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-boom-noun-3> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#EmotionalSafetyDepositBox>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#SafetyDepositBox> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#EmotionalSafetyDeposit> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#audit_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Audit> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#auditOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#life_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#an> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#disjunct_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Disjunct> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Sacrifice> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#sacrifice_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#union>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#disjunct_2> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Audit>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_possession> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-audited%20account-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#produce_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Produce> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Necessary> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#audit_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#box_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#people_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#People> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Box>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/MeasureVolume> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject> , <https://w3id.org/framester/data/framestercore/Containers> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_artifact> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-box-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#life_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Life> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#lifeOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_3> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Emotional>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-emotional-adjective-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Life>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_state> , <https://w3id.org/framester/data/framestercore/Existence> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-life-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Shallow>
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Ultimately> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#UninvestedWindfallProfit>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#WindfallProfit> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#box_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#EmotionalSafetyDepositBox> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#emotionalSafetyDepositBoxOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#holding_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#profit_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_2>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_3>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_4>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Really> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#risk_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Risk> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#riskOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#joy_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Low-interestHolding>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Holding> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#profit_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#UninvestedWindfallProfit> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#windfall_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Windfall> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#profit_1> .
+
+# -------------------------

@@ -1,0 +1,288 @@
+#### knowledge graph for: antematter: the dream versions of things in your life, which appear totally foreign but are still somehow yours—your anteschool, your antefriends, your antehome—all part of a parallel world whose gravitational pull raises your life's emotional stakes, increasing the chances you'll end up betting everything you have.
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#dream_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Dream> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#version_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_2> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#yours_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Yours> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#version_1> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#patient>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#anteschool_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#antehome_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#antefriend_1> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#part_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#yoursOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#world_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#bet_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Bet> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_8> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_3> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#stake_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#EmotionalStake> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Emotional> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#emotionalStakeOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#life_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#raise_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Raise> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#pull_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#stake_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Parallel>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-parallel-adjective-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#antefriend_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Antefriend> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#antefriendOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_4> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Appear>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/IntentionallyCreate> , <https://w3id.org/framester/data/framestercore/Arriving> , <https://w3id.org/framester/data/framestercore/Appearance> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/ComingToBe> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-look-verb-2> , <http://www.ontologydesignpatterns.org/ont/vn/data/Appear_48011000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Pull>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Manipulation> , <http://www.ontologydesignpatterns.org/ont/d0.owl#Activity> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_act> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-pull-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Increase>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/CauseChangeOfPositionOnAScale> , <https://w3id.org/framester/data/framestercore/ChangePositionOnAScale> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Increase_45040000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_2>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Situation> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Necessary> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_3> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#bet_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#have_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Situation> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#life_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Somehow> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Still> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Dream>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_cognition> , <https://w3id.org/framester/data/framestercore/Perception> , <https://w3id.org/framester/data/framestercore/PerceptionExperience> , <https://w3id.org/framester/data/framestercore/Sleep> , <http://www.ontologydesignpatterns.org/ont/d0.owl#CognitiveEntity> , <https://w3id.org/framester/data/framestercore/BecomingAware> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-dream-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Have>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Possession> , <https://w3id.org/framester/data/framestercore/Ingestion> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Have_39040100> , <http://www.w3.org/2006/03/wn/wn30/instances/synset-have-verb-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Raise>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/BodyMovement> , <https://w3id.org/framester/data/framestercore/CauseChangeOfPositionOnAScale> , <https://w3id.org/framester/data/framestercore/Motion> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Raise_9040000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Bet>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Bet_94000000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#World>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Locale> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_object> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-universe-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#life_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Life> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Foreign> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Somehow> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#lifeOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_7> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_5> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_3> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#have_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Have> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_9> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Patient>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_3> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ParallelWorld>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#World> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Parallel> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://dbpedia.org/resource/Parallel_universe_(fiction)> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Part>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_relation> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> , <https://w3id.org/framester/data/framestercore/Membership> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-part-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#End>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/CauseToEnd> , <https://w3id.org/framester/data/framestercore/ActivityStop> , <https://w3id.org/framester/data/framestercore/ProcessEnd> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/End_55040100> , <http://www.w3.org/2006/03/wn/wn30/instances/synset-end-verb-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#world_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ParallelWorld> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#a> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2>
+        a       <http://www.w3.org/2002/07/owl#Thing> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#in>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#life_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Gravitational>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-gravitational-adjective-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#antehome_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Antehome> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#antehomeOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_6> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#chance_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Chance> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#increase_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Increase> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Patient>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#chance_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#end_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#End> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Necessary> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Up> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_8> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_2> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#pull_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#GravitationalPull> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#gravitationalPullOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#world_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#EmotionalStake>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Stake> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#version_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#DreamVersion> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#dreamVersionOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#anteschool_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Anteschool> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#anteschoolOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_2> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Foreign>
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Totally> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Life>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_state> , <https://w3id.org/framester/data/framestercore/Existence> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-life-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#GravitationalPull>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Pull> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Gravitational> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_6>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_7>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_8>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_9>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_2>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_3>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_5>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_4>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#appear_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Appear> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#life_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#DreamVersion>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Version> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#part_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Part> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#all> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Yours>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1>
+        a       <http://www.w3.org/2002/07/owl#Thing> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_3>
+        a       <http://www.w3.org/2002/07/owl#Thing> .
+
+# -------------------------

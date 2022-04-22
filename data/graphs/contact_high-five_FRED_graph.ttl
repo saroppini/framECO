@@ -1,0 +1,370 @@
+#### knowledge graph for: contact high-five: an innocuous touch by someone just doing their job—a barber, yoga instructor or friendly waitress—that you enjoy more than you’d like to admit, a feeling of connection so stupefyingly simple that it cheapens the power of the written word, so that by the year 2025, aspiring novelists would be better off just giving people a hug.
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#like_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Like> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Experiencer>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_3> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#admit_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Year>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/CalendricUnit> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_time> , <https://w3id.org/framester/data/framestercore/MeasureDuration> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-year-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#yoga_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Yoga> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#instructor_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Admit>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Getting> , <https://w3id.org/framester/data/framestercore/RevealSecret> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/Statement> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Admit_37100000> , <http://www.w3.org/2006/03/wn/wn30/instances/synset-admit-verb-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#disjunct_2>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Disjunct> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Connection> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Waitress> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cheapen> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Like> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Admit> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Friendly> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Feeling> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Stupefyingly> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Enjoy> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#instructor_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Simple> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#More> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#write_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Write> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#word_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Word>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/SimpleName> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_communication> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-word-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Hug>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_act> , <http://www.ontologydesignpatterns.org/ont/d0.owl#Activity> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-hug-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Yoga>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_cognition> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://dbpedia.org/resource/Yoga> , <http://www.w3.org/2006/03/wn/wn30/instances/synset-yoga-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Waitress>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/PeopleByVocation> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_person> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-waitress-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Like>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/ExperiencerFocus> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-like-verb-2> , <http://www.ontologydesignpatterns.org/ont/vn/data/Like_32010110> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#instructor_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#FriendlyWaitress> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#YogaInstructor> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#better_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Better> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#give_1> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Necessary> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Off> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#betterBy>
+                "2025-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme1>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#novelist_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#barber_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Barber> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#a> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Situation> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#stupefyingly_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Admit> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#cheapen_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#feeling_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#admit_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#like_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#more_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#enjoy_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#connection_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Give>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/Giving> , <https://w3id.org/framester/data/framestercore/Ingestion> , <https://w3id.org/framester/data/framestercore/Passing> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Give_13010100> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Power>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Differentiation> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_attribute> , <http://www.ontologydesignpatterns.org/ont/d0.owl#Characteristic> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-power-noun-1> , <http://dbpedia.org/resource/The_Power_(Snap!_song)> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#enjoy_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Enjoy> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Experiencer>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_2> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#more_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#feeling_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Connection>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_relation> , <https://w3id.org/framester/data/framestercore/SocialConnection> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-connection-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#give_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#JustGive> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Just> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#novelist_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Recipient>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#people_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#hug_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#word_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Word> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Barber>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person> , <https://w3id.org/framester/data/framestercore/Grooming> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_person> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-barber-noun-2> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#People>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_group> , <https://w3id.org/framester/data/framestercore/People> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-people-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Touch>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Event> , <http://www.ontologydesignpatterns.org/ont/d0.owl#Event> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-touch-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Write>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/TextCreation> , <https://w3id.org/framester/data/framestercore/SpellingAndPronouncing> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Write_25020000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Better>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/Surpassing> , <https://w3id.org/framester/data/framestercore/Progress> , <https://w3id.org/framester/data/framestercore/CauseToMakeProgress> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-better-verb-2> , <http://www.ontologydesignpatterns.org/ont/vn/data/Better_90000000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#more_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#More> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#moreOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#connection_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#than>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#like_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#do_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#JustDo> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_1> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#patient>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#job_1> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Just> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#So> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#that>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#aspire_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Instructor>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_person> , <https://w3id.org/framester/data/framestercore/EducationTeaching> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-teacher-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#FriendlyWaitress>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Waitress> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Friendly> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Job>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_act> , <http://www.ontologydesignpatterns.org/ont/d0.owl#Activity> , <https://w3id.org/framester/data/framestercore/BeingEmployed> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-occupation-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#power_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Power> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#powerOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#word_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#admit_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Admit> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_3> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#feeling_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Feeling> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#moreOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#connection_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#a> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#More>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person> , <https://w3id.org/framester/data/framestercore/People> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_person> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-More-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#year_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Year> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#at>
+                "2025-01-01"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cheapen>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Cheapen_45040000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Feeling>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Feeling> , <http://www.ontologydesignpatterns.org/ont/d0.owl#CognitiveEntity> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_tops> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-feeling-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#InnocuousTouch>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Touch> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Innocuous> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Innocuous>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-innocuous-adjective-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#cheapen_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cheapen> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#neuter_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Patient>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#power_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#JustGive>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Give> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Aspire>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#disjunct_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Disjunct> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Yoga> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Instructor> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#instructor_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#union>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#disjunct_2> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#people_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#People> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#touch_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#InnocuousTouch> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Topic> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#innocuousTouchBy>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#an> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#stupefyingly_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Stupefyingly> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Simple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#hug_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Hug> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#a> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Enjoy>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/EmotionsOfMentalActivity> , <https://w3id.org/framester/data/framestercore/ExperiencerFocus> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-enjoy-verb-1> , <http://www.ontologydesignpatterns.org/ont/vn/data/Enjoy_32010100> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Do>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#aspire_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Aspire> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#novelist_1> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Necessary> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#connection_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Connection> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#JustDo>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Do> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#job_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Job> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#instructor_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#barber_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#jobOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#YogaInstructor>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Instructor> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Yoga> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_2>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_3>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#novelist_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Novelist> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#neuter_1>
+        a       <http://www.w3.org/2002/07/owl#Thing> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Friendly>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Sociability> , <https://w3id.org/framester/data/framestercore/SocialInteractionEvaluation> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-friendly-adjective-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1>
+        a       <http://www.w3.org/2002/07/owl#Thing> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Just>
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-just-adjective-1> .
+
+# -------------------------

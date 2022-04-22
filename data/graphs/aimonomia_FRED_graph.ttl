@@ -1,0 +1,339 @@
+#### knowledge graph for: aimonomia: fear that learning the name of something—a bird, a constellation, an attractive stranger—will somehow ruin it, transforming a lucky discovery into a conceptual husk pinned in a glass case, which leaves one less mystery to flutter around your head, trying to get in.
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#get_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Get> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Necessary> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#In> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Patient>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#stranger_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#bird_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#constellation_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Stranger>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_person> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-stranger-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Head>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_body> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-head-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#fear_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Fear> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_1> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Topic> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Get>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-get-verb-1> , <http://www.ontologydesignpatterns.org/ont/vn/data/Get_26062000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#name_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Name> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#nameOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#transform_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Transform> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Necessary> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#constellation_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#stranger_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#bird_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Patient>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#discovery_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#glass_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Glass> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#case_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#a> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Conceptual>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-conceptual-adjectivesatellite-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Case>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-case-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Glass>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_substance> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-glass-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Learn>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Learn_84000110> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#learn_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Learn> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#name_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mystery>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_cognition> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-mystery-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Situation> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#try_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#stranger_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#husk_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Get> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ruin_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#In> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#discovery_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#bird_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#leave_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#flutter_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#learn_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#mystery_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#case_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#transform_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#get_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#pin_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#constellation_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#flutter_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Flutter> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Necessary> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Location>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#head_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#mystery_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Ruin>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Ruin_44000000> , <http://www.w3.org/2006/03/wn/wn30/instances/synset-destroy-verb-2> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#constellation_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Constellation> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#a> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Name>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_communication> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Description> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-name-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Pin>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Pin_22040000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#LuckyDiscovery>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Discovery> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Lucky> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#try_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Try> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Necessary> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#constellation_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#bird_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#stranger_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Predicate>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#get_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Fear>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/d0.owl#CognitiveEntity> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_feeling> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-fear-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ruin_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#SomehowRuin> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Necessary> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Somehow> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#constellation_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#stranger_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#bird_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Patient>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#neuter_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#bird_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Bird> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#a> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Less>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-less-adjective-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Bird>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_animal> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Organism> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-bird-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#AttractiveStranger>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Stranger> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Attractive> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Transform>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Transform_26061000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#husk_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ConceptualHusk> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#a> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Husk>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_substance> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-chaff-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Try>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Try_61000000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#pin_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Pin> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Necessary> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#in>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#case_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Patient>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#husk_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Constellation>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_cognition> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://dbpedia.org/resource/Constellation> , <http://www.w3.org/2006/03/wn/wn30/instances/synset-configuration-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Discovery>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/d0.owl#Activity> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_act> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-discovery-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#head_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Head> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#headOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_3> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_2> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Lucky>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-lucky-adjectivesatellite-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Flutter>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Flutter_47030000> , <http://www.w3.org/2006/03/wn/wn30/instances/synset-flit-verb-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ConceptualHusk>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Husk> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Conceptual> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#discovery_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#LuckyDiscovery> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#into>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#husk_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#a> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#LessMystery>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Mystery> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Less> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#In>
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-in-adjectivesatellite-2> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#GlassCase>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Case> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Glass> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#mystery_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#LessMystery> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue>
+                "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#one> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_2>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_3>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#leave_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Leave> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Necessary> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#case_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#mystery_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Leave>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Leave_15020000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#SomehowRuin>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Ruin> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#case_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#GlassCase> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#neuter_1>
+        a       <http://www.w3.org/2002/07/owl#Thing> .
+
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasDataValue>
+        a       <http://www.w3.org/2002/07/owl#DataTypeProperty> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Attractive>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-attractive-adjective-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#stranger_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#AttractiveStranger> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#an> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2>
+        a       <http://www.w3.org/2002/07/owl#Thing> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1>
+        a       <http://www.w3.org/2002/07/owl#Thing> .
+
+# -------------------------

@@ -1,0 +1,246 @@
+#### knowledge graph for: anecdoche: a conversation in which everyone is talking but nobody is listening, simply overlaying disconnected words like a game of Scrabble, with each player borrowing bits of other anecdotes as a way to increase their own score, until we all run out of things to say.
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#player_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Bit> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Player> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#playerOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#anecdote_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#each> , <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#increase_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Increase> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasTruthValue>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#False> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#until>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_3> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#way_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Patient>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#score_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Say>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Request> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/Communication> , <https://w3id.org/framester/data/framestercore/Statement> , <https://w3id.org/framester/data/framestercore/TextCreation> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-state-verb-1> , <http://www.ontologydesignpatterns.org/ont/vn/data/Say_37070100> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#SimplyOverlay>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Overlay> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Way>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Means> , <http://www.ontologydesignpatterns.org/ont/d0.owl#Characteristic> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_attribute> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-manner-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Run>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/CauseImpact> , <https://w3id.org/framester/data/framestercore/Impact> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/CauseMotion> , <https://w3id.org/framester/data/framestercore/SelfMotion> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-run-verb-1> , <http://www.ontologydesignpatterns.org/ont/vn/data/Run_47051100> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Increase>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/CauseChangeOfPositionOnAScale> , <https://w3id.org/framester/data/framestercore/ChangePositionOnAScale> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-increase-verb-1> , <http://www.ontologydesignpatterns.org/ont/vn/data/Increase_45040000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#conversation_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Conversation> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Topic> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#a> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_2>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Situation> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#borrow_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#player_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Situation> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#borrow_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#entails>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_2> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_3>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Situation> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_3> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#say_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#run_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Own>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Possession> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-own-adjectivesatellite-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Player>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_person> , <https://w3id.org/framester/data/framestercore/Participation> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-player-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#overlay_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#SimplyOverlay> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_2> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#patient>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#word_1> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasTruthValue>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#False> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Simply> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#with>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#player_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#score_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#OwnScore> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ownScoreOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#game_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Game> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#gameOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Scrabble> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#a> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Conversation>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_communication> , <https://w3id.org/framester/data/framestercore/Chatting> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-conversation-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#say_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Say> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Topic>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#talk_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Talk> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#in>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#conversation_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Listen>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Seeking> , <https://w3id.org/framester/data/framestercore/PerceptionActive> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Listen_30030000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#OwnScore>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Score> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Own> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_3>
+        a       <http://www.w3.org/2002/07/owl#Thing> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> , <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#all> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Talk>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Talk_37110100> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Scrabble>
+        <http://www.w3.org/2002/07/owl#sameAs>
+                <http://dbpedia.org/resource/Scrabble> ;
+        <https://w3id.org/framester/schema/playsRoleIn>
+                <https://w3id.org/framester/data/framestercore/IntentionallyAct> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Game>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_act> , <https://w3id.org/framester/data/framestercore/IntentionallyAct> , <http://www.ontologydesignpatterns.org/ont/d0.owl#Activity> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-game-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Score>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/d0.owl#CognitiveEntity> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_cognition> , <https://w3id.org/framester/data/framestercore/Assessing> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-mark-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#anecdote_2>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Anecdote> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#other> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#borrow_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Borrow> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasTruthValue>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#False> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Borrow>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Borrow_13052000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#anecdote_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Anecdote> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#as>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#way_1> ;
+        <http://www.w3.org/2002/07/owl#differentFrom>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#anecdote_2> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#DisconnectedWord>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Word> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#listen_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Listen> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasTruthValue>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#False> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#in>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#conversation_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Experiencer>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_2> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#run_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Run> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Out> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Location>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_3> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_3> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#word_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#DisconnectedWord> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Disconnected> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#like>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#game_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#way_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Way> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#a> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_2>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_3>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Overlay>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2>
+        a       <http://www.w3.org/2002/07/owl#Thing> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1>
+        a       <http://www.w3.org/2002/07/owl#Thing> .
+
+# -------------------------

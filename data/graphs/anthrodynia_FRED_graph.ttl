@@ -1,0 +1,148 @@
+#### knowledge graph for: anthrodynia: a state of exhaustion with how shitty people can be to each other, typically causing a countervailing sense of affection for things that are sincere but not judgmental, are unabashedly joyful, or just are.
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_3>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Situation> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Possible> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Sincere> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Judgmental> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#State>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/d0.owl#Location> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_location> , <https://w3id.org/framester/data/framestercore/PoliticalLocales> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-state-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Sense>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/d0.owl#CognitiveEntity> , <https://w3id.org/framester/data/framestercore/PerceptionExperience> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_cognition> , <https://w3id.org/framester/data/framestercore/Awareness> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-sense-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#countervail_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Countervail> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#sense_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Possible> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Just> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Affection>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Feeling> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_feeling> , <http://www.ontologydesignpatterns.org/ont/d0.owl#CognitiveEntity> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-affection-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ShittyPeople>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#People> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Shitty> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#state_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#State> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#stateOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#exhaustion_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#to>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#other_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#with>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#people_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#a> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#People>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/People> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Collection> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_group> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-people-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Situation> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Possible> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Joyful> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Unabashedly> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#union>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#countervail_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#cause_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#TypicallyCause> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Possible> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Typically> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme1>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#state_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme2>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#sense_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#TypicallyCause>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cause> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_2>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Situation> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Possible> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Other> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#other_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cause>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/Causation> , <https://w3id.org/framester/data/framestercore/IntentionallyCreate> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Cause_27000000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Exhaustion>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_state> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> , <https://w3id.org/framester/data/framestercore/BiologicalUrge> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-exhaustion-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#affection_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Affection> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#for>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1>
+        a       <http://www.w3.org/2002/07/owl#Thing> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Sincere> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Judgmental> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Joyful> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Shitty>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> , <https://w3id.org/framester/data/framestercore/Desirability> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-icky-adjectivesatellite-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Joyful>
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Unabashedly> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#sense_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Sense> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#senseOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#affection_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#a> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#other_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Other> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#each> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#people_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ShittyPeople> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#exhaustion_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Exhaustion> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Countervail>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+
+# -------------------------

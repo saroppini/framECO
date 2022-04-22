@@ -1,0 +1,375 @@
+{
+    "entries": {
+        "adomania": "sense",
+        "adronitis": "frustration",
+        "agnosthesia": "state",
+        "aimonomia": "fear",
+        "Altschmerz": "weariness",
+        "anchorage": "desire",
+        "anecdoche": "conversation",
+        "antematter": "dream",
+        "anthrodynia": "state",
+        "apomakrysmenophobia": "fear",
+        "backmasking": "tendency",
+        "bends": "frustration",
+        "catoptric tristesse": "sadness",
+        "chrysalism": "tranquility",
+        "contact high-five": "touch",
+        "la cuna": "twinge",
+        "daguerreologue": "interview",
+        "dead reckoning": "find",
+        "deep cut": "emotion",
+        "degrass\u00e9": "entranced",
+        "dialecstatic": "hearing",
+        "dream fever": "heat",
+        "ecstatic shock": "surge",
+        "ellipsism": "sadness",
+        "énouement": "bittersweetness",
+        "exulansis": "tendency",
+        "fata organa": "flash",
+        "fitzcarraldo": "image",
+        "flashover": "moment",
+        "Funkenzwangsvorstellung": "trance",
+        "gnossienne": "moment",
+        "hanker sore": "finding",
+        "heartworm": "relationship",
+        "hiybbprqag": "feeling",
+        "jouska": "conversation",
+        "kairosclerosis": "moment",
+        "kenopsia": "eerie",
+        "keyframe": "moment",
+        "kinda blues": "awareness",
+        "kuebiko": "state",
+        "lachesism": "desire",
+        "lalalalia": "realization",
+        "lapyear": "age",
+        "lethobenthos": "habit",
+        "liberosis": "desire",
+        "lilo": "friendship",
+        "mahpiohanzia": "disappointment",
+        "mal de coucou": "phenomenon",
+        "Mauerbauertraurigkeit": "urge",
+        "McFly effect": "phenomenon",
+        "meantime": "moment",
+        "midding": "feeling",
+        "midsummer": "feast",
+        "mimeomia": "frustration",
+        "moledro": "feeling",
+        "monachopsis": "subtle",
+        "moriturism": "jolt",
+        "nementia": "post-distraction",
+        "nighthawk": "thought",
+        "nodus tollens": "realization",
+        "occhiolism": "awareness",
+        "onism": "frustration",
+        "opia": "intensity",
+        "pâro": "feeling",
+        "reverse shibboleth": "practice",
+        "rigor samsa": "kind",
+        "rollover reaction": "dream",
+        "rubatosis": "awareness",
+        "Rückkehrunruhe": "feeling",
+        "scabulous": "proud",
+        "semaphorism": "hint",
+        "silience": "kind",
+        "slipcast": "default",
+        "sonder": "realization",
+        "swish fulfillment": "feeling",
+        "tilt shift": "phenomenon",
+        "trumspringa": "temptation",
+        "vellichor": "wistfulness",
+        "vemödalen": "frustration",
+        "waldosia": "condition",
+        "wytai": "feature",
+        "xeno": "unit",
+        "Zielschmerz": "dread",
+        "ambedo": "kind",
+        "ameneurosis": "ache",
+        "la gaudière": "glint",
+        "gnasche": "desire"
+    },
+    "definitions": {
+        "sense": 1,
+        "frustration": 5,
+        "state": 3,
+        "fear": 2,
+        "weariness": 1,
+        "desire": 4,
+        "conversation": 2,
+        "dream": 2,
+        "tendency": 2,
+        "sadness": 2,
+        "tranquility": 1,
+        "touch": 1,
+        "twinge": 1,
+        "interview": 1,
+        "find": 1,
+        "emotion": 1,
+        "entranced": 1,
+        "hearing": 1,
+        "heat": 1,
+        "surge": 1,
+        "bittersweetness": 1,
+        "flash": 1,
+        "image": 1,
+        "moment": 5,
+        "trance": 1,
+        "finding": 1,
+        "relationship": 1,
+        "feeling": 6,
+        "eerie": 1,
+        "awareness": 3,
+        "realization": 3,
+        "age": 1,
+        "habit": 1,
+        "friendship": 1,
+        "disappointment": 1,
+        "phenomenon": 3,
+        "urge": 1,
+        "feast": 1,
+        "subtle": 1,
+        "jolt": 1,
+        "post-distraction": 1,
+        "thought": 1,
+        "intensity": 1,
+        "practice": 1,
+        "kind": 3,
+        "proud": 1,
+        "hint": 1,
+        "default": 1,
+        "temptation": 1,
+        "wistfulness": 1,
+        "condition": 1,
+        "feature": 1,
+        "unit": 1,
+        "dread": 1,
+        "ache": 1,
+        "glint": 1
+    },
+    "sorted_def": [
+        [
+            "feeling",
+            6
+        ],
+        [
+            "frustration",
+            5
+        ],
+        [
+            "moment",
+            5
+        ],
+        [
+            "desire",
+            4
+        ],
+        [
+            "state",
+            3
+        ],
+        [
+            "awareness",
+            3
+        ],
+        [
+            "realization",
+            3
+        ],
+        [
+            "phenomenon",
+            3
+        ],
+        [
+            "kind",
+            3
+        ],
+        [
+            "fear",
+            2
+        ],
+        [
+            "conversation",
+            2
+        ],
+        [
+            "dream",
+            2
+        ],
+        [
+            "tendency",
+            2
+        ],
+        [
+            "sadness",
+            2
+        ],
+        [
+            "sense",
+            1
+        ],
+        [
+            "weariness",
+            1
+        ],
+        [
+            "tranquility",
+            1
+        ],
+        [
+            "touch",
+            1
+        ],
+        [
+            "twinge",
+            1
+        ],
+        [
+            "interview",
+            1
+        ],
+        [
+            "find",
+            1
+        ],
+        [
+            "emotion",
+            1
+        ],
+        [
+            "entranced",
+            1
+        ],
+        [
+            "hearing",
+            1
+        ],
+        [
+            "heat",
+            1
+        ],
+        [
+            "surge",
+            1
+        ],
+        [
+            "bittersweetness",
+            1
+        ],
+        [
+            "flash",
+            1
+        ],
+        [
+            "image",
+            1
+        ],
+        [
+            "trance",
+            1
+        ],
+        [
+            "finding",
+            1
+        ],
+        [
+            "relationship",
+            1
+        ],
+        [
+            "eerie",
+            1
+        ],
+        [
+            "age",
+            1
+        ],
+        [
+            "habit",
+            1
+        ],
+        [
+            "friendship",
+            1
+        ],
+        [
+            "disappointment",
+            1
+        ],
+        [
+            "urge",
+            1
+        ],
+        [
+            "feast",
+            1
+        ],
+        [
+            "subtle",
+            1
+        ],
+        [
+            "jolt",
+            1
+        ],
+        [
+            "post-distraction",
+            1
+        ],
+        [
+            "thought",
+            1
+        ],
+        [
+            "intensity",
+            1
+        ],
+        [
+            "practice",
+            1
+        ],
+        [
+            "proud",
+            1
+        ],
+        [
+            "hint",
+            1
+        ],
+        [
+            "default",
+            1
+        ],
+        [
+            "temptation",
+            1
+        ],
+        [
+            "wistfulness",
+            1
+        ],
+        [
+            "condition",
+            1
+        ],
+        [
+            "feature",
+            1
+        ],
+        [
+            "unit",
+            1
+        ],
+        [
+            "dread",
+            1
+        ],
+        [
+            "ache",
+            1
+        ],
+        [
+            "glint",
+            1
+        ]
+    ]
+}

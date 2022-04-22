@@ -1,0 +1,291 @@
+#### knowledge graph for: bends: frustration that you're not enjoying an experience as much as you should, even something you've worked for years to attain, which prompts you to plug in various thought combinations to try for anything more than static emotional blankness, as if your heart had been accidentally demagnetized by a surge of expectations.
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#enjoy_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Enjoy> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasTruthValue>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#False> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#As> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#muchAs>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#should_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Experiencer>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_2> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#experience_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Blankness>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_state> , <https://w3id.org/framester/data/framestercore/Fullness> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-blankness-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Heart>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_cognition> , <https://w3id.org/framester/data/framestercore/Opinion> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity> , <https://w3id.org/framester/data/framestercore/Awareness> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-heart-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#year_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Year> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#to>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#attain_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#much> , <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#should_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Should> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_3> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Necessary> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Experience>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Expertise> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_cognition> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-experience-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Static>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Motion> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-inactive-adjectivesatellite-10> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_2>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Situation> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#blankness_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Situation> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#entails>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_2> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_3>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Situation> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Necessary> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasTruthValue>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#False> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#surge_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#try_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#blankness_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#plug_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thought_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#year_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#work_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#combination_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#prompt_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#demagnetize_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#experience_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#enjoy_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#attain_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#should_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#expectation_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Try>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Attempt> , <https://w3id.org/framester/data/framestercore/AttemptMeans> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-try-verb-1> , <http://www.ontologydesignpatterns.org/ont/vn/data/Try_31010000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Various>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-respective-adjectivesatellite-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#VariousThought>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Thought> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Various> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Plug>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Eclipse> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-plug-verb-1> , <http://www.ontologydesignpatterns.org/ont/vn/data/Plug_9080000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#blankness_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#StaticEmotionalBlankness> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Emotional> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Static> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thought_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#VariousThought> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#plug_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Plug> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_5> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Destination>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#combination_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thought_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#demagnetize_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#AccidentallyDemagnetize> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Necessary> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Accidentally> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#surge_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Patient>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#heart_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#expectation_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Expectation> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#AccidentallyDemagnetize>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Demagnetize> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Thought>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Awareness> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity> , <https://w3id.org/framester/data/framestercore/Cogitation> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_cognition> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-idea-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#surge_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Surge> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#surgeOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#expectation_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#a> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Work>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Reshaping> , <https://w3id.org/framester/data/framestercore/ManipulateIntoShape> , <https://w3id.org/framester/data/framestercore/BeingOperational> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Work_26050000> .
+
+<http://www.w3.org/2002/07/owl#Thing>
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://dbpedia.org/resource/A_for_Anything> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Demagnetize>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Demagnetize_45040000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Surge>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/d0.owl#Event> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-rush-noun-2> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#EmotionalBlankness>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Blankness> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Emotional> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Frustration>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_feeling> , <https://w3id.org/framester/data/framestercore/Preventing> , <https://w3id.org/framester/data/framestercore/EmotionDirected> , <http://www.ontologydesignpatterns.org/ont/d0.owl#CognitiveEntity> , <https://w3id.org/framester/data/framestercore/Thwarting> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-frustration-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#work_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Work> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Necessary> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasTruthValue>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#False> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#as>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#demagnetize_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#for>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#year_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Material>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#EvenThing> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Even> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Should>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#prompt_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Prompt> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasModality>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#Necessary> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#hasTruthValue>
+                <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#False> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Prompt>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/CauseToStart> , <https://w3id.org/framester/data/framestercore/IntentionallyCreate> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Prompt_59000000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#combination_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Combination> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#frustration_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Frustration> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_3> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Topic> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#try_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Try> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#for>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Cause>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_5> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Enjoy>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Enjoy_32010100> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Emotional>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-emotional-adjective-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#experience_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Experience> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#an> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_2>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_3>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_5>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_4>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#heart_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Heart> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#heartOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#EvenThing>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2002/07/owl#Thing> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2>
+        a       <http://www.w3.org/2002/07/owl#Thing> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#moreThan>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#blankness_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#StaticEmotionalBlankness>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#EmotionalBlankness> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#attain_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Attain> .
+
+# -------------------------

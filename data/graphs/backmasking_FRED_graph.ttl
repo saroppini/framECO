@@ -1,0 +1,312 @@
+#### knowledge graph for: backmasking: the instinctive tendency to see someone as you knew them in their youth, a burned-in image of grass-stained knees, graffitied backpacks or handfuls of birthday cake superimposed on an adult with a degree, an illusion formed when someone opens the door to your emotional darkroom while the memory is still developing.
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#darkroom_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#EmotionalDarkroom> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Emotional> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#emotionalDarkroomOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Superimpose>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Placing> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Superimpose_9010000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Image>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_cognition> , <https://w3id.org/framester/data/framestercore/Awareness> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-image-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Birthday>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#TimeInterval> , <https://w3id.org/framester/data/framestercore/Commemorative> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_time> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-birthday-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Burned-inImage>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Image> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Burned-in> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Illusion>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_cognition> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-illusion-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Open>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Closure> , <https://w3id.org/framester/data/framestercore/BodyMovement> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Open_47060000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#BirthdayCake>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cake> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Birthday> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Tendency>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/d0.owl#CognitiveEntity> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_cognition> , <https://w3id.org/framester/data/framestercore/Inclination> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-inclination-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#knee_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Grass-stainedKnee> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#handful_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#backpack_1> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Grass-stained> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Memory>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_cognition> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity> , <https://w3id.org/framester/data/framestercore/CommunicateCategorization> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-memory-noun-1> , <http://dbpedia.org/resource/Memory> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#See>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Awareness> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/ComingToBelieve> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-visualize-verb-1> , <http://www.ontologydesignpatterns.org/ont/vn/data/See_29090110> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Degree>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Quantity> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_attribute> , <http://www.ontologydesignpatterns.org/ont/d0.owl#Characteristic> , <https://w3id.org/framester/data/framestercore/Rank> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-degree-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#adult_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Adult> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#with>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#degree_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#an> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Develop>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/ComingToBe> , <https://w3id.org/framester/data/framestercore/CauseToMakeProgress> , <https://w3id.org/framester/data/framestercore/IntentionallyCreate> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Develop_26010000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#memory_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Memory> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Youth>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_person> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-young%20person-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#open_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Open> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_4> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Location>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#develop_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#door_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Door>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/ConnectingArchitecture> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_artifact> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-door-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#tendency_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#InstinctiveTendency> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#illusion_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Illusion> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#an> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#know_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Know> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#in>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#youth_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#tendency_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Cake>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_artifact> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-cake-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Adult>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_person> , <https://w3id.org/framester/data/framestercore/PeopleByAge> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Person> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-adult-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Form>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/ComingToBe> , <https://w3id.org/framester/data/framestercore/Reshaping> , <https://w3id.org/framester/data/framestercore/Becoming> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Form_48012000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Know>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Know_29090110> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Graffity>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#youth_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Youth> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#image_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#youthOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Darkroom>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/BuildingSubparts> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_artifact> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-darkroom-noun-1> , <http://dbpedia.org/resource/Darkroom> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#see_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#See> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#tendency_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_2> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#birthday_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Birthday> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#cake_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#StillDevelop>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Develop> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#handful_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Handful> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#handfulOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#cake_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#graffity_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Graffity> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#patient>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#backpack_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#union>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#superimpose_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Emotional>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-emotional-adjective-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#InstinctiveTendency>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Tendency> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Instinctive> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#degree_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Degree> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#illusion_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#a> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#backpack_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Backpack> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#superimpose_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Superimpose> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Destination>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#adult_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#cake_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#door_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Door> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#to>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#darkroom_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#image_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Burned-inImage> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#burned-inImageOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#knee_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#a> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#develop_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#StillDevelop> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Still> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#memory_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_2>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#as>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_3> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#form_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Form> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#when>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#open_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#illusion_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Instinctive>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-natural-adjectivesatellite-6> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_3>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_4>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Burned-in>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#EmotionalDarkroom>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Darkroom> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Emotional> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#cake_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#BirthdayCake> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Grass-stainedKnee>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Knee> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thing_2>
+        a       <http://www.w3.org/2002/07/owl#Thing> .
+
+# -------------------------

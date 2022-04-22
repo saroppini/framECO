@@ -1,0 +1,198 @@
+#### knowledge graph for: chrysalism: the amniotic tranquility of being indoors during a thunderstorm, listening to waves of rain pattering against the roof like an argument upstairs, whose muffled words are unintelligible but whose crackling release of built-up tension you understand perfectly.
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Argument>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Evidence> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationEntity> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_communication> , <https://w3id.org/framester/data/framestercore/Reasoning> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-argument-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Understand>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/Categorization> , <https://w3id.org/framester/data/framestercore/ExperiencerFocus> , <https://w3id.org/framester/data/framestercore/Awareness> , <https://w3id.org/framester/data/framestercore/OthersSituationAsStimulus> , <https://w3id.org/framester/data/framestercore/Grasp> , <https://w3id.org/framester/data/framestercore/Opinion> , <https://w3id.org/framester/data/framestercore/PerceptionExperience> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-understand-verb-1> , <http://www.ontologydesignpatterns.org/ont/vn/data/Understand_77000000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#listen_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Listen> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#patient>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Experiencer>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#tranquility_1> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Stimulus>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#wave_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thunderstorm_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Thunderstorm> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#a> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#roof_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Roof> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#like>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#upstairs_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#upstairs_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ArgumentUpstairs> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#situation_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Situation> ;
+        <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#involves>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#tranquility_1> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Indoor> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#during>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#thunderstorm_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#wave_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Wave> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#waveOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#rain_2> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#argument_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Argument> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#upstairs_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#an> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Roof>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_artifact> , <https://w3id.org/framester/data/framestercore/ArchitecturalPart> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-roof-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Thunderstorm>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/d0.owl#Event> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_phenomenon> , <https://w3id.org/framester/data/framestercore/Weather> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-thunderstorm-noun-1> , <http://dbpedia.org/resource/Thunderstorm> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Tension>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/MedicalConditions> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_state> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-tension-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#word_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#MuffledWord> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Muffled> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Unintelligible> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#muffledWordOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#rain_2> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Listen>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Seeking> , <https://w3id.org/framester/data/framestercore/PerceptionActive> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Listen_30030000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Rain>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Precipitation> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Situation> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_phenomenon> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-rain-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#release_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Release> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#releaseOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#tension_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Built-upTension>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Tension> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Built-up> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#understand_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Understand> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Perfectly> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#tranquility_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#rain_2>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Rain> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Whose> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#pattering_1> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#against>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#roof_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#tranquility_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Indoor> , <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#AmnioticTranquility> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasDeterminer>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#the> ;
+        <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#hasQuantifier>
+                <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#multiple> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Built-up>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-built-up-adjectivesatellite-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Tranquility>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_attribute> , <http://www.ontologydesignpatterns.org/ont/d0.owl#Characteristic> , <https://w3id.org/framester/data/framestercore/ExperiencerObj> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-repose-noun-3> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Release>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/CommerceSell> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_artifact> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-release-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Amniotic>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Quality> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-amniotic-adjective-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#ArgumentUpstairs>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Upstairs> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#associatedWith>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Argument> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#AmnioticTranquility>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Tranquility> ;
+        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasQuality>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Amniotic> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Crackle>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/MotionNoise> , <https://w3id.org/framester/data/framestercore/Impact> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Event> , <https://w3id.org/framester/data/framestercore/MakeNoise> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.ontologydesignpatterns.org/ont/vn/data/Crackle_43020000> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Upstairs>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <https://w3id.org/framester/data/framestercore/Buildings> , <https://w3id.org/framester/data/framestercore/PartWhole> , <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#PhysicalObject> , <http://www.w3.org/2006/03/wn/wn30/instances/supersense-noun_artifact> ;
+        <http://www.w3.org/2002/07/owl#equivalentClass>
+                <http://www.w3.org/2006/03/wn/wn30/instances/synset-upstairs-noun-1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#crackle_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Crackle> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Agent>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#rain_2> ;
+        <http://www.ontologydesignpatterns.org/ont/vn/abox/role/Theme>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#release_1> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#person_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Person> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#tension_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Built-upTension> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#MuffledWord>
+        <http://www.w3.org/2000/01/rdf-schema#subClassOf>
+                <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Word> .
+
+<http://www.ontologydesignpatterns.org/ont/fred/domain.owl#pattering_1>
+        a       <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#Pattering> .
+
+# -------------------------
