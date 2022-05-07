@@ -1,0 +1,248 @@
+Prefix(:=<https://github.com/saroppini/framECO/framECO.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://github.com/saroppini/framECO/framECO.owl#>
+
+Declaration(Class(:AffectiveState))
+Declaration(Class(:BodilyProcess))
+Declaration(Class(:Circumstance))
+Declaration(Class(:Content))
+Declaration(Class(:Degree))
+Declaration(Class(:Emotion))
+Declaration(Class(:Entity))
+Declaration(Class(:Event))
+Declaration(Class(:Experiencer))
+Declaration(Class(:Expressor))
+Declaration(Class(:Facial))
+Declaration(Class(:Gesture))
+Declaration(Class(:HighDegree))
+Declaration(Class(:LocomotoryBehavior))
+Declaration(Class(:LowDegree))
+Declaration(Class(:Manner))
+Declaration(Class(:PhysiologicalProcess))
+Declaration(Class(:Speech))
+Declaration(Class(:State))
+Declaration(Class(:Stimulus))
+Declaration(Class(:Valence))
+Declaration(ObjectProperty(:evokedBy))
+Declaration(ObjectProperty(:hasCircumstance))
+Declaration(ObjectProperty(:hasContent))
+Declaration(ObjectProperty(:hasDegree))
+Declaration(ObjectProperty(:hasEntity))
+Declaration(ObjectProperty(:hasExperiencer))
+Declaration(ObjectProperty(:hasExpressor))
+Declaration(ObjectProperty(:hasManner))
+Declaration(ObjectProperty(:hasValence))
+Declaration(ObjectProperty(:partecipateIn))
+Declaration(NamedIndividual(:Negative))
+Declaration(NamedIndividual(:Neutral))
+Declaration(NamedIndividual(:Positive))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :evokedBy (evokedBy)
+
+AnnotationAssertion(rdfs:label :evokedBy "evokedBy")
+ObjectPropertyDomain(:evokedBy :Emotion)
+ObjectPropertyRange(:evokedBy :Stimulus)
+
+# Object Property: :hasCircumstance (hasCircumstance)
+
+AnnotationAssertion(rdfs:label :hasCircumstance "hasCircumstance")
+FunctionalObjectProperty(:hasCircumstance)
+ObjectPropertyDomain(:hasCircumstance :Emotion)
+ObjectPropertyRange(:hasCircumstance :Circumstance)
+
+# Object Property: :hasContent (hasContent)
+
+AnnotationAssertion(rdfs:label :hasContent "hasContent")
+ObjectPropertyDomain(:hasContent :Emotion)
+ObjectPropertyRange(:hasContent :Content)
+
+# Object Property: :hasDegree (hasDegree)
+
+AnnotationAssertion(rdfs:label :hasDegree "hasDegree")
+ObjectPropertyDomain(:hasDegree :Emotion)
+ObjectPropertyRange(:hasDegree :Degree)
+
+# Object Property: :hasEntity (hasEntity)
+
+AnnotationAssertion(rdfs:label :hasEntity "hasEntity")
+FunctionalObjectProperty(:hasEntity)
+ObjectPropertyDomain(:hasEntity :State)
+ObjectPropertyRange(:hasEntity :Entity)
+
+# Object Property: :hasExperiencer (hasExperiencer)
+
+AnnotationAssertion(rdfs:label :hasExperiencer "hasExperiencer")
+FunctionalObjectProperty(:hasExperiencer)
+ObjectPropertyDomain(:hasExperiencer :AffectiveState)
+ObjectPropertyRange(:hasExperiencer :Experiencer)
+
+# Object Property: :hasExpressor (hasExpressor)
+
+AnnotationAssertion(rdfs:label :hasExpressor "hasExpressor")
+ObjectPropertyDomain(:hasExpressor :Emotion)
+ObjectPropertyRange(:hasExpressor :Expressor)
+
+# Object Property: :hasManner (hasManner)
+
+AnnotationAssertion(rdfs:label :hasManner "hasManner")
+ObjectPropertyDomain(:hasManner :Emotion)
+ObjectPropertyRange(:hasManner :Manner)
+
+# Object Property: :hasValence (hasValence)
+
+AnnotationAssertion(rdfs:label :hasValence "hasValence")
+ObjectPropertyDomain(:hasValence :AffectiveState)
+ObjectPropertyRange(:hasValence :Valence)
+
+# Object Property: :partecipateIn (partecipateIn)
+
+AnnotationAssertion(rdfs:label :partecipateIn "partecipateIn")
+ObjectPropertyDomain(:partecipateIn :Experiencer)
+ObjectPropertyRange(:partecipateIn :Event)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :AffectiveState (AffectiveState)
+
+AnnotationAssertion(rdfs:comment :AffectiveState "An Affective State is a feeling State of an Experiencer."@en)
+AnnotationAssertion(rdfs:label :AffectiveState "AffectiveState"@en)
+SubClassOf(:AffectiveState :State)
+SubClassOf(:AffectiveState ObjectExactCardinality(1 :hasExperiencer :Experiencer))
+
+# Class: :BodilyProcess (:BodilyProcess)
+
+SubClassOf(:BodilyProcess :Expressor)
+
+# Class: :Circumstance (Circumstance)
+
+AnnotationAssertion(rdfs:comment :Circumstance "Circumstances or conditions under which the Experiencer experiences the emotion. Unlike Content it does not give the specific content of the emotion, but the Content can often be inferred from the Circumstances."@en)
+AnnotationAssertion(rdfs:label :Circumstance "Circumstance"@en)
+DisjointClasses(:Circumstance :Content)
+DisjointClasses(:Circumstance :Stimulus)
+
+# Class: :Content (Content)
+
+AnnotationAssertion(rdfs:comment :Content "Content is what the Experiencer's feelings or experiences are directed towards or based upon. The Content differs from a stimulus because the Content is not construed as being directly responsible for causing the emotion."@en)
+AnnotationAssertion(rdfs:label :Content "Content"@en)
+DisjointClasses(:Content :Stimulus)
+
+# Class: :Degree (Degree)
+
+AnnotationAssertion(rdfs:comment :Degree "Degree to which the Experiencer feels the emotion."@en)
+AnnotationAssertion(rdfs:label :Degree "Degree"@en)
+
+# Class: :Emotion (Emotion)
+
+AnnotationAssertion(rdfs:comment :Emotion "An emotion is an Affective State lived by an Experiencer which involves or is evoked by specific Circumstances. For this reason it is usually intense and short-lived."@en)
+AnnotationAssertion(rdfs:label :Emotion "Emotion"@en)
+EquivalentClasses(:Emotion ObjectIntersectionOf(:AffectiveState ObjectSomeValuesFrom(:hasCircumstance :Circumstance)))
+SubClassOf(:Emotion :AffectiveState)
+
+# Class: :Entity (Entity)
+
+AnnotationAssertion(rdfs:comment :Entity "Any living being"@en)
+AnnotationAssertion(rdfs:label :Entity "Entity"@en)
+
+# Class: :Event (Event)
+
+AnnotationAssertion(rdfs:comment :Event "The Event is the occasion or happening that Experiencers in a certain emotional state participate in."@en)
+AnnotationAssertion(rdfs:label :Event "Event"@en)
+
+# Class: :Experiencer (Experiencer)
+
+AnnotationAssertion(rdfs:comment :Experiencer "The Experiencer is the person or sentient entity that experiences or feels the Emotion or other internal state such as Mood."@en)
+AnnotationAssertion(rdfs:label :Experiencer "Experiencer"@en)
+SubClassOf(:Experiencer :Entity)
+
+# Class: :Expressor (Expressor)
+
+AnnotationAssertion(rdfs:comment :Expressor "The Expressor marks expressions that indicate a bodily process, such as a gesture, facial expression, speech impairment or other expression of the Experiencer that reflects their emotional state."@en)
+AnnotationAssertion(rdfs:label :Expressor "Expressor"@en)
+
+# Class: :Facial (Facial)
+
+AnnotationAssertion(rdfs:comment :Facial "A Facial Expressor of an emotion is a change in the face of the Experiencer, such as blushing or raising the eyebrows."@en)
+AnnotationAssertion(rdfs:label :Facial "Facial"@en)
+SubClassOf(:Facial :Expressor)
+
+# Class: :Gesture (Gesture)
+
+AnnotationAssertion(rdfs:comment :Gesture "A Gesture is a Bodily Process, which is an Expressor of the Experiencer's Emotion. It can be, for instance, clenching fists or rubbing hands."@en)
+AnnotationAssertion(rdfs:label :Gesture "Gesture"@en)
+SubClassOf(:Gesture :BodilyProcess)
+
+# Class: :HighDegree (HighDegree)
+
+AnnotationAssertion(rdfs:comment :HighDegree "An Affective State is lived with high intensity."@en)
+AnnotationAssertion(rdfs:label :HighDegree "HighDegree"@en)
+SubClassOf(:HighDegree :Degree)
+
+# Class: :LocomotoryBehavior (Locomotory Behavior)
+
+AnnotationAssertion(rdfs:comment :LocomotoryBehavior "A Locomotory Behavior is a Bodily Process, which is an Expressor of the Experiencer's Emotion. It consists in the movement of the body of the Experiencer, such as walking, running etc."@en)
+AnnotationAssertion(rdfs:label :LocomotoryBehavior "Locomotory Behavior"@en)
+SubClassOf(:LocomotoryBehavior :BodilyProcess)
+
+# Class: :LowDegree (LowDegree)
+
+AnnotationAssertion(rdfs:comment :LowDegree "An Affective State is lived with low intensity."@en)
+AnnotationAssertion(rdfs:label :LowDegree "LowDegree"@en)
+SubClassOf(:LowDegree :Degree)
+
+# Class: :Manner (:Manner)
+
+AnnotationAssertion(rdfs:comment :Manner "Any description of the way in which the Experiencer experiences the Emotion, including secondary effects (e.g. \"quietly\", \"loudly\"), and general descriptions comparing events (e.g. \"the same way\"). Manner may also describe a state of the Experiencer that affects the details of the emotional experience."@en)
+AnnotationAssertion(rdfs:seeAlso :Manner "Manner"@en)
+
+# Class: :PhysiologicalProcess (Physiological Process)
+
+AnnotationAssertion(rdfs:comment :PhysiologicalProcess "A Physiological Process is a Bodily Process which is an Expressor of an Experiencer's Emotion. It can be a change in the rate of breathing, muscle becoming tense or relaxing, etc."@en)
+AnnotationAssertion(rdfs:comment :PhysiologicalProcess "A Physiological Process is a Bodily Process, which is an Expressor of an Experiencer's Emotion. It can be a change in the rate of the heart beating, or muscle relaxing or becoming tense, or crying etc."@en)
+AnnotationAssertion(rdfs:label :PhysiologicalProcess "Physiological Process"@en)
+SubClassOf(:PhysiologicalProcess :BodilyProcess)
+
+# Class: :Speech (Speech)
+
+AnnotationAssertion(rdfs:comment :Speech "A Speech impaiment or a change in the way of speaking might be an Expressor of an Emotion."@en)
+AnnotationAssertion(rdfs:label :Speech "Speech"@en)
+SubClassOf(:Speech :Expressor)
+
+# Class: :State (State)
+
+AnnotationAssertion(rdfs:comment :State "An Entity persists in a stable situation"@en)
+AnnotationAssertion(rdfs:label :State "State"@en)
+
+# Class: :Stimulus (Stimulus)
+
+AnnotationAssertion(rdfs:comment :Stimulus "The Stimulus is the person, event, or state of affairs that evokes the emotional response in the Experiencer."@en)
+AnnotationAssertion(rdfs:label :Stimulus "Stimulus"@en)
+
+# Class: :Valence (:Valence)
+
+EquivalentClasses(:Valence ObjectOneOf(:Negative :Neutral :Positive))
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :Neutral (:Neutral)
+
+ClassAssertion(:Valence :Neutral)
+
+
+)
